@@ -17,10 +17,33 @@
 
 /* About section */
 .about {
+  display: flex;
   background-color: var(--darkgrey);
   color: white;
   padding-inline: 10%;
 }
+.abt-info{
+  align-items: center;
+  justify-content: center;
+}
 .intro-msg {
-  padding-block: 50%;
+  padding-block: 20%;
+}
+.abt-banner {
+  text-align: center;
+  background-color: red;
+  border-radius: 5px;
+}
+
+/* Services section */
+.services {
+  align-items: center;
+  text-align: center;
+  padding-block: 30px;
+}
+.srvc-row{
+  padding: 2%;
+}
+.srvc-col {
+  padding-block:1%;
 }
