@@ -50,5 +50,8 @@
   padding-block:1%;
 }
 
-/* Portfolio sectiongit add .
- */
+/* Portfolio section*/
+
+.portfolio {
+  text-align: center;
+}
