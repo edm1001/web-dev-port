@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   padding-block: 25%;
-
+  padding-inline: 2%;
 }
 
 /* About section */
@@ -20,7 +20,7 @@
   display: flex;
   background-color: var(--darkgrey);
   color: white;
-  padding-inline: 10%;
+  padding-inline: 15%;
 }
 .abt-info{
   align-items: center;
@@ -40,6 +40,8 @@
   align-items: center;
   text-align: center;
   padding-block: 30px;
+  background-color: black;
+  color: white;
 }
 .srvc-row{
   padding: 2%;
@@ -47,3 +49,6 @@
 .srvc-col {
   padding-block:1%;
 }
+
+/* Portfolio sectiongit add .
+ */
