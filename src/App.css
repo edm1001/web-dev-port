@@ -55,3 +55,13 @@
 .portfolio {
   text-align: center;
 }
+
+/* Contact Section */
+.contact-form {
+  justify-content: center;
+}
+.contact-info, .contact-info>a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
