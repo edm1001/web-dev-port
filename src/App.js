@@ -6,6 +6,7 @@ import Services from './Components/Services/Services'
 import Projects from './Components/Projects/Projects';
 import Header from './Components/Navbar/Navbar';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
     <Projects/>
     <Contact/>
     </main>
+    <footer>
+    <Footer/>
+    </footer>
     </>
       );
 }

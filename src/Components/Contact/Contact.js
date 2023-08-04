@@ -2,8 +2,9 @@ import {Row, Col, Button, Form } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <section  style={{paddingTop:'20%'}}>
-            
+        <section className='contact'>
+        <div className='contact-row'>
+
         <h2 style={{textAlign:'center'}}>Contact me through my Website</h2>
         <Row className='contact' style={{paddingTop:'5%'}}>
             <Col lg={6} md={6} sm={12} style={{textAlign:'center', paddingTop:'10%', backgroundColor:'red'}}> 
@@ -20,7 +21,7 @@ const Contact = () => {
             <Col className='contact-form'lg={6} md={6} sm={12} >
             <Form>
                 <Form.Group>
-                    <Row>
+                    <Row >
                         <Col>
                         <Form.Label>Name</Form.Label>
                         <Form.Control required type='name' placeholder='Enter Name'></Form.Control></Col>
@@ -34,10 +35,11 @@ const Contact = () => {
                     <Form.Control as='textarea' rows={4} placeholder='Write your message here'>
                     </Form.Control>
                 </Form.Group>
-                <Button type='submit'> Submit</Button>
+                <Button type='submit' id='contact-btn'> Submit</Button>
             </Form>
             </Col>
         </Row>
+        </div>
         </section>
     )
 }
