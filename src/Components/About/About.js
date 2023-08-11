@@ -4,7 +4,7 @@ import AboutPic from '../../Assets/photos/personcoding.png'
 const About = () => {
     return (
 
-        <section className="about" >
+        <section className="about" id="about">
     <Row className="abt-info">
         <Col lg={6} md={8} sm={12}>
         <div className="intro-msg">
