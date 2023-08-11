@@ -1,7 +1,11 @@
 import {Card , Row, Col} from 'react-bootstrap';
 
-import {FaReact} from 'react-icons/fa';
-
+import {FaBootstrap, FaGithubAlt, FaReact} from 'react-icons/fa';
+import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
+import {VscJson} from 'react-icons/vsc';
+import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
+import {AiOutlineHtml5} from 'react-icons/ai'
+import {SiMongodb, SiExpress} from 'react-icons/si'
 
 const Services = () => {
     return (
@@ -45,11 +49,25 @@ const Services = () => {
               
             
             </Row>
+
         <div>
            <h5>Technologies learned</h5>
+           <Row>        
         <div className='tech-logos'>
-            <FaReact/>
+            <AiOutlineHtml5  size={50} color='orange' className="skl-logo"/>
+            <IoLogoCss3 size={50} color='lightblue' className="skl-logo" />
+            <IoLogoJavascript size={50} color='gold' className="skl-logo" />
+            <FaBootstrap size={50} color='lightblue' className="skl-logo"/>
+            <FaReact size={50} color="blue" className="skl-logo"/>
+            <VscJson size={50} color='orange' className="skl-logo"/>
+            <DiStackoverflow size={50} color='orange' className="skl-logo"/>
+            <DiNodejs size={50} color='green' className="skl-logo"/>
+            <DiNpm  size={50} color='red' className="skl-logo"/>
+            <DiStackoverflow  size={50} color='lightorange' className="skl-logo"/>
+            <SiMongodb size={50} color='green'  className="skl-logo"/>
+            <SiExpress size={50}  className="skl-logo"/>
         </div>
+           </Row>
         </div>
 
         </section>

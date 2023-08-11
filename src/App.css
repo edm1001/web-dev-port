@@ -59,6 +59,10 @@ section {
 .portfolio {
   text-align: center;
 }
+.project-row {
+  background-color: black;
+  padding: 10px;
+}
 
 /* Contact Section */
 .contact-row {

@@ -7,8 +7,8 @@ const Projects = () => {
     return (
         <section className="portfolio">
             <h3> My Projects</h3>
-            <Row>
-                <Col lg={4} md={6} sm={12}>
+            <Row className="project-row">
+                <Col lg={4} md={6} sm={6}>
             <Card>
             <Card.Header>
                 <h3>Wordle</h3>
@@ -20,7 +20,8 @@ const Projects = () => {
             </Card.Body>
             </Card> 
                 </Col>
-                <Col lg={4} md={6} sm={12}>
+
+                <Col lg={4} md={6} sm={6}>
             <Card>
             <Card.Header>
                 <h3>Chatterize</h3>
@@ -32,7 +33,8 @@ const Projects = () => {
             </Card.Body>
             </Card> 
                 </Col>
-                <Col lg={4} md={6} sm={12}>
+
+                <Col lg={4} md={6} sm={6}>
             <Card>
             <Card.Header>
                 <h3>Travel Diary</h3>
