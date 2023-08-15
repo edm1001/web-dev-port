@@ -5,6 +5,7 @@ const About = () => {
     return (
 
         <section className="about" id="about">
+            
     <Row className="abt-info">
         <Col lg={6} md={8} sm={12}>
         <div className="intro-msg">
@@ -19,11 +20,11 @@ const About = () => {
         <img  alt='about-pic' src={AboutPic}/>
         </div>
         </Col>
-        <Col lg={8} className="abt-banner">
+    </Row>
+        <div  className="abt-banner">
         <div>50+ Projects</div>
         <div> 2yrs+ Experiences</div>
-        </Col>
-    </Row>
+        </div>
     </section>
 
     )

@@ -1,6 +1,5 @@
 import {Card , Row, Col} from 'react-bootstrap';
-
-import {FaBootstrap, FaGithubAlt, FaReact} from 'react-icons/fa';
+import {FaBootstrap, FaReact} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
@@ -9,7 +8,7 @@ import {SiMongodb, SiExpress} from 'react-icons/si'
 
 const Services = () => {
     return (
-        <section className='services'>
+        <section className='services' id='services'>
             <h2 className=''>Services</h2>
             <Row className='srvc-row' bg='dark' data-bs-theme='dark'>
                 <Col lg={4} md={4} sm={6} className='srvc-col'>
@@ -66,6 +65,7 @@ const Services = () => {
             <DiStackoverflow  size={50} color='lightorange' className="skl-logo"/>
             <SiMongodb size={50} color='green'  className="skl-logo"/>
             <SiExpress size={50}  className="skl-logo"/>
+            <DiResponsive size={60} className='skl-logo'/>
         </div>
            </Row>
         </div>

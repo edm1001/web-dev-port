@@ -9,7 +9,7 @@ const Footer = () => {
                <Col>
                 <div>
                 Copyright by Edmer Valencia &copy; <br/>
-                <a href=''>Phone:</a><br/>
+                <a href='+12344'>Phone:</a><br/>
                 <a>Location</a><br/>
                 <a>aaa</a>
                 </div>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <Col className='ftr-col2'>
                     <Dropdown>
                     <Dropdown.Toggle className='ftr-dropdown'
-                    variant='secondary'
+                    variant='outline-light'
                     >See More</Dropdown.Toggle>
                     <Dropdown.Menu> 
                     <Dropdown.Item>My Resume</Dropdown.Item>

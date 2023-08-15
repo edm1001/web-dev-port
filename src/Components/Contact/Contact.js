@@ -3,20 +3,22 @@ import {Row, Col, Button, Form } from 'react-bootstrap';
 const Contact = () => {
     return (
         <section className='contact'>
-        <div className='contact-row'>
 
         <h2 style={{textAlign:'center'}}>Contact me through my Website</h2>
-        <Row className='contact' style={{paddingTop:'5%'}}>
-            <Col lg={6} md={6} sm={12} style={{textAlign:'center', paddingTop:'10%', backgroundColor:'red'}}> 
+        <div className='contact-row'>
+        <Row className='contact'>
+            <Col lg={6} md={6} sm={12}> 
             <div className='contact-info'>
                 {/* add icons here */}
                 <a href='tel:00000'>(123) 456-7890</a><br/>
                 <a href='mailto:edmerfranciz@gmail.com'>edmerfranciz@gmail.com</a><br/>
-                <p>Spring, Texas</p><br/>
+                <h6>Spring, Texas</h6>
                 <Button bg='dark'>CV Resume</Button>
                     
             </div>
             </Col>
+
+
 
             <Col className='contact-form'lg={6} md={6} sm={12} >
             <Form>
