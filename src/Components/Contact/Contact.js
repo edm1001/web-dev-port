@@ -1,4 +1,6 @@
 import {Row, Col, Button, Form } from 'react-bootstrap';
+import Resume from '../Resume/Resume.js';
+
 
 const Contact = () => {
     return (
@@ -13,7 +15,7 @@ const Contact = () => {
                 <a href='tel:00000'>(123) 456-7890</a><br/>
                 <a href='mailto:edmerfranciz@gmail.com'>edmerfranciz@gmail.com</a><br/>
                 <h6>Spring, Texas</h6>
-                <Button bg='dark'>CV Resume</Button>
+                <Resume/>
                     
             </div>
             </Col>

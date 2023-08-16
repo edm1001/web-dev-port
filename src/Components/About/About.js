@@ -21,10 +21,10 @@ const About = () => {
         </div>
         </Col>
     </Row>
-        <div  className="abt-banner">
+        {/* <div  className="abt-banner">
         <div>50+ Projects</div>
         <div> 2yrs+ Experiences</div>
-        </div>
+        </div> */}
     </section>
 
     )

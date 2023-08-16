@@ -2,7 +2,7 @@ import {Nav, Navbar} from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <Navbar className="justify-content-center" sticky="top" bg="dark" data-bs-theme="dark" expand="lg" >
+        <Navbar className="" sticky="top" bg="dark" data-bs-theme="dark" expand="lg" >
         <Navbar.Brand>Icon</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="" >
