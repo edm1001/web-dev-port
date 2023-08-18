@@ -10,8 +10,8 @@ const Footer = () => {
                 <div>
                 Copyright by Edmer Valencia &copy; <br/>
                 <a href='+12344'>Phone:</a><br/>
-                <a>Location</a><br/>
-                <a>aaa</a>
+                <a href='/'>Spring, Texas</a><br/>
+                <a href='/'>aaa</a>
                 </div>
                 </Col>
                 <Col className='ftr-col2'>

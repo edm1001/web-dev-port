@@ -15,7 +15,9 @@ const Contact = () => {
                 <a href='tel:00000'>(123) 456-7890</a><br/>
                 <a href='mailto:edmerfranciz@gmail.com'>edmerfranciz@gmail.com</a><br/>
                 <h6>Spring, Texas</h6>
+                <div>
                 <Resume/>
+                </div>
                     
             </div>
             </Col>

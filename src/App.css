@@ -63,7 +63,9 @@ section {
   background-color: black;
   padding: 10px;
 }
-
+.proj-card {
+  background-color: white;
+}
 /* Contact Section */
 .contact-row {
   padding-block: 2%;
