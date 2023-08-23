@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -5,12 +6,12 @@ import {BsFillPersonFill} from 'react-icons/bs'
 
 const Reviews =() => {
     return (
-        <section className='reviews'>
+        <section className='reviews' id='reviews'>
+            <h2 className=''>Reviews</h2>
+            <Container>
+
             <Row className='reviews-row'>
-
-
             
-
                 <Col lg={3} md={4} sm={6}>
             <Card>
             <BsFillPersonFill size={35} />
@@ -144,6 +145,7 @@ const Reviews =() => {
             </Card>
                 </Col>
             </Row>
+            </Container>
         </section>
     )
 }

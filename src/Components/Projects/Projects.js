@@ -5,7 +5,7 @@ import Chatterize from '../../Assets/port/chatterize.gif';
 
 const Projects = () => {
     return (
-        <section className="portfolio">
+        <section className="portfolio" id='portfolio'>
             <h3> My Projects</h3>
             <Row className="project-row">
                 <Col lg={3} md={4} sm={6}>

@@ -1,20 +1,24 @@
-import {Nav, Navbar} from 'react-bootstrap';
-
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 const Header = () => {
     return (
-        <Navbar className="" sticky="top" bg="dark" data-bs-theme="dark" expand="lg" >
-        <Navbar.Brand>Icon</Navbar.Brand>
+      <Navbar className="" sticky="top" bg="dark" data-bs-theme="dark" expand="lg" >
+        <Navbar.Brand classsName ='nav-logo'>Icon</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="" >
-          <Nav className="justify-content-center">
+        <Container>
+          <Nav className="nav-links">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About me</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>            
             <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="#reviews">Reviews</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
           </Nav>
+      </Container>
+            <Button href='#resume' className='nav-resume' >Resume</Button>
           </Navbar.Collapse>       
         </Navbar>
     )

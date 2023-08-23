@@ -4,7 +4,7 @@ import Resume from '../Resume/Resume.js';
 
 const Contact = () => {
     return (
-        <section className='contact'>
+        <section className='contact' id='contact'>
 
         <h2 style={{textAlign:'center'}}>Contact me through my Website</h2>
         <div className='contact-row'>

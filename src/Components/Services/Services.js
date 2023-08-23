@@ -1,4 +1,7 @@
-import {Card , Row, Col} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col';
 import {FaBootstrap, FaReact} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
@@ -10,6 +13,8 @@ const Services = () => {
     return (
         <section className='services' id='services'>
             <h2 className=''>Services</h2>
+            <Container>
+
             <Row className='srvc-row' bg='dark' data-bs-theme='dark'>
                 <Col lg={4} md={4} sm={6} className='srvc-col'>
                     <Card>
@@ -49,6 +54,7 @@ const Services = () => {
             
             </Row>
 
+            </Container>
         <div>
            <h5>Technologies learned</h5>
            <Row>        

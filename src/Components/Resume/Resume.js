@@ -31,7 +31,6 @@ const Resume = () => {
   <Modal.Body>
     <Document
         file={resumePdf}
-        onLoadError={console.error}
         >
     <Page pageNumber={0} ></Page>
     <Page pageNumber={1} ></Page>
