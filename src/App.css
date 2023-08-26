@@ -25,11 +25,25 @@ section {
 
 /* Intro section */
 .welcome {
-  background-color: black;
+  width:100%;
+  height: 100vh;
+}
+#intro-vid {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.intro-content {
+  position: absolute;
+  height:100vh;
+  width: 100%;
+  top: 10%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding-inline: 15%;
-  padding-block: 20%;
 }
 
 /* About section */
@@ -51,6 +65,7 @@ section {
   background-color: var(--red);
   border-radius: 5px;
 }
+
 
 /* Services section */
 .services {

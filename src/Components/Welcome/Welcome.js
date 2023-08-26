@@ -1,22 +1,21 @@
-// import Button from 'react-bootstrap';
-
-// import Button from 'react-bootstrap/button';
-import  {Stack }  from 'react-bootstrap';
+import bgVideo from '../../Assets/videos/welcome-video.mp4' 
+import {FcGoogle} from 'react-icons/fc';
+import {FaGithubAlt} from 'react-icons/fa';
 
 const Welcome =  () => {
     return (
-        <section className='welcome'id='home'>
-            <Stack  gap={2}>
-                <div className='text-center'>
+        <div className='welcome'id='home'> 
+            <video id='intro-vid' src={bgVideo} autoPlay/>
+            <div className='intro-content'>
                  <h2 className="quote" style={{color:'white'}}> In all human affairs there are efforts and there are results, and the strength of the effort is the measure of the result </h2>
-                 </div> 
-                 <div><h4 className='text-center' style={{color:'red'}}> - James Allen</h4></div>
-        {/* <FcGoogle size={50}/>
-        <FaGithubAlt size={50}/>  */}
+
+                 <h4 className='text-center' style={{color:'red'}}> -James Allen</h4>
+                    <FcGoogle size={50}/>
+                    <FaGithubAlt size={50}/>  
         
-        </Stack>         
+            </div>         
      
-        </section>
+        </div>
     )
 }
 export default Welcome;
