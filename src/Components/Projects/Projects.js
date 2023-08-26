@@ -1,4 +1,8 @@
-import { Row, Col, Card, Button } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import Wordle from '../../Assets/port/wordle.gif';
 import travelBlog from '../../Assets/port/travel-blog.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
@@ -6,7 +10,10 @@ import Chatterize from '../../Assets/port/chatterize.gif';
 const Projects = () => {
     return (
         <section className="portfolio" id='portfolio'>
+        <Container>
             <h3> My Projects</h3>
+
+     
             <Row className="project-row">
                 <Col lg={3} md={4} sm={6}>
             <Card className="proj-card">
@@ -49,6 +56,7 @@ const Projects = () => {
             </div>
                 </Col>
             </Row>
+        </Container>
 
         </section>
     )

@@ -5,7 +5,7 @@ import {FaGithubAlt} from 'react-icons/fa';
 const Welcome =  () => {
     return (
         <div className='welcome'id='home'> 
-            <video id='intro-vid' src={bgVideo} autoPlay/>
+            <video id='intro-vid' src={bgVideo} autoPlay muted/>
             <div className='intro-content'>
                  <h2 className="quote" style={{color:'white'}}> In all human affairs there are efforts and there are results, and the strength of the effort is the measure of the result </h2>
 

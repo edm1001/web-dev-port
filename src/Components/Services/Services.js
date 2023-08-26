@@ -12,11 +12,25 @@ import {SiMongodb, SiExpress} from 'react-icons/si'
 const Services = () => {
     return (
         <section className='services' id='services'>
-            <h2 className=''>Services</h2>
             <Container>
 
+
             <Row className='srvc-row' bg='dark' data-bs-theme='dark'>
-                <Col lg={4} md={4} sm={6} className='srvc-col'>
+
+            <Col lg={6} md={12} sm={12} >
+                <div className='service-info'>
+                    <h2> Services</h2>
+                    
+                    <p>
+                        short paragraph about what services i know that is wanted by companies TDD API SQL DATABASES DATASTRUCTURES ALGOS GIT
+                    </p>
+                </div>
+            </Col>
+
+
+            <Col lg={6} md={12} sm={12} >
+            <Row>
+                <Col lg={6} md={6} sm={12} className='srvc-col'>
                     <Card>
                     <Card.Header className='srvc-header'>
                         <h6>MVC</h6></Card.Header>
@@ -25,10 +39,10 @@ const Services = () => {
                     <p> A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
                 </p>
                 </Card.Body>
-            </Card>
+                     </Card>
                 </Col>
                 
-                <Col lg={4} md={4} sm={6} className='srvc-col'>
+                <Col lg={6} md={6} sm={12} className='srvc-col'>
                     <Card>
                     <Card.Header className='srvc-header'> <h6>OOP</h6></Card.Header>
                 <Card.Body>
@@ -36,10 +50,10 @@ const Services = () => {
                     <p>A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
                 </p>
                 </Card.Body>
-            </Card>
+                        </Card>
                 </Col>
 
-                <Col lg={4} md={4} sm={6} className='srvc-col'>
+                <Col lg={6} md={6} sm={12} className='srvc-col'>
                     <Card>
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
@@ -47,11 +61,11 @@ const Services = () => {
                     <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
                 </p>
                 </Card.Body>
-            </Card>
+                        </Card>
                 </Col>
-
-              
-            
+            </Row>
+            </Col>
+        
             </Row>
 
             </Container>

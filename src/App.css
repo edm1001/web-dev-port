@@ -5,6 +5,7 @@
   background-color: black;
   --darkgrey : #343330;
   --red: #BE1B09;
+  --lightgrey: #DBD7D2;
   
 }
 section {
@@ -49,16 +50,23 @@ section {
 /* About section */
 .about {
   display: flex;
-  background-color: var(--darkgrey);
+  background-color: var(--lightgrey);
   color: white;
   padding-inline: 15%;
+  height: 95vh;
+  width: 100%;
 }
 .abt-info{
   align-items: center;
   justify-content: center;
 }
 .intro-msg {
-  padding-top: 2%;
+  background-color: black;
+  padding: 10% 3%;
+  height: 100%;
+  border-radius: 25px;
+  border:#2072AF 5px solid;
+  text-align: center;
 }
 .abt-banner {
   text-align: center;
@@ -86,13 +94,15 @@ section {
 
 .portfolio {
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 .project-row {
   background-color: black;
   padding: 10px;
 }
 .proj-card {
-  background-color: white;
+  background-color: red;
 }
 /* Contact Section */
 .contact-row {
