@@ -18,10 +18,10 @@ const Services = () => {
             <Row className='srvc-row' bg='dark' data-bs-theme='dark'>
 
             <Col lg={6} md={12} sm={12} >
-                <div className='service-info'>
+                <div className=''>
                     <h2> Services</h2>
                     
-                    <p>
+                    <p className='pt-5 srvc-info'>
                         short paragraph about what services i know that is wanted by companies TDD API SQL DATABASES DATASTRUCTURES ALGOS GIT
                     </p>
                 </div>
@@ -69,10 +69,10 @@ const Services = () => {
             </Row>
 
             </Container>
-        <div>
+        <div className='tech-learned' >
            <h5>Technologies learned</h5>
            <Row>        
-        <div className='tech-logos'>
+        <div className='skl-logos'>
             <AiOutlineHtml5  size={50} color='orange' className="skl-logo"/>
             <IoLogoCss3 size={50} color='lightblue' className="skl-logo" />
             <IoLogoJavascript size={50} color='gold' className="skl-logo" />

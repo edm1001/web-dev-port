@@ -52,13 +52,13 @@ section {
   display: flex;
   background-color: var(--lightgrey);
   color: white;
-  padding-inline: 15%;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
 }
 .abt-info{
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding-inline: 10%;
 }
 .intro-msg {
   background-color: black;
@@ -68,11 +68,9 @@ section {
   border:#2072AF 5px solid;
   text-align: center;
 }
-.abt-banner {
-  text-align: center;
-  background-color: var(--red);
-  border-radius: 5px;
-}
+ .intro-img {
+  padding-left: 15%;
+ }
 
 
 /* Services section */
@@ -82,12 +80,22 @@ section {
   padding-block: 30px;
   background-color: black;
   color: white;
+  width:100%;
+  height: 100%;
 }
 .srvc-row{
   padding: 2%;
 }
+.srvc-info {
+  text-align: center;
+  padding-inline: 10%;
+}
 .srvc-col {
   padding-block:1%;
+}
+
+.tech-learned {
+  padding-top: 5%;
 }
 
 /* Portfolio section*/
