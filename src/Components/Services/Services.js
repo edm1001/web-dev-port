@@ -21,9 +21,9 @@ const Services = () => {
                 <div className=''>
                     <h2> Services</h2>
                     
-                    <p className='pt-5 srvc-info'>
-                        short paragraph about what services i know that is wanted by companies TDD API SQL DATABASES DATASTRUCTURES ALGOS GIT
-                    </p>
+                    {/* add a progress bar for skills:
+                    html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
+                    */}
                 </div>
             </Col>
 
