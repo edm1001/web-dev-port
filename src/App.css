@@ -8,9 +8,7 @@
   --lightgrey: #DBD7D2;
   
 }
-section {
-  height:100%;
-}
+
 /* Navbar */
 .nav-links , .nav-logo {
   display:flex;
@@ -21,13 +19,10 @@ section {
   text-decoration: line-through;
 }
 
-
-
-
 /* Intro section */
 .welcome {
   width:100%;
-  height: 100vh;
+  height: 95vh;
 }
 #intro-vid {
   width:100%;
@@ -103,7 +98,6 @@ section {
 .portfolio {
   text-align: center;
   width: 100%;
-  height: 100vh;
 }
 .project-row {
   background-color: black;
@@ -112,6 +106,7 @@ section {
 .proj-card {
   background-color: red;
 }
+
 /* Contact Section */
 .contact-row {
   padding-block: 2%;
@@ -119,8 +114,6 @@ section {
 .contact-form {
   display: flex;
   justify-content: center;
-  padding:10px ;
-
 }
 .contact-info, .contact-info>a {
   text-decoration: none;
@@ -137,7 +130,7 @@ section {
   align-items: center;
 }
 #contact-btn {
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 /* Reviews */

@@ -44,6 +44,7 @@ const Contact = () => {
                 <Button type='submit' id='contact-btn'> Submit</Button>
             </Form>
             </Col>
+            
         </Row>
         </div>
         </section>
