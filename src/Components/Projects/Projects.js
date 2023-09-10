@@ -4,22 +4,11 @@ import Card from 'react-bootstrap/Card';
 import Wordle from '../../Assets/port/wordle.gif';
 import travelBlog from '../../Assets/port/travel-blog.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Portfolio from './Portfolio';
 
 const Projects = () => {
     return (
         <section className="portfolio" id='portfolio'>
             <h2> My Projects</h2>
-
-            <Router>
-                <Routes>
-                    <Route
-                    path='/portfolio'
-                    element={<Portfolio/>}>
-                    </Route>
-                </Routes>
-            </Router>
 
      
             <Row className="project-row">
@@ -28,7 +17,7 @@ const Projects = () => {
             <Card.Img
             src={Wordle} alt='jo' />
             <Card.Body>
-                <a href='/portfolio' to='/portfolio'>Link</a>
+                <button href='/portfolio' to='/portfolio'>Link</button>
             </Card.Body>
             </Card> 
                 </Col>

@@ -2,7 +2,6 @@
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: black;
   --darkgrey : #343330;
   --red: #BE1B09;
   --lightgrey: #DBD7D2;
@@ -20,20 +19,26 @@
 }
 
 /* Intro section */
-.welcome {
+.hero-section{
+  width: 100%;
+  height: 70vh;
+  background-color: darkgrey;
+}
+.welcome-banner {
   width:100%;
-  height: 95vh;
+  height: 25vh;
 }
 #intro-vid {
   width:100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 .intro-content {
-  position: absolute;
-  height:100vh;
+  position:absolute;
+  top: 77vh;
+  z-index: 0;
   width: 100%;
-  top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +52,7 @@
   display: flex;
   background-color: var(--lightgrey);
   color: white;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 .abt-info{
@@ -76,7 +81,7 @@
   background-color: black;
   color: white;
   width:100%;
-  height: 100%;
+  height: 90vh;
 }
 .srvc-row{
   padding: 2%;
@@ -90,7 +95,7 @@
 }
 
 .tech-learned {
-  padding-top: 5%;
+  padding-top: 15%;
 }
 
 /* Portfolio section*/

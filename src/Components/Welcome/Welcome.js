@@ -1,21 +1,24 @@
-import bgVideo from '../../Assets/videos/welcome-video.mp4' 
-import {FcGoogle} from 'react-icons/fc';
-import {FaGithubAlt} from 'react-icons/fa';
+import Row from 'react-bootstrap/Row';
+import Col  from 'react-bootstrap/Col';
 
 const Welcome =  () => {
     return (
-        <div className='welcome'id='home'> 
-            <video id='intro-vid' src={bgVideo} autoPlay muted/>
-            <div className='intro-content'>
-                 <h2 className="quote" style={{color:'white'}}> In all human affairs there are efforts and there are results, and the strength of the effort is the measure of the result </h2>
+        <section>
+        <div className='hero-section' id="home">
+            <Row>
 
-                 <h4 className='text-center' style={{color:'red'}}> -James Allen</h4>
-                    <FcGoogle size={50}/>
-                    <FaGithubAlt size={50}/>  
-        
-            </div>         
-     
+            <Col className='text-center bg-dark text-white'>
+            small paragraph goes here
+            </Col>
+            <Col className='text-center'>
+            my img goes here
+            </Col>
+            </Row>
         </div>
+
+
+
+        </section>
     )
 }
 export default Welcome;
