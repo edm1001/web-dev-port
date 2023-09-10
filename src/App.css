@@ -5,7 +5,7 @@
   --darkgrey : #343330;
   --red: #BE1B09;
   --lightgrey: #DBD7D2;
-  --blue: #318CE7;
+  --blue: #7BAFD4;
 }
 
 /* Navbar */
@@ -112,10 +112,11 @@
 }
 .project-row {
   background-color: black;
-  padding: 10px;
+  padding-top: 5%;
 }
 .proj-card {
-  background-color: red;
+  width: 100%;
+  height:100%;
 }
 
 /* Contact Section */

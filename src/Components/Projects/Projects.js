@@ -9,13 +9,11 @@ const Projects = () => {
     return (
         <section className="portfolio" id='portfolio'>
             <h2> My Projects</h2>
-
-     
-            <Row className="project-row">
+            <Row className="d-flex justify-content-center project-row">
                 <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card">
+            <Card className="proj-card" to='/portfolio'>
             <Card.Img
-            src={Wordle} alt='jo' />
+            src={Wordle} alt='jo'/>
             <Card.Body>
                 <button href='/portfolio' to='/portfolio'>Link</button>
             </Card.Body>
@@ -30,12 +28,10 @@ const Projects = () => {
                 </Col>
 
                 <Col lg={3} md={4} sm={6}>
-            <div className="">
-            <Card>
+            <Card className="proj-card">
             <Card.Img
             src={travelBlog} alt='jo' />
             </Card> 
-            </div>
                 </Col>
             </Row>
 

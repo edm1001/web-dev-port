@@ -9,7 +9,7 @@ const About = () => {
         <Row className="abt-info">
             <Col lg={6} md={8} sm={12}>
             <div className="intro-msg">
-            <h1> Welcome to my Webpage</h1>
+            <h1> Why Hire Me?</h1>
         <p>
             My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
         </p>
