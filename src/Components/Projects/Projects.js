@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Wordle from '../../Assets/port/wordle.gif';
 import travelBlog from '../../Assets/port/travel-blog.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 
 const Projects = () => {
     return (
@@ -17,7 +17,6 @@ const Projects = () => {
             <Card className="proj-card" to='/portfolio'>
             <Card.Img
             src={Wordle} alt='jo'/>
-            <Card.Link href='/portfolio'> link</Card.Link>
             </Card> 
                 </Col>
 
@@ -39,7 +38,6 @@ const Projects = () => {
             <Card className="proj-card" to='/portfolio'>
             <Card.Img
             src={Wordle} alt='jo'/>
-            <Card.Link href='/portfolio'> link</Card.Link>
             </Card> 
                 </Col>
 

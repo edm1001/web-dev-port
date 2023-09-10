@@ -16,7 +16,7 @@ const Reviews =() => {
 
             
                 <Col lg={3} md={4} sm={6}>
-            <Card>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
              <p>
