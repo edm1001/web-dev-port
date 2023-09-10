@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Portfolio from './Pages/Portfolio';
 import Home from './Pages/Home';
+import ResumePdf from './Pages/ResumePdf';
 
 // add two pages: Home[age 
 
@@ -21,6 +22,10 @@ function App() {
                     <Route
                     path='/portfolio'
                     element={<Portfolio/>}>
+                    </Route>
+                    <Route
+                    path='/ResumePdf'
+                    element={<ResumePdf/>}>
                     </Route>
                 </Routes>
     <Footer/>

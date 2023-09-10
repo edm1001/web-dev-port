@@ -1,5 +1,5 @@
 import {Row, Col, Button, Form } from 'react-bootstrap';
-import Resume from '../Resume/Resume.js';
+// import Resume from '../Resume/Resume.js';
 
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
                 <a href='mailto:edmerfranciz@gmail.com'>edmerfranciz@gmail.com</a><br/>
                 <h6>Spring, Texas</h6>
                 <div>
-                <Resume/>
+                <Button href='/ResumePdf' variant="outline-secondary" >Resume</Button>
                 </div>
                     
             </div>

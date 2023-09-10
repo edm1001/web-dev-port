@@ -19,7 +19,7 @@ const Header = () => {
             <Nav.Link href="#reviews">Reviews</Nav.Link>
           </Nav>
       </Container>
-            <Button href='#resume' className='nav-resume'>Resume</Button>
+            <Button href='/ResumePdf' className='nav-resume'>Resume</Button>
           </Navbar.Collapse>       
         </Navbar>
     )
