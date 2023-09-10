@@ -5,7 +5,7 @@
   --darkgrey : #343330;
   --red: #BE1B09;
   --lightgrey: #DBD7D2;
-  
+  --blue: #318CE7;
 }
 
 /* Navbar */
@@ -18,25 +18,30 @@
   text-decoration: line-through;
 }
 
-/* Intro section */
-.hero-section{
+/* Welcome section */
+.hero{
   width: 100%;
-  height: 70vh;
+  height: 85vh;
   background-color: darkgrey;
 }
+.welcome-pic{
+  background-color:var(--blue) ;
+}
+
+/* Banner section */
 .welcome-banner {
   width:100%;
-  height: 25vh;
+  height: 35vh;
 }
-#intro-vid {
+#banner-bg {
   width:100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
 }
-.intro-content {
+.banner-content {
   position:absolute;
-  top: 77vh;
+  top: 95vh;
   z-index: 0;
   width: 100%;
   display: flex;
@@ -46,6 +51,7 @@
   text-align: center;
   padding-inline: 15%;
 }
+
 
 /* About section */
 .about {
@@ -81,7 +87,7 @@
   background-color: black;
   color: white;
   width:100%;
-  height: 90vh;
+  height: 100vh;
 }
 .srvc-row{
   padding: 2%;
@@ -95,7 +101,7 @@
 }
 
 .tech-learned {
-  padding-top: 15%;
+  padding-top: 2%;
 }
 
 /* Portfolio section*/

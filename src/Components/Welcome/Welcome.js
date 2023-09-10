@@ -4,17 +4,16 @@ import Col  from 'react-bootstrap/Col';
 const Welcome =  () => {
     return (
         <section>
-        <div className='hero-section' id="home">
-            <Row>
+            <Row className='hero' id="home">
 
-            <Col className='text-center bg-dark text-white'>
-            small paragraph goes here
-            </Col>
-            <Col className='text-center'>
+            <Col className='text-center welcome-pic'>
             my img goes here
             </Col>
+
+            <Col className='d-flex justify-content-center align-center text-center h-100 p-5 bg-light'>
+            
+            </Col>
             </Row>
-        </div>
 
 
 
