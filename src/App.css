@@ -106,18 +106,22 @@
 
 /* Portfolio section*/
 
-.portfolio {
-  text-align: center;
-  width: 100%;
+
+
+
+/* proj section */
+.project {
+  height: 80vh;
 }
 .project-row {
-  background-color: black;
-  padding-top: 5%;
+  padding-block: 5%;
 }
 .proj-card {
   width: 100%;
   height:100%;
 }
+.see-btn{
+  justify-content: center;}
 
 /* Contact Section */
 .contact-row {
