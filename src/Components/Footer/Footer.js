@@ -9,9 +9,9 @@ const Footer = () => {
                <Col>
                 <div>
                 Copyright by Edmer Valencia &copy; <br/>
-                <a href='+12344'>Phone:</a><br/>
-                <a href='/'>Spring, Texas</a><br/>
-                <a href='/'>aaa</a>
+                <a href='+12344'>Call/Text: 1+ (956) 372-0283 </a><br/>
+                <a href='/'>Location: Spring, Texas</a><br/>
+                <a href='/'>Email: edmerfranciz@gmail.com</a>
                 </div>
                 </Col>
                 <Col className='ftr-col2'>
