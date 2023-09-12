@@ -10,7 +10,7 @@ const Welcome =  () => {
             my img goes here
             </Col>
 
-            <Col className='d-flex justify-content-center align-center text-center h-100 p-5 bg-light'>
+            <Col className='d-flex justify-content-center align-center text-center'>
             
             </Col>
             </Row>

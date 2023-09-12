@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 const Header = () => {
     return (
       <Navbar className="" sticky="top" bg="dark" data-bs-theme="dark" expand="lg" >
-        <Navbar.Brand classsName ='nav-logo'>Icon</Navbar.Brand>
+        <Navbar.Brand classsName='p nav-logo'>Icon</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="" >
         <Container>

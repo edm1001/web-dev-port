@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import {FaBootstrap, FaReact} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
@@ -20,10 +21,13 @@ const Services = () => {
             <Col lg={6} md={12} sm={12} >
                 <div className=''>
                     <h2> Services</h2>
-                    
                     {/* add a progress bar for skills:
                     html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
                     */}
+                    <div>
+                        Full Stack Development 
+                        <ProgressBar animated variant='danger' now={100} className='' size='sm' />
+                    </div>
                 </div>
             </Col>
 
