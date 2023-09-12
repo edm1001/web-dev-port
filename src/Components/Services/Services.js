@@ -24,10 +24,21 @@ const Services = () => {
                     {/* add a progress bar for skills:
                     html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
                     */}
-                    <div>
-                        Full Stack Development 
-                        <ProgressBar animated variant='danger' now={100} className='' size='sm' />
-                    </div>
+                    <Row className=''>
+                    <Col className='col-12 py-1'>
+                        Front End Development 
+                        <ProgressBar animated variant='success' now={100} className='' size='' />
+                    </Col>
+                    <Col  className='col-12 py-1' >
+                        Full Stack Development  
+                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                    </Col>
+                    <Col  className='col-12 py-1' >
+                        Back End Development  
+                        <ProgressBar animated variant='danger' label='100%' now={100} className='' />
+                    </Col>
+
+                    </Row>
                 </div>
             </Col>
 
