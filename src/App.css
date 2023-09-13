@@ -155,9 +155,12 @@
 /* Reviews */
 .reviews {
   background-color:var(--darkgrey);
+  height: 100%;
 }
 .review-card {
   overflow: hidden;
+  height: 200px;
+  width: 200px
 }
 
 /* Footer */

@@ -37,7 +37,7 @@ const Reviews =() => {
                 </Col>
 
                 <Col lg={3} md={4} sm={6}>
-            <Card>
+            <Card className='review-card' >
              <BsFillPersonFill size={35} /> 
             <Card.Body>
              <p>
@@ -56,7 +56,7 @@ const Reviews =() => {
                 </Col>
                 
              <Col lg={3} md={4} sm={6}>
-            <Card>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
             <p> Great job here! Your video was concise and demonstrates your app asking the user questions about the readme's content (title, description, installation, usage, license, contributing, tests, email, and github), generating a readme with corresponding sections that matched your input, included a questions section at the end with your email and github info, and had a working table of contents that linked to each section<br/>
@@ -73,8 +73,8 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-                <Col lg={3} md={4} sm={6}>
-            <Card>
+            <Col lg={3} md={4} sm={6}>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
             <p> Edmer Franciz, <br/>
@@ -98,7 +98,7 @@ const Reviews =() => {
                 </Col>
 
             <Col lg={4} md={4} sm={6}>
-            <Card>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
             <p> Great job here. The heroku link you gave led to a "Application error" page, but I tested things locally and can confirm that everything worked properly.<br/>
@@ -115,7 +115,7 @@ const Reviews =() => {
                 </Col>
 
                 <Col lg={4} md={4} sm={6}>
-            <Card>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
             <p>Thank you for submitting your assignment Edmer! <br/> I was able to clone and run the application. The application utilizes React on the front end, and the routes are handled by Express.<br/>
@@ -131,8 +131,8 @@ const Reviews =() => {
             </Card>
                 </Col>
             
-                <Col lg={4} md={4} sm={6}>
-            <Card>
+            <Col lg={4} md={4} sm={6}>
+            <Card className='review-card'>
             <BsFillPersonFill size={35} />
             <Card.Body>
             <p> All MVP requirements were exceeded. Very Impressive and Congratulations! You deserve this grade!</p>
