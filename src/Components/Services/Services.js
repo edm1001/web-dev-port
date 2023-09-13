@@ -30,7 +30,7 @@ const Services = () => {
                         <ProgressBar animated variant='success' now={100} className='' size='' />
                     </Col>
                     <Col  className='col-12 py-1' >
-                        Full Stack Development  
+                        <h6>Full Stack Development</h6>  
                         <ProgressBar animated variant='warning' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >

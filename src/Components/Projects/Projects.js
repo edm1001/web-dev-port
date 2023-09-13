@@ -55,9 +55,9 @@ const Projects = () => {
             </Card> 
             </Col>
 
-            </Row>
-            <Row>
-            <Button  variant="outline-warning" size="lg" className='see-btn' href='/portfolio'> See More! </Button>
+            </Row >
+            <Row className='pb-4'>
+            <Button  variant="outline-warning" size="lg" className='' href='/portfolio'> See More! </Button>
             </Row>
 
         </Container>
