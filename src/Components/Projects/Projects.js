@@ -11,53 +11,32 @@ const Projects = () => {
     return (
         <Container className="project" fluid>
             <h2 className='text-center'> My Projects</h2>
-            <Row className="d-flex justify-content-center project-row">
+            <Row className="d-flex justify-content-center p-5 project-row">
 
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card" to='/portfolio'>
+            <Col className='' lg={4} md={6} sm={6}>
+            <Card className="proj-card h-80 w-75" to='/portfolio'>
             <Card.Img
             src={Wordle} alt='jo'/>
             </Card> 
                 </Col>
 
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card">
+            <Col lg={4} md={6} sm={6}>
+            <Card className="proj-card h-80 w-75">
             <Card.Img
             src={Chatterize} alt='jo' />
             </Card> 
             </Col>
 
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card">
+            <Col lg={4} md={6} sm={6}>
+            <Card className="proj-card w-90">
             <Card.Img
             src={travelBlog} alt='jo' />
             </Card> 
             </Col>
-
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card" to='/portfolio'>
-            <Card.Img
-            src={Wordle} alt='jo'/>
-            </Card> 
-                </Col>
-
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card">
-            <Card.Img
-            src={Chatterize} alt='jo' />
-            </Card> 
-            </Col>
-
-            <Col lg={3} md={4} sm={6}>
-            <Card className="proj-card">
-            <Card.Img
-            src={travelBlog} alt='jo' />
-            </Card> 
-            </Col>
-
             </Row >
-            <Row className='pb-5'>
-            <Button  variant="outline-warning" size="lg" className='' href='/portfolio'> See More! </Button>
+
+            <Row className='py-4'>
+            <Button  variant="outline-warning" size="lg" className='w-100 d-flex justify-content-center' href='/portfolio'> See More! </Button>
             </Row>
 
         </Container>

@@ -104,10 +104,6 @@
   padding-top: 2%;
 }
 
-/* Portfolio section*/
-.portfolio {
-  height: 100%
-}
 
 
 
@@ -155,7 +151,7 @@
 /* Reviews */
 .reviews {
   background-color:var(--darkgrey);
-  height: 85vh;
+  height: 95vh;
 }
 .review-card {
   width: 100%;
@@ -178,12 +174,19 @@
   text-decoration: underline;
 }
 
+/* PORTFOLIO PAGE*/
+.portfolio {
+  height: 100%;
+}
+.ftrd-img{
+  cursor: pointer;
+}
 /* Footer */
 .footer{
   background-color: var(--red);
   padding: 2.5em;
   color: white;
-
+  
 }
 .ftr-col2{
   padding-bottom: 10%;

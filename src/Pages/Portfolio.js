@@ -1,33 +1,59 @@
-import React from "react";
+import {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import Badge from 'react-bootstrap/Badge'
-import ListGroup from 'react-bootstrap/ListGroup'
+import Image  from "react-bootstrap/Image";
+import Modal from 'react-bootstrap/Modal';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/Button'
 import {FiExternalLink} from 'react-icons/fi'
 import {AiOutlineRead} from 'react-icons/ai';
 import {FiGithub} from 'react-icons/fi'
-// import row col and natiner lg=3 md -4 sm =6 =20 featured
+import Wordle from "../Assets/port/wordle.gif";
+
+// make modal for featured Projects
+
 const Portfolio = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     return (
         // have a list under the featured proj for "other projects"
         // the projects have a live link, github link, link to the readme
         <section className="portfolio">
         <h1 className='text-center' id=''>Projects Page</h1>
         <Container className="portfolio">
-        <Row className="py-3">
-            <Col lg={3} md={4} sm={6} >proj1</Col>
-            <Col lg={3} md={4} sm={6} >proj2</Col>
-            <Col lg={3} md={4} sm={6} >proj3</Col>
-            <Col lg={3} md={4} sm={6} >proj4</Col>
-            <Col lg={3} md={4} sm={6} >proj5</Col>
-            <Col lg={3} md={4} sm={6} >proj6</Col>
-            <Col lg={3} md={4} sm={6} >proj7</Col>
-            <Col lg={3} md={4} sm={6} >proj8</Col>
+        <Row className=" d-flex justify-content-center py-5">
+            <Col lg={3} md={4} sm={6} >
+              <Image  className='w-100 h-100 ftrd-img' src={Wordle} alt="" fluid onClick={handleShow}></Image>
+            </Col>
 
+            <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="info" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
         </Row>
 
+
+
+
+
+
+
+
+
+
+
+{/* list starts here */}
         <Row>
         <Card>
             <Card.Header> More Projects!</Card.Header>
@@ -41,7 +67,7 @@ const Portfolio = () => {
           <div className="fw-bold">Subheading</div>
           Cras justo odio
         </div>
-        <FiExternalLink><a href='/'></a></FiExternalLink>
+        <a href='/'><FiExternalLink/></a>
         <FiGithub><a href='#'className="px-2"></a></FiGithub>
         <AiOutlineRead><a href='#' className="px-2"></a></AiOutlineRead>
       </ListGroup.Item>

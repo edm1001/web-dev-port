@@ -29,7 +29,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 const Reviews =() => {
     return (
         <section className='reviews' id='reviews'>
-            <h2 className=''>Reviews</h2>
+            <h2 className='d-flex justify-content-center text-white py-4'>Reviews</h2>
             <Container>
 
             <Row className='d-flex justify-content-center reviews-row'>
