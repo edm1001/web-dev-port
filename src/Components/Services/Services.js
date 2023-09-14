@@ -24,26 +24,26 @@ const Services = () => {
                     {/* add a progress bar for skills:
                     html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
                     */}
-                    <Row className=''>
-                    <Col className='col-12 py-1'>
-                        Full Stack Development 
+                    <Row className='text-start fw-bold'>
+                    <Col className='col-12 py-1 text-start'>
+                        <h6>Full Stack Development:</h6> 
                         <ProgressBar animated variant='success' label='100%' now={100} className='' size='' />
                     </Col>
-                    <Col  className='col-12 py-1' >
-                        <h6 className='position-relative text-red'>Front End Development</h6>  
+                    <Col  className='col-12 py-1 text-start' >
+                        <h6>Front End Development:</h6>  
                         <ProgressBar animated  label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
-                        Back End Development  
+                        <h6>Back End Development:</h6>  
                         <ProgressBar animated variant='warning' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
-                        CRUD Operations  
-                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                        <h6>CRUD Operations:</h6>  
+                        <ProgressBar animated variant='danger' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
-                        Client Server Model  
-                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                        <h6>Client Server Model:</h6>  
+                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
                     </Col>
                     
 
@@ -55,7 +55,7 @@ const Services = () => {
             <Col lg={6} md={12} sm={12} >
             <Row>
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card className='w-100 h-100' >
+                    <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
                         <h6>MVC</h6></Card.Header>
                 <Card.Body>
@@ -67,7 +67,7 @@ const Services = () => {
                 </Col>
                 
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card className='w-100 h-100'>
+                    <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6>OOP</h6></Card.Header>
                 <Card.Body>
                     <Card.Title>Object-Oriented Programming</Card.Title>
@@ -78,7 +78,7 @@ const Services = () => {
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card className='w-100 h-100'>
+                    <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
                     <Card.Title>Progressing Web Application</Card.Title>
@@ -88,7 +88,7 @@ const Services = () => {
                         </Card>
                 </Col>
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card className='w-100 h-100'>
+                    <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
                     <Card.Title>Object Relational Mapping</Card.Title>
