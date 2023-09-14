@@ -37,6 +37,15 @@ const Services = () => {
                         Back End Development  
                         <ProgressBar animated variant='warning' label='100%' now={100} className='' />
                     </Col>
+                    <Col  className='col-12 py-1' >
+                        CRUD Operations  
+                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                    </Col>
+                    <Col  className='col-12 py-1' >
+                        Client Server Model  
+                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                    </Col>
+                    
 
                     </Row>
                 </div>
@@ -46,7 +55,7 @@ const Services = () => {
             <Col lg={6} md={12} sm={12} >
             <Row>
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card>
+                    <Card className='w-100 h-100' >
                     <Card.Header className='srvc-header'>
                         <h6>MVC</h6></Card.Header>
                 <Card.Body>
@@ -58,7 +67,7 @@ const Services = () => {
                 </Col>
                 
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card>
+                    <Card className='w-100 h-100'>
                     <Card.Header className='srvc-header'> <h6>OOP</h6></Card.Header>
                 <Card.Body>
                     <Card.Title>Object-Oriented Programming</Card.Title>
@@ -69,10 +78,20 @@ const Services = () => {
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card>
+                    <Card className='w-100 h-100'>
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
                     <Card.Title>Progressing Web Application</Card.Title>
+                    <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                </p>
+                </Card.Body>
+                        </Card>
+                </Col>
+                <Col lg={6} md={6} sm={12} className='srvc-col'>
+                    <Card className='w-100 h-100'>
+                    <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
+                    <Card.Body>
+                    <Card.Title>Object Relational Mapping</Card.Title>
                     <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
                 </p>
                 </Card.Body>
