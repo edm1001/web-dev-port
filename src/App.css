@@ -155,12 +155,27 @@
 /* Reviews */
 .reviews {
   background-color:var(--darkgrey);
-  height: 100%;
+  height: 85vh;
 }
 .review-card {
-  overflow: hidden;
-  height: 200px;
-  width: 200px
+  width: 100%;
+  border-radius: 10px;
+}
+.reviews-icon, .reviews-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Read more/less button */
+.toggle-button {
+  margin-left: 7px;
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  color: lightslategray;
+  text-decoration: underline;
 }
 
 /* Footer */
