@@ -12,11 +12,11 @@ const Header = () => {
         <Container>
           <Nav className="nav-links">
             <Nav.Link href="/" activeStyle>Home</Nav.Link>
-            <Nav.Link href="#about">About me</Nav.Link>
+            <Nav.Link href="/#about">About me</Nav.Link>
             <Nav.Link href="/portfolio">Portfolio</Nav.Link>            
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#reviews">Reviews</Nav.Link>
+            <Nav.Link href="/#services">Services</Nav.Link>
+            <Nav.Link href="/#contact">Contact</Nav.Link>
+            <Nav.Link href="/#reviews">Reviews</Nav.Link>
           </Nav>
       </Container>
             <Button href='/ResumePdf' className='nav-resume'>Resume</Button>

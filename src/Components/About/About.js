@@ -18,12 +18,12 @@ const About = () => {
                 <Col className="text-start">
                 <Badge bg="success" >Ethnicity:</Badge> Filipino <br/>
                 <Badge>Birthday:</Badge> October 10, 1998 <br/>
-                <Badge>Age:</Badge> 24 <br/>
+                <Badge bg='danger'>Age:</Badge> 24 <br/>
                 </Col>
                 <Col className="text-start">
                 <Badge bg="success" >Birthplace: </Badge> Iloilo City, Philippines <br/>
-                <Badge className="text-left">School:</Badge>Coding Bootcamp at UT Austin<br/>
-                <Badge>Loves:</Badge> traveling, nature, & games <br/>
+                <Badge>School:</Badge>Coding Bootcamp at UT Austin<br/>
+                <Badge bg='danger'>Loves:</Badge> traveling, nature, & games <br/>
                 </Col>
             </Row>
             </div>

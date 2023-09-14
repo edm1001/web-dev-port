@@ -18,8 +18,8 @@ const ListProjects = () => {
                     Cras justo odio
                     </div>
         <a href='/'><FiExternalLink/></a>
-        <FiGithub><a href='#'className="px-2"></a></FiGithub>
-        <AiOutlineRead><a href='#' className="px-2"></a></AiOutlineRead>
+        <a href='/'className="px-2"> <FiGithub/></a>
+        <a href='/' ><AiOutlineRead/></a>
       </ListGroup.Item>
                 </ListGroup>
             </Card.Body>
