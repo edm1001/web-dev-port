@@ -17,7 +17,7 @@ const About = () => {
              <Row className="">
                 <Col className="text-start">
                 <Badge bg="success" >Ethnicity:</Badge> Filipino <br/>
-                <Badge>Birthday:</Badge> October 10, 1998 <br/>
+                <Badge>Birthday:</Badge> October 1, 1998 <br/>
                 <Badge bg='danger'>Age:</Badge> 24 <br/>
                 </Col>
                 <Col className="text-start">
