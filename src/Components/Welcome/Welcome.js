@@ -7,11 +7,20 @@ const Welcome =  () => {
             <Row className='hero' id="home">
 
             <Col className='text-center welcome-pic'>
-            my img goes here
+            <div>
+                {/* add a intro info box about me, what made me into coding and path i took */}
+            </div>
             </Col>
 
-            <Col className='d-flex justify-content-center align-center text-center'>
-            
+            <Col className=' text-center ' >
+                    <div className='welcome-box'>
+                    <div className='welcome-info text-black py-3 ps-5'>
+                    <h1>color frame</h1>
+                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
+                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
+                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
+                    </div>
+                    </div>
             </Col>
             </Row>
 

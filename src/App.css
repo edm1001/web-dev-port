@@ -21,11 +21,24 @@
 /* Welcome section */
 .hero{
   width: 100%;
-  height: 85vh;
-  background-color: darkgrey;
+  height: 90vh;
 }
 .welcome-pic{
-  background-color:var(--blue) ;
+  background-color:var(--blue);
+}
+.welcome-box{
+  background-color: ;
+  padding: 5% 3%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 0 50% 0 ;
+  border:var(--blue) 10px solid;
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+.welcome-info {
+  flex-direction: column;
 }
 
 /* Banner section */
@@ -41,7 +54,7 @@
 }
 .banner-content {
   position:absolute;
-  top: 95vh;
+  top: 105vh;
   z-index: 0;
   width: 100%;
   display: flex;
@@ -58,24 +71,25 @@
   display: flex;
   background-color: var(--lightgrey);
   color: white;
-  height: 70vh;
+  height: 100%;
   width: 100%;
 }
 .abt-info{
   align-items: center;
   width: 100%;
-  padding-inline: 10%;
 }
-.intro-msg {
+.about-msg {
   background-color: black;
-  padding: 10% 3%;
+  padding: 5% 3%;
   height: 100%;
   border-radius: 25px;
   border:#2072AF 5px solid;
   text-align: center;
 }
- .intro-img {
-  padding-left: 15%;
+ .about-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
  }
 
 

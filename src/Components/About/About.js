@@ -8,13 +8,23 @@ const About = () => {
     
     <section className="about" id="about">            
         <Row className="abt-info">
+
+            <Col lg={6} md={4} sm={12}>
+            <div className='about-img'>
+            <img  alt='about-pic' src={AboutPic}/>
+            </div>
+            </Col>
+
+
             <Col lg={6} md={8} sm={12}>
-            <div className="intro-msg">
+            <div className="about-msg">
             <h1> Why Hire Me?</h1>
         <p>
             My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
         </p>  
              <Row className="">
+
+
                 <Col className="text-start">
                 <Badge bg="success" >Ethnicity:</Badge> Filipino <br/>
                 <Badge>Birthday:</Badge> October 1, 1998 <br/>
@@ -27,13 +37,9 @@ const About = () => {
                 </Col>
             </Row>
             </div>
+            </Col>
+
             
-            </Col>
-            <Col lg={6} md={4} sm={12}>
-            <div className='intro-img'>
-            <img  alt='about-pic' src={AboutPic}/>
-            </div>
-            </Col>
         </Row>
     
         </section>
