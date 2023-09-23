@@ -23,11 +23,13 @@
   width: 100%;
   height: 90vh;
 }
-.welcome-pic{
-  background-color:var(--blue);
+.welcome-img{
+  background-color:red;
+  height: 100%;
+  width: 100%
 }
 .welcome-box{
-  background-color: ;
+  background-color: var(--blue) ;
   padding: 5% 3%;
   width: 100%;
   height: 100%;
@@ -35,7 +37,7 @@
   border:var(--blue) 10px solid;
   display: flex;
   align-items: center;
-  margin-left: 25%;
+  margin-left: 8%;
 }
 .welcome-info {
   flex-direction: column;
