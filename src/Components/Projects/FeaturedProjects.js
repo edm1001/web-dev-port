@@ -21,7 +21,12 @@ const FeaturedProjects = () => {
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
     const [show4, setShow4] = useState(false);
-    const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
+    const [show6, setShow6] = useState(false);
+    const [show7, setShow7] = useState(false);
+    const [show8, setShow8] = useState(false);
+    const [show9, setShow9] = useState(false);
+    const [show10, setShow10] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -31,6 +36,16 @@ const FeaturedProjects = () => {
     const handleShow3 = () => setShow3(true);
     const handleClose4 = () => setShow4(false);
     const handleShow4 = () => setShow4(true);                                                                                                                                                                                                                                                       
+    const handleClose5 = () => setShow5(false);
+    const handleShow5 = () => setShow5(true);                                                                                                                                                                                                                                                       
+    const handleClose6 = () => setShow6(false);
+    const handleShow6 = () => setShow6(true);                                                                                                                                                                                                                                                       
+    const handleClose7 = () => setShow7(false);
+    const handleShow7 = () => setShow7(true);                                                                                                                                                                                                                                                       
+    const handleClose8 = () => setShow8(false);
+    const handleShow8 = () => setShow8(true);                                                                                                                                                                                                                                                       
+    const handleClose9 = () => setShow9(false);
+    const handleShow9 = () => setShow9(true);                                                                                                                                                                                                                                                       
     
     return (
         <Row className=" d-flex justify-content-center py-5">
@@ -48,6 +63,25 @@ const FeaturedProjects = () => {
 
         <Col lg={3} md={4} sm={6} >
           <Image  className='w-100 h-100 ftrd-img' src={TripleJ} alt="" fluid onClick={handleShow4}></Image>
+        </Col>
+
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={Taskmaster} alt="" fluid onClick={handleShow9}></Image>
+        </Col>
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={IssuesLookup} alt="" fluid onClick={handleShow6}></Image>
+        </Col>
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={PortGenerator} alt="" fluid onClick={handleShow7}></Image>
+        </Col>
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={SalonSite} alt="" fluid onClick={handleShow8}></Image>
+        </Col>
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={DailyScheduler} alt="" fluid onClick={handleShow5}></Image>
+        </Col>
+        <Col lg={3} md={4} sm={6} >
+          <Image  className='w-100 h-100 ftrd-img' src={Zookeepers} alt="" fluid onClick={handleShow9}></Image>
         </Col>
 
 
@@ -92,6 +126,18 @@ const FeaturedProjects = () => {
         <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal4!</Modal.Body>
+        <Modal.Footer>
+        <Button variant="outline-success" onClick={handleClose4}>
+            Close
+        </Button>
+        </Modal.Footer>
+        </Modal>
+
+        <Modal show={show5} onHide={handleClose4}>
+        <Modal.Header closeButton>
+        <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>You are reading this text in a modal5!</Modal.Body>
         <Modal.Footer>
         <Button variant="outline-success" onClick={handleClose4}>
             Close
