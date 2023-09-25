@@ -7,12 +7,20 @@ import Button from 'react-bootstrap/Button'
 import Wordle from '../../Assets/port/wordle.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
 import TravelDiary from '../../Assets/port/travel-blog.gif';
-import TripleJ from '../../Assets/port/triplej.gif'
+import TripleJ from '../../Assets/port/triplej.gif';
+
+import DailyScheduler from '../../Assets/port/daily-scheduler.gif';
+import IssuesLookup from '../../Assets/port/git-issue-lookup.gif';
+import PortGenerator from '../../Assets/port/portfolio=generator.gif';
+import SalonSite from '../../Assets/port/salon-site.gif';
+import Taskmaster from '../../Assets/port/task-master-pro.gif';
+import Zookeepers from '../../Assets/port/zoo-inventory.gif'
 
 const FeaturedProjects = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
     const [show4, setShow4] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -22,7 +30,7 @@ const FeaturedProjects = () => {
     const handleClose3 = () => setShow3(false);
     const handleShow3 = () => setShow3(true);
     const handleClose4 = () => setShow4(false);
-    const handleShow4 = () => setShow4(true);
+    const handleShow4 = () => setShow4(true);                                                                                                                                                                                                                                                       
     
     return (
         <Row className=" d-flex justify-content-center py-5">
