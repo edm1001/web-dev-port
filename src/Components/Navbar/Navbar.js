@@ -14,6 +14,7 @@ const Header = () => {
           src={Logo}
           width="80"
           height="80"
+          alt='brnd-logo'
           />
         </Navbar.Brand>
         </div>

@@ -22,10 +22,9 @@
 /* Welcome section */
 .hero{
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 .welcome-img{
-  background-color:red;
   height: 100%;
   width: 100%
 }
@@ -33,16 +32,16 @@
   background-color: var(--blue) ;
   padding: 5% 3%;
   width: 100%;
-  height: 100%;
+  height: 30rem;
   border-radius: 50% 0 50% 0 ;
   border:var(--blue) 10px solid;
   display: flex;
   align-items: center;
-  margin-left: 8%;
 }
 .welcome-info {
   flex-direction: column;
 }
+
 
 /* Banner section */
 .welcome-banner {
@@ -66,6 +65,25 @@
   align-items: center;
   text-align: center;
   padding-inline: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .progress-row {
+    padding-block: 5%;
+  }
+  .srvc-row {
+    padding-top: 5%;
+  }
+  .banner-content{
+    top:130vh;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  .banner-logo {
+    size: 30px;
+  }
+  
 }
 
 
@@ -119,16 +137,6 @@
 
 .tech-learned {
   padding-top: 2%;
-}
-
-@media only screen and (max-width: 768px) {
-  .progress-row {
-    padding-block: 5%;
-  }
-  .srvc-row {
-    padding-top: 5%;
-  }
-
 }
 
 /* proj section */
