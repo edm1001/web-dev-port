@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
     const [show7, setShow7] = useState(false);
     const [show8, setShow8] = useState(false);
     const [show9, setShow9] = useState(false);
-    const [show10, setShow10] = useState(false);
+    // const [show10, setShow10] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
