@@ -36,7 +36,7 @@ const Projects = () => {
             </Row >
 
             <div className='pb-5 text-center'>
-            <Button  variant="outline-warning" size="lg" className='see-btn' href='/portfolio'> See More! </Button>
+            <Button  variant="outline-dark" size="lg" className='see-btn' href='/portfolio'> See More! </Button>
             </div>
 
         </Container>
