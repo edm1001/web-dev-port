@@ -74,8 +74,12 @@
   .srvc-row {
     padding-top: 5%;
   }
+  .welcome-banner{
+    height:280px;
+  }
   .banner-content{
     top:130vh;
+    padding: 0;
   }
   .quote {
     font-size: 20px;
