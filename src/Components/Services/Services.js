@@ -104,20 +104,20 @@ const Services = () => {
 
             </Container>
         <div className='tech-learned' >
-           <h5>Technologies learned</h5>
-           <Row>        
+           <h4>Technologies learned</h4>
+           <Row className='p-5'>        
         <div className='skl-logos'>
-            <AiOutlineHtml5  size={50} color='orange' className="skl-logo"/>
-            <IoLogoCss3 size={50} color='lightblue' className="skl-logo" />
-            <IoLogoJavascript size={50} color='gold' className="skl-logo" />
-            <FaBootstrap size={50} color='lightblue' className="skl-logo"/>
-            <FaReact size={50} color="blue" className="skl-logo"/>
-            <VscJson size={50} color='orange' className="skl-logo"/>
-            <DiStackoverflow size={50} color='orange' className="skl-logo"/>
-            <DiNodejs size={50} color='green' className="skl-logo"/>
-            <DiNpm  size={50} color='red' className="skl-logo"/>
-            <DiStackoverflow  size={50} color='lightorange' className="skl-logo"/>
-            <SiMongodb size={50} color='green'  className="skl-logo"/>
+            <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>
+            <IoLogoCss3 size={50} color='lightgrey' className="skl-logo" />
+            <IoLogoJavascript size={50} color='lightgrey' className="skl-logo" />
+            <FaBootstrap size={50} color='lightgrey' className="skl-logo"/>
+            <FaReact size={50} color='lightgrey' className="skl-logo"/>
+            <VscJson size={50} color='lightgrey' className="skl-logo"/>
+            <DiStackoverflow size={50} color='lightgrey'className="skl-logo"/>
+            <DiNodejs size={50} color='lightgrey'className="skl-logo"/>
+            <DiNpm  size={50} color='lightgrey' className="skl-logo"/>
+            <DiStackoverflow  size={50} color='lightgrey' className="skl-logo"/>
+            <SiMongodb size={50} color='lightgrey'className="skl-logo"/>
             <SiExpress size={50}  className="skl-logo"/>
             <DiResponsive size={60} className='skl-logo'/>
         </div>
