@@ -67,30 +67,6 @@
   padding-inline: 15%;
 }
 
-@media only screen and (max-width: 768px) {
-  .progress-row {
-    padding-block: 5%;
-  }
-  .srvc-row {
-    padding-top: 5%;
-  }
-  .welcome-banner{
-    height:280px;
-  }
-  .banner-content{
-    top:130vh;
-    padding: 0;
-  }
-  .quote {
-    font-size: 20px;
-  }
-  .banner-logo {
-    size: 30px;
-  }
-  
-}
-
-
 /* About section */
 .about {
   display: flex;
@@ -101,7 +77,6 @@
 }
 .abt-info{
   align-items: center;
-  width: 100%;
 }
 .about-msg {
   background-color: black;
@@ -229,4 +204,37 @@
 }
 
 /* MOBILE STYLES */
-
+@media only screen and (max-width: 768px) {
+  .progress-row {
+    padding-block: 5%;
+  }
+  .srvc-row {
+    padding-top: 5%;
+  }
+  .welcome-banner{
+    height:280px;
+  }
+  .banner-content{
+    top:205vh;
+    padding: 0;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  .banner-logo {
+    size: 30px;
+  }
+  /* About */
+  .about {
+    padding-block: 20%;
+  }
+  .about-msg {
+    padding: 0;
+  }
+  
+}
+@media only screen and (max-width: 525px) {
+  .banner-content{
+    top: 200vh;
+  }
+}
