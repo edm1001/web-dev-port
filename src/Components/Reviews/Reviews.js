@@ -29,10 +29,11 @@ const ExpandableText = ({ children, descriptionLength }) => {
 const Reviews =() => {
     return (
         <section className='reviews' id='reviews'>
-            <h2 className='d-flex justify-content-center text-white py-4'>Reviews</h2>
+            <h2 className='d-flex justify-content-center text-black
+             py-4'>Reviews</h2>
             <Container>
 
-            <Row className='d-flex justify-content-center reviews-row'>
+            <Row className='reviews-row'>
             <Col className=' py-2' lg={3} md={4} sm={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'><BsFillPersonFill size={35} /> </i>

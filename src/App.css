@@ -118,7 +118,6 @@
 /* proj section */
 .project {
   height: 100%;
-  width:100%;
 }
 .project-row {
   padding-block: 3%;
@@ -156,7 +155,7 @@
 
 /* Reviews */
 .reviews {
-  background-color:var(--darkgrey);
+  background-color:var(--lightgrey);
   height: 100%;
 }
 .review-card {
@@ -214,7 +213,7 @@
 
 
 /* MOBILE STYLES */
-@media all and (min-width: 569px) and (max-width: 960px) {
+@media all and (min-width: 526px) and (max-width: 960px) {
   .progress-row {
     padding-block: 5%;
   }
