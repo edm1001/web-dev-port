@@ -10,13 +10,13 @@ const Welcome =  () => {
 
             <Col lg={6} md={12} sm={12} className='text-center bg-info'>
             <div className='welcome-img'>
-               <Image src={Photo} className='h-60 w-70' />
+               <Image src={Photo} className='' id='personal-photo'/>
             </div>
             </Col>
 
             <Col lg={6} md={12} sm={12} className=' text-center h-100 welcome-intro ' >
                     <div className='welcome-box'>
-                    <div className='welcome-info text-black py-3 ps-5'> 
+                    <div className='welcome-info text-black'> 
                     {/* add a intro info box about me, what made me into coding and path i took */}
                     <h1>color frame</h1>
                     <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>

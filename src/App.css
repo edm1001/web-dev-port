@@ -56,7 +56,7 @@
 }
 .banner-content {
   position:absolute;
-  top: 105vh;
+  top: 750px;
   z-index: 0;
   width: 100%;
   display: flex;
@@ -204,19 +204,20 @@
 }
 
 /* MOBILE STYLES */
-@media only screen and (max-width: 768px) {
+@media all and (min-width: 569px) and (max-width: 960px) {
   .progress-row {
     padding-block: 5%;
   }
   .srvc-row {
     padding-top: 5%;
   }
+
+  /* Banner */
   .welcome-banner{
-    height:280px;
+    height:220px;
   }
   .banner-content{
-    top:205vh;
-    padding: 0;
+    top:1200px;
   }
   .quote {
     font-size: 20px;
@@ -233,10 +234,23 @@
   }
   
 }
-@media only screen and (max-width: 525px) {
-  .banner-content{
-    top: 200vh;
+@media all and (min-width: 319px) and (max-width: 525px) {
+/* Welcome */
+  #personal-photo {
+    height: 250px;
+    width:200px;
   }
+
+  .welcome-banner {
+    height:220px;
+  }
+  .banner-content{
+    top: 850px;
+  }
+  .quote {
+    font-size: 16px;
+  }
+  /* proj section */
   .proj-img {
     display: flex;
     height:100%;
