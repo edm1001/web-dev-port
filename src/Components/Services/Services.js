@@ -24,7 +24,7 @@ const Services = () => {
                     {/* add a progress bar for skills:
                     html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
                     */}
-                    <Row className='text-start fw-bold progress-row'>
+                    <Row className='text-start fw-bold py-3 progress-row'>
                     <Col className='col-12 py-1 text-start'>
                         <h6>Full Stack Development:</h6> 
                         <ProgressBar animated variant='success' label='100%' now={100} className='' size='' />
@@ -53,9 +53,9 @@ const Services = () => {
 
 
             <Col lg={6} md={12} sm={12} >
-            <Row>
+            <Row className='py-3 px-2'>
                 <Col lg={6} md={6} sm={12} className='srvc-col'>
-                    <Card className='w-100 h-100' border='secondary'>
+                    <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
                         <h6>MVC</h6></Card.Header>
                 <Card.Body>

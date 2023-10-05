@@ -24,8 +24,8 @@ const Contact = () => {
 
 
 
-            <Col className='contact-form'lg={6} md={6} sm={12} >
-            <Form>
+            <Col className='mb-3 contact-form'lg={6} md={6} sm={12} >
+            <Form className='p-5'>
                 <Form.Group>
                     <Row >
                         <Col>

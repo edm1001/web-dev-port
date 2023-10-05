@@ -3,11 +3,10 @@ const Footer = () => {
     return (
         
             <Row
-            className='footer'
-            style={{textAlign:'center'}}
+            className=' footer'
             >
-               <Col>
-                <div>
+               <Col  className=''>
+                <div className='ftr-col1'>
                 Copyright by Edmer Valencia &copy; <br/>
                 <a href='+12344'>Call/Text: 1+ (956) 372-0283 </a><br/>
                 <a href='/'>Location: Spring, Texas</a><br/>

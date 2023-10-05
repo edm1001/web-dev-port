@@ -9,22 +9,22 @@ import Container from 'react-bootstrap/Container';
 
 const Projects = () => {
     return (
-        <Container className="project" fluid>
-            <h2 className='text-center pt-5'> My Projects</h2>
-            <Row className="d-flex justify-content-center p-5 project-row">
+        <Container className="project">
+            <h2 className=' text-center pt-5'> My Projects</h2>
+            <Row className=" project-row">
 
-            <Col className='p-2' lg={4} md={4} sm={4}>
-            <Image className="proj-img h-90 w-85" as='a'  src={Wordle} to='/portfolio'>
+            <Col className='' lg={4} md={4} sm={4}>
+            <Image className="proj-img" as='a'  src={Wordle} to='/portfolio'>
             </Image> 
                 </Col>
 
             <Col className='p-2' lg={4} md={4} sm={4}>
-            <Image className="proj-img h-90 w-85" as='a'  src={Chatterize} to='/portfolio'>
+            <Image className="proj-img" as='a'  src={Chatterize} to='/portfolio'>
             </Image> 
                 </Col>
 
             <Col className='p-2' lg={4} md={4} sm={4}>
-            <Image className="proj-img h-90 w-85" as='a'  src={PortGenerator} to='/portfolio'>
+            <Image className="proj-img" as='a'  src={PortGenerator} to='/portfolio'>
             </Image> 
                 </Col>
 

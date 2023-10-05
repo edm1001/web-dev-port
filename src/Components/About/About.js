@@ -16,24 +16,22 @@ const About = () => {
             </Col>
 
 
-            <Col lg={6} md={8} sm={12}>
-            <div className="about-msg">
-            <h1> Why Hire Me?</h1>
+            <Col className="mb-5 p-4" lg={6} md={8} sm={12}>
+            <div className=" p-2 about-msg">
+            <h4> Why Hire Me?</h4>
         <p>
             My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
         </p>  
-             <Row className="">
-
-
+             <Row className="about-badge">
                 <Col className="text-start">
-                <Badge bg="success" >Ethnicity:</Badge> Filipino <br/>
-                <Badge>Birthday:</Badge> October 1, 1998 <br/>
-                <Badge bg='danger'>Age:</Badge> 24 <br/>
+                <Badge bg="success" >Ethnicity :</Badge> Filipino <br/>
+                <Badge>Birthday :</Badge> October 1, 1998 <br/>
+                <Badge bg='danger'>Age :</Badge> 25 <br/>
                 </Col>
                 <Col className="text-start">
-                <Badge bg="success" >Birthplace: </Badge> Iloilo City, Philippines <br/>
-                <Badge>School:</Badge>Coding Bootcamp at UT Austin<br/>
-                <Badge bg='danger'>Loves:</Badge> traveling, nature, & games <br/>
+                <Badge bg="success" >Birthplace : </Badge> Iloilo City, Philippines <br/>
+                <Badge>School :</Badge>Coding bootcamp at UT Austin<br/>
+                <Badge bg='danger'>Loves :</Badge> excercise, nature, & games <br/>
                 </Col>
             </Row>
             </div>

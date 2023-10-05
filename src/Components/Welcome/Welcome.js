@@ -17,11 +17,8 @@ const Welcome =  () => {
             <Col lg={6} md={12} sm={12} className=' text-center h-100 welcome-intro ' >
                     <div className='welcome-box'>
                     <div className='welcome-info text-black'> 
-                    {/* add a intro info box about me, what made me into coding and path i took */}
                     <h1>color frame</h1>
-                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
-                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
-                    <p>LOREM@KSDNCIAUCKJASNIUANCKJANOI</p>
+                    My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
                     </div>
                     </div>
             </Col>

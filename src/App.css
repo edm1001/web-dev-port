@@ -70,10 +70,7 @@
 /* About section */
 .about {
   display: flex;
-  background-color: var(--lightgrey);
   color: white;
-  height: 100%;
-  width: 100%;
 }
 .abt-info{
   align-items: center;
@@ -121,13 +118,14 @@
 /* proj section */
 .project {
   height: 100%;
+  width:100%;
 }
 .project-row {
   padding-block: 3%;
 }
 .proj-img {
-  width: 100%;
-  height:100%;
+  width: 150px;
+  height:150px;
 }
 
 /* Contact Section */
@@ -159,7 +157,7 @@
 /* Reviews */
 .reviews {
   background-color:var(--darkgrey);
-  height: 95vh;
+  height: 100%;
 }
 .review-card {
   width: 100%;
@@ -182,6 +180,30 @@
   text-decoration: underline;
 }
 
+/* Footer */
+.footer{
+  background-color: var(--darkgrey);
+  padding: 2.5em;
+  color: white;
+  font-size: small;
+  list-style-type: none ;
+}
+.ftr-col1>a {
+  text-decoration: none;
+  color: var(--blue);
+}
+.ftr-col1>a:hover {
+  color:teal;
+  text-decoration:line-through white ;
+}
+
+.ftr-col2{
+  padding-bottom: 10%;
+}
+.ftr-dropdown {
+  padding-top: 20%;
+}
+
 /* PORTFOLIO PAGE*/
 .portfolio {
   height: 100%;
@@ -189,19 +211,7 @@
 .ftrd-img{
   cursor: pointer;
 }
-/* Footer */
-.footer{
-  background-color: var(--red);
-  padding: 2.5em;
-  color: white;
-  
-}
-.ftr-col2{
-  padding-bottom: 10%;
-}
-.ftr-dropdown {
-  padding-top: 20%;
-}
+
 
 /* MOBILE STYLES */
 @media all and (min-width: 569px) and (max-width: 960px) {
@@ -248,13 +258,18 @@
     top: 850px;
   }
   .quote {
-    font-size: 16px;
+    font-size: 14px;
   }
+  /* About */
+  .about-badge {
+    font-size: 12px;
+  }
+
   /* proj section */
   .proj-img {
     display: flex;
     height:100%;
     width: 30%;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
