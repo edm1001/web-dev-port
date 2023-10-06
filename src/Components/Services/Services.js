@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
@@ -9,6 +10,25 @@ import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
 import {AiOutlineHtml5} from 'react-icons/ai'
 import {SiMongodb, SiExpress} from 'react-icons/si'
+
+const ExpandableText = ({ children, descriptionLength }) => {
+    const fullText = children;
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleText = () => {
+      setIsExpanded(!isExpanded);
+    };
+  
+    return (
+      <p className='text'>
+        {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}...`}
+        <span onClick={toggleText} className='toggle-button'>
+          {isExpanded ? 'Show less' : 'Show more'}
+        </span>
+      </p>
+    );
+  };
+
 
 const Services = () => {
     return (
@@ -57,10 +77,13 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={6} className='srvc-col'>
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
-                        <h6>MVC</h6></Card.Header>
+                        <h6 className='fw-bold'>MVC</h6></Card.Header>
                 <Card.Body>
                     <Card.Title >Model View Controller</Card.Title>
-                    <p> A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
+                    <p>
+                        <ExpandableText descriptionLength={50}>
+                         A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
+                        </ExpandableText>
                 </p>
                 </Card.Body>
                      </Card>
@@ -68,10 +91,13 @@ const Services = () => {
                 
                 <Col lg={6} md={6} sm={6} xs={6} className='srvc-col'>
                     <Card className='w-100 h-100' border='secondary'>
-                    <Card.Header className='srvc-header'> <h6>OOP</h6></Card.Header>
+                    <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
                 <Card.Body>
                     <Card.Title>Object-Oriented Programming</Card.Title>
-                    <p>A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
+                    <p>
+                    <ExpandableText descriptionLength={50}>
+                    A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
+                    </ExpandableText>
                 </p>
                 </Card.Body>
                         </Card>
@@ -82,7 +108,11 @@ const Services = () => {
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
                     <Card.Title>Progressing Web Application</Card.Title>
-                    <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                    <p>
+                    <ExpandableText descriptionLength={50}>
+
+                        Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                    </ExpandableText>
                 </p>
                 </Card.Body>
                         </Card>
@@ -92,7 +122,11 @@ const Services = () => {
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
                     <Card.Body>
                     <Card.Title>Object Relational Mapping</Card.Title>
-                    <p>Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                    <p>
+                    <ExpandableText descriptionLength={50}>
+
+                        Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                    </ExpandableText>
                 </p>
                 </Card.Body>
                         </Card>
@@ -103,6 +137,7 @@ const Services = () => {
             </Row>
 
             </Container>
+
         <div className='tech-learned' >
            <h4 className='fs-3'>Skills</h4>
            <Row className='px-5 py-3'>        
