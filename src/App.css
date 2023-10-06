@@ -39,9 +39,6 @@
   display: flex;
   align-items: center;
 }
-.welcome-info {
-  flex-direction: column;
-}
 
 
 /* Banner section */

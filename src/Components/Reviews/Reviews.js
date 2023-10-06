@@ -186,4 +186,4 @@ const Reviews =() => {
         </section>
     )
 }
-export default Reviews;
+export default Reviews ;
