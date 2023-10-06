@@ -104,8 +104,8 @@ const Services = () => {
 
             </Container>
         <div className='tech-learned' >
-           <h4>Technologies learned</h4>
-           <Row className='p-5'>        
+           <h4 className='fs-3'>Skills</h4>
+           <Row className='px-5 py-3'>        
         <div className='skl-logos'>
             <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>
             <IoLogoCss3 size={50} color='lightgrey' className="skl-logo" />

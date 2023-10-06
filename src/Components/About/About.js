@@ -1,3 +1,4 @@
+import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
@@ -6,7 +7,8 @@ import AboutPic from '../../Assets/photos/personcoding.png'
 const About = () => {
     return (
     
-    <section className="about" id="about">            
+    <section className="about" id="about">
+      <Container>
         <Row className="abt-info">
 
             <Col lg={6} md={4} sm={12}>
@@ -18,8 +20,8 @@ const About = () => {
 
             <Col className="mb-5 p-4" lg={6} md={8} sm={12}>
             <div className=" p-2 about-msg">
-            <h4> Why Hire Me?</h4>
-        <p>
+            <h4 className="fw-bold"> Why Hire Me?</h4>
+        <p className="fs-6">
             My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
         </p>  
              <Row className="about-badge">
@@ -40,6 +42,7 @@ const About = () => {
             
         </Row>
     
+            </Container>            
         </section>
 
     )

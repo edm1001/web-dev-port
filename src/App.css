@@ -2,7 +2,8 @@
   margin: 0;
   border: 0;
   padding: 0;
-  font-family:Verdana, Tahoma, sans-serif;
+  width:100%;
+  font-family:'Courier New', Courier, monospace;
   --darkgrey : #343330;
   --red: #BE1B09;
   --lightgrey: #DBD7D2;
@@ -84,7 +85,6 @@
   text-align: center;
 }
  .about-img {
-  width: 100%;
   display: flex;
   justify-content: center;
  }
@@ -116,17 +116,13 @@
 }
 
 /* proj section */
-.project {
-  height: 100%;
-}
 .project-row {
-  padding-block: 3%;
+  padding-block: 30px;
 }
 .proj-img {
-  width: 150px;
-  height:150px;
+  width: 100%;
+  height: 100%;
 }
-
 /* Contact Section */
 .contact-row {
   padding-block: 2%;
@@ -226,7 +222,7 @@
     height:220px;
   }
   .banner-content{
-    top:1200px;
+    top:1175px;
   }
   .quote {
     font-size: 20px;
@@ -265,10 +261,5 @@
   }
 
   /* proj section */
-  .proj-img {
-    display: flex;
-    height:100%;
-    width: 30%;
-    flex-direction: column;
-  }
+
 }
