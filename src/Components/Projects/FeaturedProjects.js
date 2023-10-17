@@ -51,35 +51,36 @@ const FeaturedProjects = () => {
     
     return (
         <Row className=" d-flex justify-content-center py-5">
-        <Col className="py-1" lg={3} md={4} sm={6} >
+          
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6}>
           <Image  className='w-100 h-100 ftrd-img' src={Wordle} alt="" fluid onClick={handleShow}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={Chatterize} alt="" fluid onClick={handleShow2}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={TravelDiary} alt="" fluid onClick={handleShow3}></Image>
         </Col>
 
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={TripleJ} alt="" fluid onClick={handleShow4}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6}>
           <Image  className='w-100 h-100 ftrd-img' src={Taskmaster} alt="" fluid onClick={handleShow9}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={IssuesLookup} alt="" fluid onClick={handleShow6}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={PortGenerator} alt="" fluid onClick={handleShow7}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={SalonSite} alt="" fluid onClick={handleShow8}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={DailyScheduler} alt="" fluid onClick={handleShow5}></Image>
         </Col>
-        <Col className="py-1" lg={3} md={4} sm={6} >
+        <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={Zookeepers} alt="" fluid onClick={handleShow9}></Image>
         </Col>
 

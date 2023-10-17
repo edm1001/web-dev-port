@@ -8,6 +8,10 @@
   --red: #BE1B09;
   --lightgrey: #DBD7D2;
   --blue: #7BAFD4;
+  --gold: #db5a44;
+}
+h2 {
+  color: var(--gold)
 }
 
 /* Navbar */
@@ -17,7 +21,7 @@
 }
 
 .nav-links :hover {
-  text-decoration: line-through;
+  text-decoration: underline #dba544;
 }
 
 /* Welcome section */
@@ -30,12 +34,12 @@
   width: 100%
 }
 .welcome-box{
-  background-color: var(--blue) ;
+  background-color: var(--darkgrey) ;
   padding: 5% 3%;
   width: 100%;
   height: 30rem;
   border-radius: 50% 0 50% 0 ;
-  border:var(--blue) 10px solid;
+  border:var(--darkgrey) 10px solid;
   display: flex;
   align-items: center;
 }
@@ -44,7 +48,7 @@
 /* Banner section */
 .welcome-banner {
   width:100%;
-  height: 300px;
+  height: 250px;
 }
 #banner-bg {
   width:100%;
@@ -54,7 +58,7 @@
 }
 .banner-content {
   position:absolute;
-  top: 750px;
+  top: 620px;
   z-index: 0;
   width: 100%;
   display: flex;
@@ -63,6 +67,7 @@
   align-items: center;
   text-align: center;
   padding-inline: 15%;
+  color: var(--lightgrey);
 }
 
 /* About section */
@@ -216,10 +221,10 @@
 
   /* Banner */
   .welcome-banner{
-    height:220px;
+    height:200px;
   }
   .banner-content{
-    top:1175px;
+    top:900px;
   }
   .quote {
     font-size: 20px;
@@ -244,10 +249,10 @@
   }
 
   .welcome-banner {
-    height:220px;
+    height:180px;
   }
   .banner-content{
-    top: 850px;
+    top: 925px;
   }
   .quote {
     font-size: 14px;

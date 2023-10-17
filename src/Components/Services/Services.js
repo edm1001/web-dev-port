@@ -51,15 +51,15 @@ const Services = () => {
                     </Col>
                     <Col  className='col-12 py-1 text-start' >
                         <h6>Front End Development:</h6>  
-                        <ProgressBar animated  label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Back End Development:</h6>  
-                        <ProgressBar animated variant='warning' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>CRUD Operations:</h6>  
-                        <ProgressBar animated variant='danger' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Client Server Model:</h6>  
