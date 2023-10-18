@@ -34,12 +34,12 @@ const Reviews =() => {
             <Container>
 
             <Row className='reviews-row'>
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'><BsFillPersonFill size={35} /> </i>
             <Card.Body>
              <p>
-             <ExpandableText descriptionLength={150}>
+             <ExpandableText descriptionLength={100}>
                 Hi Edmer,
                 Your Regex tutorial on email validation is clean and readable! You were able to explain the purpose and the proper usage of this complex feature! 
                 You were able to provide a clear explanation of the underlying regex topics.  Great job including detailed sections that corresponded to important components in the starter code that make up the regex features. You were able to embed code snippets for each underlying example you used! 
@@ -57,12 +57,12 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6} >
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /> </i>
             <Card.Body>
              <p>
-            <ExpandableText descriptionLength={150}>
+            <ExpandableText descriptionLength={100}>
              Congratulations on finishing project 2! Yall are over 2/3 done with the course and can now call yourselves full stack developers! Your project fulfilled all the requirements while still being responsive and polished. I am seriously impressed with the outcome you were able to achieve in only 2 weeks!
             I love the flow and layout of the information presented. Everything is easy to find at a glance, and the presentation is very polished and pleasing to the eye. Additionally, all the backend routes seem to be working properly!
             Additionally, it seems that all the backend routes are working as intended and all the images are loading properly! Great job using Multer and getting all the backend routes to work.
@@ -78,12 +78,12 @@ const Reviews =() => {
             </Card>
                 </Col>
                 
-             <Col className=' py-2' lg={3} md={4} sm={6}>
+             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
              <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
             <p>
-                <ExpandableText descriptionLength={150}>
+                <ExpandableText descriptionLength={100}>
                  Great job here! Your video was concise and demonstrates your app asking the user questions about the readme's content (title, description, installation, usage, license, contributing, tests, email, and github), generating a readme with corresponding sections that matched your input, included a questions section at the end with your email and github info, and had a working table of contents that linked to each section. The rest looks good and works properly; good work!
                 </ExpandableText>
             </p>
@@ -97,12 +97,12 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
             <p> 
-            <ExpandableText descriptionLength={150}>
+            <ExpandableText descriptionLength={100}>
                 Edmer Franciz, 
                 Great job with this assignment! 
                 Video walkthrough demonstrates all of the prompts receiving user input. 
@@ -125,12 +125,12 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
             <p>
-            <ExpandableText descriptionLength={150}>
+            <ExpandableText descriptionLength={100}>
                  Great job here. The heroku link you gave led to a "Application error" page, but tested things locally and can confirm that everything worked properly.
                 The user is able to add and subtract funds, those changes are saved to the database, and if they are done offline, changes are saved locally and added to the database once connection is re-established.
                 Aside from the deployment, the rest looks good. Best of luck and good work! 
@@ -146,12 +146,12 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35}/></i>
             <Card.Body>
             <p>
-            <ExpandableText descriptionLength={150}>
+            <ExpandableText descriptionLength={100}>
             I was able to search for a book. The application returns a collection of books. The application shows the title, author, description, image field, however, it is missing the link field for the books that are returned from the search. You also are utilizing the React Router package. Overall good start to this application!
             </ExpandableText>
              </p>
@@ -165,7 +165,7 @@ const Reviews =() => {
             </Card>
                 </Col>
             
-            <Col className=' py-2' lg={3} md={4} sm={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
