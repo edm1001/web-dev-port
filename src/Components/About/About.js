@@ -18,7 +18,7 @@ const About = () => {
             </Col>
 
 
-            <Col className="mb-5 p-4" lg={6} md={8} sm={12}>
+            <Col className="mb-5 " lg={6} md={8} sm={12}>
             <div className=" p-2 about-msg">
             <h4 className="fw-bold"> Why Hire Me?</h4>
         <p className="fs-6">

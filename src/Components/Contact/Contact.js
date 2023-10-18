@@ -53,13 +53,13 @@ const Contact = () => {
                         <Form.Control type="subjec" name="subject" placeholder='Subject here'></Form.Control></Col>
                     </Row>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type='email' name='user_email'   placeholder='Enter your email' as='input'></Form.Control>
+                    <Form.Control required type='email' name='user_email'   placeholder='Enter your email' as='input'></Form.Control>
 
                     <Form.Label>Message</Form.Label>
                     <Form.Control required name="message" as='textarea' rows={4} placeholder='Write your message here'>
                     </Form.Control>
                 </Form.Group>
-                <Button type="submit" value="Send" onSubmit={sendEmail}> Submit</Button>
+                <Button type="submit" className="my-2" variant='secondary' value="Send"> Submit</Button>
             </Form>
             </Col>
             

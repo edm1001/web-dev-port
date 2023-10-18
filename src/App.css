@@ -144,11 +144,7 @@ h2 {
   text-align: center;
 }
 .contact-form {
-  padding-block: 5%;
   align-items: center;
-}
-#contact-btn {
-  margin-top: 5%;
 }
 
 /* Reviews */
@@ -221,10 +217,10 @@ h2 {
 
   /* Banner */
   .welcome-banner{
-    height:200px;
+    height:125px;
   }
   .banner-content{
-    top:900px;
+    top:880px;
   }
   .quote {
     font-size: 20px;
@@ -233,9 +229,7 @@ h2 {
     size: 30px;
   }
   /* About */
-  .about {
-    padding-block: 20%;
-  }
+
   .about-msg {
     padding: 0;
   }
@@ -249,10 +243,10 @@ h2 {
   }
 
   .welcome-banner {
-    height:180px;
+    height:130px;
   }
   .banner-content{
-    top: 925px;
+    top: 920px;
   }
   .quote {
     font-size: 14px;

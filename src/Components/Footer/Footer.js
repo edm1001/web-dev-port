@@ -5,7 +5,7 @@ const Footer = () => {
             <Row
             className=' footer'
             >
-               <Col  className=''>
+               <Col  className='px-4'>
                 <div className='ftr-col1'>
                 Copyright by Edmer Valencia &copy; <br/>
                 <a href='+12344'>Call/Text: 1+ (956) 372-0283 </a><br/>
@@ -13,10 +13,11 @@ const Footer = () => {
                 <a href='/'>Email: edmerfranciz@gmail.com</a>
                 </div>
                 </Col>
+
                 <Col className='ftr-col2'>
                     <Dropdown>
                     <Dropdown.Toggle className='ftr-dropdown'
-                    variant='outline-light'
+                    variant='outline-secondary'
                     >See More</Dropdown.Toggle>
                     <Dropdown.Menu> 
                     <Dropdown.Item>My Resume</Dropdown.Item>
