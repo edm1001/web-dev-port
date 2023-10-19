@@ -40,30 +40,27 @@ const Services = () => {
 
             <Col lg={6} md={12} sm={12} >
                 <div className=''>
-                    <h2> Services</h2>
-                    {/* add a progress bar for skills:
-                    html,css,bootstrap,jquery,git,github,jquery react, node express, sql, mongo
-                    */}
+                    <h2 className='text-warning fw-bold'> Services</h2>
                     <Row className='text-start fw-bold py-3 progress-row'>
                     <Col className='col-12 py-1 text-start'>
                         <h6>Full Stack Development:</h6> 
-                        <ProgressBar animated variant='success' label='100%' now={100} className='' size='' />
+                        <ProgressBar animated variant='success' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1 text-start' >
                         <h6>Front End Development:</h6>  
-                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Back End Development:</h6>  
-                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' now={100} className=''/>
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>CRUD Operations:</h6>  
-                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Client Server Model:</h6>  
-                        <ProgressBar animated variant='success' label='100%' now={100} className='' />
+                        <ProgressBar animated variant='success' now={100} className='' />
                     </Col>
                     
 
@@ -79,7 +76,7 @@ const Services = () => {
                     <Card.Header className='srvc-header'>
                         <h6 className='fw-bold'>MVC</h6></Card.Header>
                 <Card.Body>
-                    <Card.Title >Model View Controller</Card.Title>
+                    <Card.Title className='fw-small fs-5 text-warning'>Model View Controller</Card.Title>
                     <p>
                         <ExpandableText descriptionLength={50}>
                          A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
@@ -93,7 +90,7 @@ const Services = () => {
                     <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
                 <Card.Body>
-                    <Card.Title>Object-Oriented Programming</Card.Title>
+                    <Card.Title className='fw-small fs-6 text-warning'>Object-Oriented Programming</Card.Title>
                     <p>
                     <ExpandableText descriptionLength={50}>
                     A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
@@ -107,7 +104,7 @@ const Services = () => {
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
-                    <Card.Title>Progressing Web Application</Card.Title>
+                    <Card.Title className='fw-small fs-6 text-warning'>Progressing Web Application</Card.Title>
                     <p>
                     <ExpandableText descriptionLength={50}>
 
@@ -121,7 +118,7 @@ const Services = () => {
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
                     <Card.Body>
-                    <Card.Title>Object Relational Mapping</Card.Title>
+                    <Card.Title className='fw-small fs-6 text-warning'>Object Relational Mapping</Card.Title>
                     <p>
                     <ExpandableText descriptionLength={50}>
 
@@ -139,7 +136,7 @@ const Services = () => {
             </Container>
 
         <div className='tech-learned' >
-           <h4 className='fs-3'>Skills</h4>
+           <h4 className='fs-3 text-warning fw-bold'>Skills</h4>
            <Row className='px-5 py-3'>        
         <div className='skl-logos'>
             <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>

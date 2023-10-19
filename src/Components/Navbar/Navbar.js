@@ -22,7 +22,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
           <Navbar.Collapse id="" >
         <Container className='bg-dark'>
-          <Nav className="nav-links py-2">
+          <Nav className="nav-links py-2 text-center">
             <Nav.Link href="/" activeStyle>Home</Nav.Link>
             <Nav.Link href="/#about">About me</Nav.Link>
             <Nav.Link href="/portfolio">Portfolio</Nav.Link>            
