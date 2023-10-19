@@ -8,13 +8,16 @@ import Wordle from '../../Assets/port/wordle.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
 import TravelDiary from '../../Assets/port/travel-blog.gif';
 import TripleJ from '../../Assets/port/triplej.gif';
-
 import DailyScheduler from '../../Assets/port/daily-scheduler.gif';
 import IssuesLookup from '../../Assets/port/git-issue-lookup.gif';
 import PortGenerator from '../../Assets/port/portfolio=generator.gif';
 import SalonSite from '../../Assets/port/salon-site.gif';
 import Taskmaster from '../../Assets/port/task-master-pro.gif';
 import Zookeepers from '../../Assets/port/zoo-inventory.gif'
+
+import {AiFillGithub} from 'react-icons/ai';
+import { FiExternalLink } from "react-icons/fi";
+
 
 const FeaturedProjects = () => {
     const [show, setShow] = useState(false);
@@ -59,9 +62,8 @@ const FeaturedProjects = () => {
           <Image  className='w-100 h-100 ftrd-img' src={Chatterize} alt="" fluid onClick={handleShow2}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
-          <Image  className='w-100 h-100 ftrd-img' src={TravelDiary} alt="" fluid onClick={handleShow3}></Image>
+          <Image  className='w-100 h-100 ftrd-img' src={Zookeepers} alt="" fluid onClick={handleShow3}></Image>
         </Col>
-
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={TripleJ} alt="" fluid onClick={handleShow4}></Image>
         </Col>
@@ -81,7 +83,7 @@ const FeaturedProjects = () => {
           <Image  className='w-100 h-100 ftrd-img' src={DailyScheduler} alt="" fluid onClick={handleShow5}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
-          <Image  className='w-100 h-100 ftrd-img' src={Zookeepers} alt="" fluid onClick={handleShow9}></Image>
+          <Image  className='w-100 h-100 ftrd-img' src={TravelDiary} alt="" fluid onClick={handleShow9}></Image>
         </Col>
 
 
@@ -91,7 +93,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose}>
             Close
         </Button>
         </Modal.Footer>
@@ -103,7 +107,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal2!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose2}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose2}>
             Close
         </Button>
         </Modal.Footer>
@@ -115,7 +121,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal3!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose3}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose3}>
             Close
         </Button>
         </Modal.Footer>
@@ -127,7 +135,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal4!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose4}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose4}>
             Close
         </Button>
         </Modal.Footer>
@@ -151,7 +161,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal6!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose6}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose6}>
             Close
         </Button>
         </Modal.Footer>
@@ -163,7 +175,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal7!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose7}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose7}>
             Close
         </Button>
         </Modal.Footer>
@@ -175,7 +189,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal8!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose8}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose8}>
             Close
         </Button>
         </Modal.Footer>
@@ -187,7 +203,9 @@ const FeaturedProjects = () => {
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal9!</Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose9}>
+        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose9}>
             Close
         </Button>
         </Modal.Footer>
