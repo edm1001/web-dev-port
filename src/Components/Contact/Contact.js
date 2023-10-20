@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import {Row, Col, Button, Form } from 'react-bootstrap';
 import {FcGoogle} from 'react-icons/fc';
 import {FaGithubAlt} from 'react-icons/fa';
+import {BsFillTelephoneOutboundFill} from 'react-icons/bs';
+import {GiTexas} from 'react-icons/gi'
 // import { validateEmail } from '../../utils/helpers';
 
 
@@ -25,15 +27,14 @@ const Contact = () => {
         <h2 style={{textAlign:'center'}}>Contact me through my Website</h2>
         <div className='contact-row'>
         <Row className='contact'>
-            <Col lg={6} md={6} sm={12}> 
+            <Col lg={6} md={6} sm={12} > 
             <div className='contact-info'>
-                <a href='tel:00000'>(123) 456-7890</a><br/>
-                <a href='mailto:edmerfranciz@gmail.com'>edmerfranciz@gmail.com</a><br/>
-                <h6>Spring, Texas</h6>
-                <FcGoogle className='banner-logo' size={30}/>
-                <FaGithubAlt id='banner-logo' color='lightgreen' size={30} />  
+                <a href='tel:9563720283' className='my-2'><BsFillTelephoneOutboundFill color='gold' size={25}/></a><br/>
+                <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-2'/></a><br/>
+               <a href='https://github.com/edm1001'><FaGithubAlt color='gold' size={30} className='mb-1' /></a>   
+                <p className='fw-bold'>Spring, Texas <GiTexas size={20} color='darkorange'/></p> 
                 <div>
-                <Button href='/ResumePdf' variant="outline-secondary" >Resume</Button>
+                <Button className='my-2' href='/ResumePdf' variant="outline-dark" >Resume</Button>
                 </div>
                     
             </div>

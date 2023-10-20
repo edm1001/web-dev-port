@@ -18,21 +18,21 @@ const About = () => {
             </Col>
 
 
-            <Col className="my-5 pb-5 " lg={6} md={8} sm={12}>
+            <Col className="my-5 py-2 " lg={6} md={8} sm={12}>
             <div className=" p-2 about-msg">
             <h4 className="fw-bold"> Why Hire Me?</h4>
         <p className="fs-6">
             My name is Edmer Valencia, I am a Full Stack Developer that graduated from the coding bootcamp program offered in University of Texas at Austin. I am eager to learn and create various technologies and projects.
         </p>  
              <Row className="about-badge">
-                <Col className="text-start">
+                <Col className="text-start ps-3 fs-small">
                 <Badge bg="success" >Ethnicity :</Badge> Filipino <br/>
                 <Badge>Birthday :</Badge> October 1, 1998 <br/>
                 <Badge bg='danger'>Age :</Badge> 25 <br/>
                 </Col>
-                <Col className="text-start">
+                <Col className="text-start pe-5">
                 <Badge bg="success" >Birthplace : </Badge> Iloilo City, Philippines <br/>
-                <Badge>School :</Badge>Coding bootcamp at UT Austin<br/>
+                <Badge>School :</Badge> Coding bootcamp at UT Austin<br/>
                 <Badge bg='danger'>Loves :</Badge> excercise, nature, & games <br/>
                 </Col>
             </Row>
