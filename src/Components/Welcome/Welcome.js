@@ -1,7 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import Photo from '../../Assets/photos/placeholder.png';
+import Photo from '../../Assets/photos/personal/clr-self.png';
 
 const Welcome =  () => {
     return (
@@ -19,7 +19,7 @@ const Welcome =  () => {
 
             <Col lg={6} md={12} sm={12} className=' text-center welcome-intro bg-dark' >
                     <div className='welcome-box'>
-                    <Image src={Photo} as='div' className='h-100 w-100 ' id='personal-photo'/>
+                    <Image src={Photo} as='div' className='h-105 w-100 mb-4 pb-2 ' id='personal-photo'/>
                    
                     </div>
             </Col>

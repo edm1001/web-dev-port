@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Badge from "react-bootstrap/Badge";
-import AboutPic from '../../Assets/photos/personcoding.png'
+import AboutPic from '../../Assets/photos/personal/abt-photo.png'
 
 const About = () => {
     return (
@@ -12,13 +12,13 @@ const About = () => {
         <Row className="abt-info">
 
             <Col lg={6} md={4} sm={12}>
-            <div className='about-img'>
-            <img  alt='about-pic' src={AboutPic}/>
+            <div className='about-img h-100 w-100 my-4 p-4'>
+            <img  alt='about-pic' src={AboutPic} className='h-100 w-100'/>
             </div>
             </Col>
 
 
-            <Col className="mb-5 " lg={6} md={8} sm={12}>
+            <Col className="my-5 pb-5 " lg={6} md={8} sm={12}>
             <div className=" p-2 about-msg">
             <h4 className="fw-bold"> Why Hire Me?</h4>
         <p className="fs-6">
