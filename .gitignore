@@ -10,8 +10,6 @@
 
 # production
 /build
-/src/Assets/resume
-/src/Assets/photos/personal
 
 # misc
 .DS_Store
