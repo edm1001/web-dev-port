@@ -89,12 +89,20 @@ const FeaturedProjects = () => {
 
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Wordle Game</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          This is a clone of the popular game Wordle! <br/>
+          In this project we use Javascript to recreate a word guessing game, We guess the five letter word by choosing a choice of letters and press enter. <br/>
+          If the letter chosen by the user is correct and in position, the letter box will turn green. <br/>
+          If the letter chosen is correct but in wrong position, it will turn orange. <br/>
+          The wrong letters will remain black, and the user will have chances to guess the word right!
+          Good Luck!
+
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/wordle-clone"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/wordle-clone/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose}>
             Close
         </Button>
@@ -103,12 +111,17 @@ const FeaturedProjects = () => {
 
         <Modal show={show2} onHide={handleClose2}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Chatterize</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal2!</Modal.Body>
+        <Modal.Body>
+          This is messaging app for users that choose to talk about anything! <br/>
+          This app was a group project and has an amazing messagging functions for its users to talk to one another. <br/>
+          The app also has an option to sign up and log in, in order to chat with one another.
+
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/xJaimeGx/chatterize"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://chatterize123.herokuapp.com/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose2}>
             Close
         </Button>
@@ -117,12 +130,17 @@ const FeaturedProjects = () => {
 
         <Modal show={show3} onHide={handleClose3}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Zoo Inventory List</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal3!</Modal.Body>
+        <Modal.Body>
+          This is a inventory app that lists the animals in the zoo! <br/>
+          If user wants to find the animal lists, user can click on view animals and it will list all the animals with some info on that animal <br/>
+          The user can also use the filter function to categorize and find a specific animal. <br/>
+          The user can also find the zookeepers that tend to these animals!
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/zookeepr"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/zookeepr/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose3}>
             Close
         </Button>
@@ -131,12 +149,16 @@ const FeaturedProjects = () => {
 
         <Modal show={show4} onHide={handleClose4}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Triple J Wild Game Birds</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal4!</Modal.Body>
+        <Modal.Body>
+          This is an online store I've partnered with a local company. <br/>
+          This app shows its users the birds and products that the company offers to its customers<br/>
+          The bird section will have a bit of info with the birds and the care for them. <br/>
+          App will also have a contact form on the site for easy contact and have some info on the company.
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="www.triplejwildgamebirds.com"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose4}>
             Close
         </Button>
@@ -145,7 +167,7 @@ const FeaturedProjects = () => {
 
         <Modal show={show5} onHide={handleClose5}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>To Do List</Modal.Title>
         </Modal.Header>
         <Modal.Body>You are reading this text in a modal5!</Modal.Body>
         <Modal.Footer>
@@ -157,12 +179,15 @@ const FeaturedProjects = () => {
       
         <Modal show={show6} onHide={handleClose6}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Git Issues Lookup</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal6!</Modal.Body>
+        <Modal.Body>
+          This app is for users to search for Github issues <br/>
+          User can search through a Github account and look at their projects, the app will show the user if the if the issues for that repository have been completed or not. <br/> The user can then make the choice to help or read on the repo's issue.
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/git-it-done"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/git-it-done/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose6}>
             Close
         </Button>
@@ -171,12 +196,16 @@ const FeaturedProjects = () => {
 
         <Modal show={show7} onHide={handleClose7}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Portfolio Generator</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal7!</Modal.Body>
+        <Modal.Body>
+          This app uses NodeJs to create a static html portfolio quick and easy! <br/>
+          After installation of the software, the app will ask its user information to put on the portfolio. <br/>
+          After answering the questions, the app will produce an index.html file with information requested by the app. <br/>
+          ** THE USER MUST CLONE THE APP FROM GITHUB FOR APP TO WORK
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/node-portfolio-gen"><AiFillGithub size={25} /></a>
         <Button variant="outline-info" onClick={handleClose7}>
             Close
         </Button>
@@ -185,12 +214,16 @@ const FeaturedProjects = () => {
 
         <Modal show={show8} onHide={handleClose8}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Salon Website</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal8!</Modal.Body>
+        <Modal.Body>
+          This app was for a local salon in Houston Texas. <br/>
+          The app will show its users information about the salon and their services! <br/>
+          Due to discontinuation of the app, it will not have a reservation function because it requires payment for working functionality.
+          </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/vitalz-barbershop"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/vitalz-barbershop/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose8}>
             Close
         </Button>
@@ -199,12 +232,16 @@ const FeaturedProjects = () => {
 
         <Modal show={show9} onHide={handleClose9}>
         <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>Daily Task Scheduler</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal9!</Modal.Body>
+        <Modal.Body>
+          This app is for daily task scheduling <br/>
+          This app has a set time from 1AM to 5PM, once it passes the time the timeslot will turn red. <br/>
+          The current timeslot also turns green, there's a save button on the right of the app that user can click to save the task they created on the local storage. <br/> They can then use the saved task for a different day or time.
+        </Modal.Body>
         <Modal.Footer>
-        <a className='btn btn-outline-info' href="/"><AiFillGithub size={25} /></a>
-        <a className='btn btn-outline-info' href="/"><FiExternalLink size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/i-like-tortoises-05"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/i-like-tortoises-05/"><FiExternalLink size={25} /></a>
         <Button variant="outline-info" onClick={handleClose9}>
             Close
         </Button>

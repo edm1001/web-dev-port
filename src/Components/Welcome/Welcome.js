@@ -19,7 +19,7 @@ const Welcome =  () => {
 
             <Col lg={6} md={12} sm={12} className=' text-center welcome-intro bg-dark' >
                     <div className='welcome-box'>
-                    <Image src={Photo} as='div' className='h-105 w-100 mb-4 pb-2 ' id='personal-photo'/>
+                    <Image src={Photo} as='div' className='h-100 w-100 mb-4 pb-2 ' id='personal-photo'/>
                    
                     </div>
             </Col>
