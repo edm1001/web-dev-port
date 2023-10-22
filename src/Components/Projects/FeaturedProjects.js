@@ -29,7 +29,7 @@ const FeaturedProjects = () => {
     const [show7, setShow7] = useState(false);
     const [show8, setShow8] = useState(false);
     const [show9, setShow9] = useState(false);
-    // const [show10, setShow10] = useState(false);
+    const [show10, setShow10] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -49,8 +49,8 @@ const FeaturedProjects = () => {
     const handleShow8 = () => setShow8(true);                                                                                                                                                                                                                                                       
     const handleClose9 = () => setShow9(false);
     const handleShow9 = () => setShow9(true);                                                                                                                                                                                                                                                       
-    // const handleClose10 = () => setShow10(false);
-    // const handleShow10 = () => setShow10(true);                                                                                                                                                                                                                                                       
+    const handleClose10 = () => setShow10(false);
+    const handleShow10 = () => setShow10(true);                                                                                                                                                                                                                                                       
     
     return (
         <Row className=" d-flex justify-content-center py-5">
@@ -68,7 +68,7 @@ const FeaturedProjects = () => {
           <Image  className='w-100 h-100 ftrd-img' src={TripleJ} alt="" fluid onClick={handleShow4}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6}>
-          <Image  className='w-100 h-100 ftrd-img' src={Taskmaster} alt="" fluid onClick={handleShow9}></Image>
+          <Image  className='w-100 h-100 ftrd-img' src={Taskmaster} alt="" fluid onClick={handleShow5}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
           <Image  className='w-100 h-100 ftrd-img' src={IssuesLookup} alt="" fluid onClick={handleShow6}></Image>
@@ -80,10 +80,10 @@ const FeaturedProjects = () => {
           <Image  className='w-100 h-100 ftrd-img' src={SalonSite} alt="" fluid onClick={handleShow8}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
-          <Image  className='w-100 h-100 ftrd-img' src={DailyScheduler} alt="" fluid onClick={handleShow5}></Image>
+          <Image  className='w-100 h-100 ftrd-img' src={TravelDiary} alt="" fluid onClick={handleShow9}></Image>
         </Col>
         <Col className="py-1" lg={3} md={4} sm={4} xs={6} >
-          <Image  className='w-100 h-100 ftrd-img' src={TravelDiary} alt="" fluid onClick={handleShow9}></Image>
+          <Image  className='w-100 h-100 ftrd-img' src={DailyScheduler} alt="" fluid onClick={handleShow10}></Image>
         </Col>
 
 
@@ -231,6 +231,26 @@ const FeaturedProjects = () => {
         </Modal>
 
         <Modal show={show9} onHide={handleClose9}>
+       <Modal.Header closeButton>
+        <Modal.Title>Travel Diary</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          This is a travel blog app that allows its users to search for destinations using city and country. <br/>
+          When user finds a place, they will find information about the destination, such as popular restaurants and travel safety. <br/>
+          This app allows users to register for an account to create a post. <br/>
+          App users can also reviews from other users will appear, and can comment if user is logged in! <br/>
+
+        </Modal.Body>
+        <Modal.Footer>
+        <a className='btn btn-outline-info' href="https://afternoon-harbor-62644.herokuapp.com/"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://github.com/strudelAndCoffee/travel-log-dashboard"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose9}>
+            Close
+        </Button>
+        </Modal.Footer>
+        </Modal>
+
+        <Modal show={show10} onHide={handleClose10}>
         <Modal.Header closeButton>
         <Modal.Title>Daily Task Scheduler</Modal.Title>
         </Modal.Header>
@@ -242,23 +262,12 @@ const FeaturedProjects = () => {
         <Modal.Footer>
         <a className='btn btn-outline-info' href="https://github.com/edm1001/i-like-tortoises-05"><AiFillGithub size={25} /></a>
         <a className='btn btn-outline-info' href="https://edm1001.github.io/i-like-tortoises-05/"><FiExternalLink size={25} /></a>
-        <Button variant="outline-info" onClick={handleClose9}>
+        <Button variant="outline-info" onClick={handleClose10}>
             Close
         </Button>
         </Modal.Footer>
         </Modal>
 
-        {/* <Modal show={show10} onHide={handleClose10}>
-        <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>You are reading this text in a modal6!</Modal.Body>
-        <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose10}>
-            Close
-        </Button>
-        </Modal.Footer>
-        </Modal> */}
 
 
 

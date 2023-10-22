@@ -217,10 +217,10 @@ h2 {
 
   /* Banner */
   .welcome-banner{
-    height:125px;
+    height:145px;
   }
   .banner-content{
-    top:880px;
+    top:900px;
   }
   .quote {
     font-size: 20px;
@@ -237,16 +237,12 @@ h2 {
 }
 @media all and (min-width: 319px) and (max-width: 525px) {
 /* Welcome */
-  #personal-photo {
-    height: 250px;
-    width:200px;
-  }
 
   .welcome-banner {
     height:130px;
   }
   .banner-content{
-    top: 960px;
+    top: 920px;
   }
   .quote {
     font-size: 14px;

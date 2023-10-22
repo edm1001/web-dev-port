@@ -24,8 +24,9 @@ const Header = () => {
         <Container className='bg-dark'>
           <Nav className="nav-links py-2 text-center">
             <Nav.Link href="/" activeStyle>Home</Nav.Link>
+            <Nav.Link href="/portfolio">Projects
+            </Nav.Link>            
             <Nav.Link href="/#about">About me</Nav.Link>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>            
             <Nav.Link href="/#services">Services</Nav.Link>
             <Nav.Link href="/#contact">Contact</Nav.Link>
             <Nav.Link href="/#reviews">Reviews</Nav.Link>

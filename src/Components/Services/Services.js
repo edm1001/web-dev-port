@@ -76,7 +76,7 @@ const Services = () => {
                     <Card.Header className='srvc-header'>
                         <h6 className='fw-bold'>MVC</h6></Card.Header>
                 <Card.Body>
-                    <Card.Title className='fw-small fs-5 text-warning'>Model View Controller</Card.Title>
+                    <Card.Title className='fw-small fs-6 text-warning'>Model View Controller</Card.Title>
                     <p>
                         <ExpandableText descriptionLength={50}>
                          A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
