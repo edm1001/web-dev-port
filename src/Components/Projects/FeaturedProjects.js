@@ -169,9 +169,16 @@ const FeaturedProjects = () => {
         <Modal.Header closeButton>
         <Modal.Title>To Do List</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You are reading this text in a modal5!</Modal.Body>
+        <Modal.Body>
+          This app is a to-do list that lets users create tasks <br/>
+          This app allows users to set their tasks into different sections like a sudoku board. <br/>
+          App has following sections: To-Do, In Progress, In Review, Done. <br/>
+          Users can drag the item to the bottom to delete the task once finished, with an option to delete all tasks on top of the app. 
+        </Modal.Body>
         <Modal.Footer>
-        <Button variant="outline-success" onClick={handleClose5}>
+        <a className='btn btn-outline-info' href="https://github.com/edm1001/taskmaster-pro"><AiFillGithub size={25} /></a>
+        <a className='btn btn-outline-info' href="https://edm1001.github.io/taskmaster-pro/"><FiExternalLink size={25} /></a>
+        <Button variant="outline-info" onClick={handleClose5}>
             Close
         </Button>
         </Modal.Footer>
