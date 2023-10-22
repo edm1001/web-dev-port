@@ -17,9 +17,9 @@ const ListProjects = () => {
                     <h6 className="fw-bold">Instagram Clone</h6>
                     An older instagram clone using JS and front end!
                     </div>
-        <a href='https://edm1001.github.io/instagram-clone/'><FiExternalLink/></a>
-        <a href='https://github.com/edm1001/instagram-clone'className="px-2"> <FiGithub/></a>
-        <a href='https://github.com/edm1001/instagram-clone/blob/main/README.md' ><AiOutlineRead/></a>
+        <a href='https://edm1001.github.io/instagram-clone/' className="btn btn-outline-secondary mx-1"><FiExternalLink/></a>
+        <a href='https://github.com/edm1001/instagram-clone' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
+        <a href='https://github.com/edm1001/instagram-clone/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>
       </ListGroup.Item>
                 </ListGroup>
             </Card.Body>
