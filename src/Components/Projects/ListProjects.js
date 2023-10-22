@@ -14,12 +14,12 @@ const ListProjects = () => {
                 <ListGroup>
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
-                    <h6 className="fw-bold">Subheading</h6>
-                    Cras justo odio
+                    <h6 className="fw-bold">Instagram Clone</h6>
+                    An older instagram clone using JS and front end!
                     </div>
-        <a href='/'><FiExternalLink/></a>
-        <a href='/'className="px-2"> <FiGithub/></a>
-        <a href='/' ><AiOutlineRead/></a>
+        <a href='https://edm1001.github.io/instagram-clone/'><FiExternalLink/></a>
+        <a href='https://github.com/edm1001/instagram-clone'className="px-2"> <FiGithub/></a>
+        <a href='https://github.com/edm1001/instagram-clone/blob/main/README.md' ><AiOutlineRead/></a>
       </ListGroup.Item>
                 </ListGroup>
             </Card.Body>
