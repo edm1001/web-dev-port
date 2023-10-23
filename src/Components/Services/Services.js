@@ -44,23 +44,23 @@ const Services = () => {
                     <Row className='text-start fw-bold py-3 progress-row'>
                     <Col className='col-12 py-1 text-start'>
                         <h6>Full Stack Development:</h6> 
-                        <ProgressBar animated variant='success' now={100} className='' />
+                        <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1 text-start' >
                         <h6>Front End Development:</h6>  
-                        <ProgressBar animated variant='success' now={100} className='' />
+                        <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Back End Development:</h6>  
-                        <ProgressBar animated variant='success' now={100} className=''/>
+                        <ProgressBar animated variant='warning' now={100} className=''/>
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>CRUD Operations:</h6>  
-                        <ProgressBar animated variant='success' now={100} className='' />
+                        <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1' >
                         <h6>Client Server Model:</h6>  
-                        <ProgressBar animated variant='success' now={100} className='' />
+                        <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
                     
 
@@ -78,7 +78,7 @@ const Services = () => {
                 <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>Model View Controller</Card.Title>
                     <p>
-                        <ExpandableText descriptionLength={50}>
+                        <ExpandableText descriptionLength={75}>
                          A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
                         </ExpandableText>
                 </p>
@@ -92,7 +92,7 @@ const Services = () => {
                 <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>Object-Oriented Programming</Card.Title>
                     <p>
-                    <ExpandableText descriptionLength={50}>
+                    <ExpandableText descriptionLength={75}>
                     A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
                     </ExpandableText>
                 </p>
@@ -106,7 +106,7 @@ const Services = () => {
                     <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>Progressing Web Application</Card.Title>
                     <p>
-                    <ExpandableText descriptionLength={50}>
+                    <ExpandableText descriptionLength={75}>
                         Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
                     </ExpandableText>
                 </p>
@@ -119,7 +119,7 @@ const Services = () => {
                     <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>Object Relational Mapping</Card.Title>
                     <p>
-                    <ExpandableText descriptionLength={50}>
+                    <ExpandableText descriptionLength={75}>
                         Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
                     </ExpandableText>
                 </p>

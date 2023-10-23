@@ -20,20 +20,24 @@ const About = () => {
 
             <Col className="my-5 py-2 " lg={6} md={6} sm={12}>
             <div className=" p-2 about-msg">
-            <h4 className="fw-bold"> Why Hire Me?</h4>
-        <p className="fs-6">
-            I am passionate for Web Development, I love it because its a career that feeds my creativity and allows me to bring fresh ideas into projects and learn ideas from amazing people. Hire me because I am a tech geek with a proven ability to work with people because of my past work experience in retail, freelance and in the coding bootcamp. I am confident that I will contribute positively to the company as I am committed to pursue learning the continuing evolution of Web Development. 
+            <h4 className="fw-bold fs-3"> Why Hire Me?</h4>
+        <p className="" id='abt-msg' >
+            I am passionate for Web Development because its a career that feeds my creativity and allows me to bring fresh ideas into projects and learn ideas from amazing people. Hire me because I am an aspiring tech wiz with a proven ability to work with people from my past work experience in retail, freelance and in the coding bootcamp. I am confident that I will contribute positively to the company as I am committed to pursue learning the continuing evolution of Web Development. 
         </p>  
              <Row className="about-badge">
-                <Col className="text-start ps-3 fs-small">
-                <Badge bg="success" >Ethnicity :</Badge> Filipino <br/>
-                <Badge>Birthday :</Badge> October 1, 1998 <br/>
-                <Badge bg='danger'>Age :</Badge> 25 <br/>
+                <Col className="text-start ps-3">
+                <p id='abt-msg'>
+                <Badge bg="warning" >Ethnicity :</Badge> Filipino <br/>
+                <Badge bg="warning">Birthday :</Badge> October 1, 1998 <br/>
+                <Badge bg='warning'>Age :</Badge> 25 <br/>
+                </p>
                 </Col>
-                <Col className="text-start pe-5">
-                <Badge bg="success" >Birthplace : </Badge> Iloilo City, Philippines <br/>
-                <Badge>School :</Badge> Coding bootcamp at UT Austin<br/>
-                <Badge bg='danger'>Loves :</Badge> excercise, nature, & games <br/>
+                <Col className="text-start pe-5" id='abt-msg'>
+                <p className="fs-12" id='abt-msg'>
+                <Badge bg="warning" >Birthplace : </Badge> Iloilo City, Philippines <br/>
+                <Badge bg="warning">School :</Badge> Coding bootcamp at UT Austin<br/>
+                <Badge bg='warning'>Loves :</Badge> aquariums,  <br/>
+                </p> 
                 </Col>
             </Row>
             </div>

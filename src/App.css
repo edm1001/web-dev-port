@@ -90,6 +90,9 @@ h2 {
   display: flex;
   justify-content: center;
  }
+ #abt-msg {
+  font-size: small;
+ }
 
 
 /* Services section */
@@ -208,6 +211,9 @@ h2 {
 
 /* MOBILE STYLES */
 @media all and (min-width: 526px) and (max-width: 960px) {
+  #abt-msg {
+    font-size: small;
+  }
   .progress-row {
     padding-block: 5%;
   }
@@ -250,6 +256,9 @@ h2 {
   /* About */
   .about-badge {
     font-size: 12px;
+  }
+  #abt-msg {
+    font-size: small;
   }
 
   /* proj section */

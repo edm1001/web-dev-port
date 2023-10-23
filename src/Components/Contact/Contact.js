@@ -2,8 +2,8 @@ import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import {Row, Col, Button, Form } from 'react-bootstrap';
 import {FcGoogle} from 'react-icons/fc';
-import {FaGithubAlt} from 'react-icons/fa';
-import {BsFillTelephoneOutboundFill} from 'react-icons/bs';
+import {FaLinkedin} from 'react-icons/fa';
+import {SiIndeed} from 'react-icons/si';
 import {GiTexas} from 'react-icons/gi'
 // import { validateEmail } from '../../utils/helpers';
 
@@ -29,10 +29,10 @@ const Contact = () => {
         <Row className='contact'>
             <Col lg={6} md={6} sm={12} > 
             <div className='contact-info'>
-                <a href='tel:9563720283' className='my-2'><BsFillTelephoneOutboundFill color='gold' size={25}/></a><br/>
-                <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-2'/></a><br/>
-               <a href='https://github.com/edm1001'><FaGithubAlt color='gold' size={30} className='mb-1' /></a>   
-                <p className='fw-bold'>Spring, Texas <GiTexas size={20} color='darkorange'/></p> 
+                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/' className='my-2'><FaLinkedin color='darkblue' size={25}/></a><br/>
+               <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed color='darkblue' size={30} className='mb-1' /></a> <br/>  
+                <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-2'/></a>
+                <p className='fw-semibold ps-2'>Spring, TX <GiTexas size={20} color='darkorange'/></p> 
                 <div>
                 <Button className='my-2' href='/ResumePdf' variant="outline-dark" >Resume</Button>
                 </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                         <Form.Control as="input" required  name="user_name" type="name" placeholder="Enter Name"></Form.Control></Col>
                         <Col>
                         <Form.Label>Subject</Form.Label>
-                        <Form.Control type="subjec" name="subject" placeholder='Subject here'></Form.Control></Col>
+                        <Form.Control type="subject" name="subject" placeholder='Subject here'></Form.Control></Col>
                     </Row>
                     <Form.Label>Email</Form.Label>
                     <Form.Control required type='email' name='user_email'   placeholder='Enter your email' as='input'></Form.Control>
