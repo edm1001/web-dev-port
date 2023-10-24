@@ -1,4 +1,4 @@
-import resumePdf from '../Assets/resume/officialresume-efv.pdf';
+import resumePdf from '../Assets/resume/MyResume.pdf';
 
 const ResumePdf= () => {
     return (
