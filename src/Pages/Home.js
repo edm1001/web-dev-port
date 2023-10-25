@@ -1,5 +1,5 @@
 import Welcome from '../Components/Welcome/Welcome';
-import Banner from '../Components/Banner/Banner'
+// import Banner from '../Components/Banner/Banner'
 import About from '../Components/About/About.js';
 import Services from '../Components/Services/Services'
 import Projects from '../Components/Projects/Projects';
@@ -11,7 +11,6 @@ const Home = () => {
     return (
         <>
         <Welcome/>
-        <Banner/>
         <About/>
         <Services/>
         <Projects/>

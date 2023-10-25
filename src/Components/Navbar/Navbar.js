@@ -3,8 +3,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Logo from '../../Assets/videos/port-logo.gif';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 
 const Header = () => {
     return (

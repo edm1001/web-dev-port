@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {motion} from 'framer-motion';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
@@ -32,6 +33,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 
 
 const Services = () => {
+    // variants={{}}
     return (
         <section className='services' id='services'>
             <Container>
