@@ -29,8 +29,8 @@ const Contact = () => {
         <Row className='contact'>
             <Col lg={6} md={6} sm={12} > 
             <div className='contact-info'>
-                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/' className='my-2'><FaLinkedin color='darkblue' size={25}/></a><br/>
-               <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed color='darkblue' size={30} className='mb-1' /></a> <br/>  
+                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'><FaLinkedin color='darkblue' size={30}/></a><br/>
+               <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed  className='mt-2' color='darkblue' size={30} /></a> <br/>  
                 <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-2'/></a>
                 <p className='fw-semibold ps-2'>Spring, TX <GiTexas size={20} color='darkorange'/></p> 
                 <div>

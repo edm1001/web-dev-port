@@ -19,8 +19,8 @@ const Header = () => {
           />
         </Navbar.Brand>
         </div>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-          <Navbar.Collapse id="" >
+          <Navbar.Toggle className='mx-3' aria-controls="responsive-navbar-nav"/>
+          <Navbar.Collapse>
         <Container className='bg-dark'>
           <Nav className="nav-links py-2 text-center">
             <Nav.Link href="/" activeStyle>Home</Nav.Link>

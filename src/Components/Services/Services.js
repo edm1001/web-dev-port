@@ -8,8 +8,9 @@ import {FaBootstrap, FaReact} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
-import {AiOutlineHtml5} from 'react-icons/ai'
-import {SiMongodb, SiExpress} from 'react-icons/si'
+import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai'
+import {SiMongodb, SiExpress, SiHeroku} from 'react-icons/si'
+import {BsFiletypeSql} from 'react-icons/bs'
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;
@@ -70,7 +71,8 @@ const Services = () => {
 
 
             <Col lg={6} md={12} sm={12} >
-            <Row className='py-3 px-2'>
+            <Row className='my-3 px-3'>
+
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
@@ -133,9 +135,9 @@ const Services = () => {
 
             </Container>
 
-        <div className='tech-learned' >
-           <h4 className='fs-3 text-warning fw-bold'>Skills</h4>
-           <Row className='px-5 py-3'>        
+        <div className='tech-learned py-2' >
+           <h4 className='fs-2 text-warning fw-bold'>Skills</h4>
+           <Row className='px-5'>        
         <div className='skl-logos'>
             <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>
             <IoLogoCss3 size={50} color='lightgrey' className="skl-logo" />
@@ -148,8 +150,12 @@ const Services = () => {
             <DiNpm  size={50} color='lightgrey' className="skl-logo"/>
             <DiStackoverflow  size={50} color='lightgrey' className="skl-logo"/>
             <SiMongodb size={50} color='lightgrey'className="skl-logo"/>
-            <SiExpress size={50}  className="skl-logo"/>
-            <DiResponsive size={60} className='skl-logo'/>
+            <SiExpress size={50}  color='lightgrey' className="skl-logo"/>
+            <DiResponsive size={60} color='lightgrey'className='skl-logo'/>
+            <AiFillGithub  size={50} color='lightgrey' className='skl-logo' />
+            <BsFiletypeSql  size={50} color='lightgrey' className='skl-logo'/>
+            <AiFillApi  size={50} color='lightgrey' className='skl-logo'/>
+            <SiHeroku  size={50} color='lightgrey' className='skl-logo'/>
         </div>
            </Row>
         </div>
