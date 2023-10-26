@@ -78,7 +78,7 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                     <motion.div
                     initial={{x:200, opacity:0}}
-                    animate={{x:0, opacity:1}}
+                    whileInView={{x:0, opacity:1}}
                     >
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
@@ -98,7 +98,7 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
                     initial={{x:200, opacity:0}}
-                    animate={{x:0, opacity:1}}
+                    whileInView={{x:0, opacity:1}}
                     >
                     <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
@@ -117,7 +117,7 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12}className='srvc-col'>
                 <motion.div
                     initial={{x:200, opacity:0}}
-                    animate={{x:0, opacity:1}}
+                    whileInView={{x:0, opacity:1}}
                     >
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
@@ -135,7 +135,7 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
                     initial={{x:200, opacity:0}}
-                    animate={{x:0, opacity:1}}
+                    whileInView={{x:0, opacity:1}}
                     > 
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
