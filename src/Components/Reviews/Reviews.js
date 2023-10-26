@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {motion} from 'framer-motion';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -35,6 +36,11 @@ const Reviews =() => {
 
             <Row className='reviews-row'>
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <motion.div
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:1.5}}
+                    >
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'><BsFillPersonFill size={35} /> </i>
             <Card.Body>
@@ -55,9 +61,15 @@ const Reviews =() => {
                 </Row>
             </Card.Footer>
             </Card>
+            </motion.div>
                 </Col>
 
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6} >
+            <motion.div
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:1.5}}
+                    >
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /> </i>
             <Card.Body>
@@ -76,9 +88,15 @@ const Reviews =() => {
                 </Row>
             </Card.Footer>
             </Card>
+            </motion.div>
                 </Col>
                 
              <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+             <motion.div
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:1.5}}
+                    >
              <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
@@ -95,6 +113,7 @@ const Reviews =() => {
                 </Row>
             </Card.Footer>
             </Card>
+            </motion.div>
                 </Col>
 
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
@@ -126,6 +145,12 @@ const Reviews =() => {
                 </Col>
 
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <motion.div
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:1.5}}
+                    >
+
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
@@ -144,6 +169,8 @@ const Reviews =() => {
                 </Row>
             </Card.Footer>
             </Card>
+            </motion.div>
+
                 </Col>
 
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
@@ -166,6 +193,12 @@ const Reviews =() => {
                 </Col>
             
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <motion.div
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:1.5}}
+                    >
+
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
@@ -178,6 +211,7 @@ const Reviews =() => {
                 </Row>
             </Card.Footer>
             </Card>
+            </motion.div>
                 </Col>
             {/*Thank you for submitting your assignment Edmer! <br/> I was able to clone and run the application. The application utilizes React on the front end, and the routes are handled by Express.<br/> */}
 

@@ -231,8 +231,8 @@ h2 {
   }
   /* About */
 
-  .about-msg {
-    padding: 0;
+  #about-msg {
+    font-size: 10px;
   }
   
 }
@@ -253,7 +253,7 @@ h2 {
     font-size: 12px;
   }
   #abt-msg {
-    font-size: small;
+    font-size: 10px;
   }
 
   /* proj section */

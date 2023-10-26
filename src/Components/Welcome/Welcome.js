@@ -30,10 +30,12 @@ const Welcome =  () => {
                             className='welcome-box'>
                     <motion.div
                     initial={{opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.2}}
-                    />
+                    animate={{opacity:1}}
+                    transition={{delay:2}}
+                    >
                    <Image src={Photo} as='div' className='h-100 w-100 p-4 mb-2 ' id='personal-photo'></Image>
+                    </motion.div>
+                    
                     </motion.div>
             </Col>
             </Row>

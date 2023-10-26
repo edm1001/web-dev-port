@@ -11,7 +11,7 @@ const About = () => {
     <section className="about" id="about">
       <Container>
         <Row className="abt-info">
-            <Col lg={6} md={6} sm={12}>
+            <Col lg={6} md={5} sm={12}>
             <motion.div
             initial={{x:-200 ,opacity:0}}
             whileInView={{x:0, opacity:1, animationDelay:2}}
@@ -23,7 +23,7 @@ const About = () => {
             </Col>
 
 
-            <Col className="my-5 py-2 " lg={6} md={6} sm={12}>
+            <Col className="my-5 py-2 " lg={6} md={7} sm={12}>
             <motion.div
                 initial={{x:200 ,opacity:0}}
                 whileInView={{x:0, opacity:1, }}
@@ -33,13 +33,13 @@ const About = () => {
                 >
             
 
-            <div className=" py-2 about-msg">
-            <h4 className="fw-bold fs-3"> Why Hire Me?</h4>
-        <p className="p-2" id='abt-msg' >
+            <div className="py-1 about-msg">
+            <h4 className="fw-bold fs-2"> Why Hire Me?</h4>
+        <p className="p-1" id='abt-msg' >
             I am passionate for Web Development because its a career that feeds my creativity and allows me to bring fresh ideas into projects and learn from amazing people. Hire me because I am an aspiring tech wiz with a proven ability to work with people from my past work experience in retail, freelance and in the coding bootcamp. I am confident to contribute positively to the company as I am committed to pursue learning the continuing evolution of Web Development. 
         </p>  
              <Row className="about-badge">
-                <Col className="text-start ps-3">
+                <Col className="text-start ps-4">
                 <p id='abt-msg'>
                 <Badge bg="warning" >Ethnicity :</Badge> Filipino <br/>
                 <Badge bg="warning">Birthday :</Badge> October 1, 1998 <br/>
@@ -50,7 +50,7 @@ const About = () => {
                 <p className="fs-12" id='abt-msg'>
                 <Badge bg="warning" >Birthplace : </Badge> Iloilo City, Philippines <br/>
                 <Badge bg="warning">School :</Badge> Coding bootcamp at UT Austin<br/>
-                <Badge bg='warning'>Loves :</Badge> Aquariums, Nature, & Music<br/>
+                <Badge bg='warning'>Loves :</Badge> Tech, Nature, & Music<br/>
                 </p> 
                 </Col>
             </Row>

@@ -4,8 +4,8 @@ import {Row, Col, Button, Form } from 'react-bootstrap';
 import {FcGoogle} from 'react-icons/fc';
 import {FaLinkedin} from 'react-icons/fa';
 import {SiIndeed} from 'react-icons/si';
-import {GiTexas} from 'react-icons/gi'
-// import { validateEmail } from '../../utils/helpers';
+import {GiTexas} from 'react-icons/gi';
+import {motion} from 'framer-motion';
 
 
 const Contact = () => {
@@ -28,6 +28,10 @@ const Contact = () => {
         <div className='contact-row'>
         <Row className='contact'>
             <Col lg={6} md={6} sm={12} > 
+            <motion.div
+            initial={{opacity:0.1}}
+            whileInView={{opacity:1}}
+            >
             <div className='contact-info'>
                 <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'><FaLinkedin color='darkblue' size={30}/></a><br/>
                <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed  className='mt-2' color='darkblue' size={30} /></a> <br/>  
@@ -36,13 +40,16 @@ const Contact = () => {
                 <div>
                 <Button className='my-2' href='/ResumePdf' variant="outline-dark" >Resume</Button>
                 </div>
-                    
             </div>
+            </motion.div>
             </Col>
-
-
-
             <Col className='mb-3 contact-form'lg={6} md={6} sm={12} >
+            <motion.div
+            initial={{x:200, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{delay:1.5}}
+            >
+
             <Form ref={form} onSubmit={sendEmail} className='p-5 message'>
                 <Form.Group>
                     <Row >
@@ -62,6 +69,7 @@ const Contact = () => {
                 </Form.Group>
                 <Button type="submit" className="my-2" variant='secondary' value="Send"> Submit</Button>
             </Form>
+            </motion.div>
             </Col>
             
         </Row>

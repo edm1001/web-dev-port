@@ -77,8 +77,9 @@ const Services = () => {
 
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                     <motion.div
-                    initial={{x:200, opacity:0}}
-                    whileInView={{x:0, opacity:1}}
+                        initial={{ opacity:0}}
+                        whileInView={{opacity:1}}
+                        transition={{delay:2}}
                     >
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
@@ -97,8 +98,9 @@ const Services = () => {
                 
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
-                    initial={{x:200, opacity:0}}
-                    whileInView={{x:0, opacity:1}}
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:2}}
                     >
                     <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
@@ -116,8 +118,9 @@ const Services = () => {
 
                 <Col lg={6} md={6} sm={6} xs={12}className='srvc-col'>
                 <motion.div
-                    initial={{x:200, opacity:0}}
-                    whileInView={{x:0, opacity:1}}
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:2}}
                     >
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
@@ -127,6 +130,7 @@ const Services = () => {
                     <ExpandableText descriptionLength={75}>
                         Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
                     </ExpandableText>
+
                 </p>
                 </Card.Body>
                         </Card>
@@ -134,8 +138,9 @@ const Services = () => {
                 </Col>
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
-                    initial={{x:200, opacity:0}}
-                    whileInView={{x:0, opacity:1}}
+                    initial={{ opacity:0}}
+                    whileInView={{opacity:1}}
+                    transition={{delay:2}}
                     > 
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
@@ -143,7 +148,7 @@ const Services = () => {
                     <Card.Title className='fw-small fs-6 text-warning'>Object Relational Mapping</Card.Title>
                     <p>
                     <ExpandableText descriptionLength={75}>
-                        Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
+                        A framework that simplifies the interchange between the two paradigms, the object and relational database tables.
                     </ExpandableText>
                 </p>
                 </Card.Body>

@@ -8,21 +8,20 @@ const Footer = () => {
                <Col  className='px-4'>
                 <div className='ftr-col1'>
                 Copyright by Edmer Valencia &copy; <br/>
-                <a href='+12344'>Call/Text: 1+ (956) 372-0283 </a><br/>
                 <a href='/'>Location: Spring, Texas</a><br/>
                 <a href='/'>Email: edmerfranciz@gmail.com</a>
                 </div>
                 </Col>
 
                 <Col className='ftr-col2'>
-                    <Dropdown>
+                    <Dropdown variant='dark'>
                     <Dropdown.Toggle className='ftr-dropdown'
                     variant='outline-secondary'
                     >See More</Dropdown.Toggle>
                     <Dropdown.Menu> 
-                    <Dropdown.Item>My Resume</Dropdown.Item>
-                    <Dropdown.Item>Contact</Dropdown.Item>
-                    <Dropdown.Item>Services</Dropdown.Item>
+                    <Dropdown.Item  href='/ResumePdf'>Resume</Dropdown.Item>
+                    <Dropdown.Item href='/#contact'>Contact</Dropdown.Item>
+                    <Dropdown.Item href='/portfolio'>Projects</Dropdown.Item>
                     </Dropdown.Menu>
                     </Dropdown>
                 </Col>
