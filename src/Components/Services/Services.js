@@ -73,24 +73,33 @@ const Services = () => {
 
 
             <Col lg={6} md={12} sm={12} >
-            <Row className='my-3 px-3'>
+            <Row className='my-3 mx-2'>
 
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
+                    <motion.div
+                    initial={{x:200, opacity:0}}
+                    animate={{x:0, opacity:1}}
+                    >
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
                         <h6 className='fw-bold'>MVC</h6></Card.Header>
-                <Card.Body>
+                    <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>Model View Controller</Card.Title>
                     <p>
                         <ExpandableText descriptionLength={75}>
                          A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
                         </ExpandableText>
-                </p>
-                </Card.Body>
+                    </p>
+                    </Card.Body>
                      </Card>
+                    </motion.div>
                 </Col>
                 
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
+                <motion.div
+                    initial={{x:200, opacity:0}}
+                    animate={{x:0, opacity:1}}
+                    >
                     <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
                 <Card.Body>
@@ -102,9 +111,14 @@ const Services = () => {
                 </p>
                 </Card.Body>
                         </Card>
+                    </motion.div>
                 </Col>
 
                 <Col lg={6} md={6} sm={6} xs={12}className='srvc-col'>
+                <motion.div
+                    initial={{x:200, opacity:0}}
+                    animate={{x:0, opacity:1}}
+                    >
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
                     <Card.Body>
@@ -116,8 +130,13 @@ const Services = () => {
                 </p>
                 </Card.Body>
                         </Card>
+                    </motion.div>
                 </Col>
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
+                <motion.div
+                    initial={{x:200, opacity:0}}
+                    animate={{x:0, opacity:1}}
+                    > 
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
                     <Card.Body>
@@ -129,6 +148,7 @@ const Services = () => {
                 </p>
                 </Card.Body>
                         </Card>
+                    </motion.div>
                 </Col>
             </Row>
             </Col>
