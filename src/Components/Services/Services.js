@@ -10,7 +10,7 @@ import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
 import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai'
-import {SiMongodb, SiExpress, SiHeroku} from 'react-icons/si'
+import {SiMongodb, SiExpress, SiHeroku, SiFramer} from 'react-icons/si'
 import {BsFiletypeSql} from 'react-icons/bs'
 
 const ExpandableText = ({ children, descriptionLength }) => {
@@ -183,6 +183,7 @@ const Services = () => {
             <BsFiletypeSql  size={50} color='lightgrey' className='skl-logo'/>
             <AiFillApi  size={50} color='lightgrey' className='skl-logo'/>
             <SiHeroku  size={50} color='lightgrey' className='skl-logo'/>
+            <SiFramer  size={50} color='lightgrey' className='skl-logo'/>
         </div>
            </Row>
         </div>
