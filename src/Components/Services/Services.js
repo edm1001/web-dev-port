@@ -33,7 +33,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 
 
 const Services = () => {
-    
+
     return (
         <section className='services' id='services'>
             <Container>
@@ -164,30 +164,29 @@ const Services = () => {
 
         <div className='tech-learned py-2' >
            <h4 className='fs-2 text-warning fw-bold'>Skills</h4>
-           <Row className='px-5'>        
-        <motion.div 
+           <Row className='px-5 mx-5 pt-2'>        
+            <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:1}}
             whileHover={{scale:1.2}}
         >
-            <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>
-            <IoLogoCss3 size={50} color='lightgrey' className="skl-logo" />
-            <IoLogoJavascript size={50} color='lightgrey' className="skl-logo" />
-            <FaBootstrap size={50} color='lightgrey' className="skl-logo"/>
-            <FaReact size={50} color='lightgrey' className="skl-logo"/>
-            <VscJson size={50} color='lightgrey' className="skl-logo"/>
-            <DiStackoverflow size={50} color='lightgrey'className="skl-logo"/>
-            <DiNodejs size={50} color='lightgrey'className="skl-logo"/>
-            <DiNpm  size={50} color='lightgrey' className="skl-logo"/>
-            <DiStackoverflow  size={50} color='lightgrey' className="skl-logo"/>
-            <SiMongodb size={50} color='lightgrey'className="skl-logo"/>
-            <SiExpress size={50}  color='lightgrey' className="skl-logo"/>
-            <DiResponsive size={60} color='lightgrey'className='skl-logo'/>
-            <AiFillGithub  size={50} color='lightgrey' className='skl-logo' />
-            <BsFiletypeSql  size={50} color='lightgrey' className='skl-logo'/>
-            <AiFillApi  size={50} color='lightgrey' className='skl-logo'/>
-            <SiHeroku  size={50} color='lightgrey' className='skl-logo'/>
-            <SiFramer  size={50} color='lightgrey' className='skl-logo'/>
+            <AiOutlineHtml5 title="HTML5"  size={50} color='lightgrey' className="skl-logo"/>
+            <IoLogoCss3 title="CSS3" size={50} color='lightgrey' className="skl-logo" />
+            <IoLogoJavascript title="JavaScript" size={50} color='lightgrey' className="skl-logo" />
+            <FaBootstrap title="Bootstrap" size={50} color='lightgrey' className="skl-logo"/>
+            <FaReact title="React" size={50} color='lightgrey' className="skl-logo"/>
+            <VscJson title="JSON" size={50} color='lightgrey' className="skl-logo"/>
+            <DiNodejs title="NodeJS" size={50} color='lightgrey'className="skl-logo"/>
+            <DiNpm title="NPM" size={50} color='lightgrey' className="skl-logo"/>
+            <DiStackoverflow title="Stack Overflow" size={50} color='lightgrey'className="skl-logo"/>
+            <SiMongodb title='Mongo' size={50} color='lightgrey'className="skl-logo"/>
+            <SiExpress title="Express Router" size={50}  color='lightgrey' className="skl-logo"/>
+            <DiResponsive title="Responsive Media" size={60} color='lightgrey'className='skl-logo'/>
+            <AiFillGithub title="Github" size={50} color='lightgrey' className='skl-logo' />
+            <BsFiletypeSql title="SQL" size={50} color='lightgrey' className='skl-logo'/>
+            <AiFillApi title="APIs" size={50} color='lightgrey' className='skl-logo'/>
+            <SiHeroku title="Heroku Cloud" size={50} color='lightgrey' className='skl-logo'/>
+            <SiFramer title="Framer Motion" size={50} color='lightgrey' className='skl-logo'/>
         </motion.div>
            </Row>
         </div>
