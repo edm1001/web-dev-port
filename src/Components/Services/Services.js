@@ -33,7 +33,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 
 
 const Services = () => {
-    // variants={{}}
+    
     return (
         <section className='services' id='services'>
             <Container>
@@ -78,8 +78,8 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                     <motion.div
                         initial={{ opacity:0}}
-                        whileInView={{opacity:1}}
-                        transition={{delay:2}}
+                        whileInView={{opacity:1, transition:1.2}}
+                        whileHover={{scale:1.2}}
                     >
                     <Card className=' w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'>
@@ -99,8 +99,8 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:2}}
+                    whileInView={{opacity:1, transition:1.2}}
+                    whileHover={{scale:1.2}}
                     >
                     <Card className='w-100 h-100' border='secondary'>
                     <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
@@ -119,8 +119,8 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12}className='srvc-col'>
                 <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:2}}
+                    whileInView={{opacity:1, transition:1.2}}
+                    whileHover={{scale:1.2}}
                     >
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
@@ -139,8 +139,8 @@ const Services = () => {
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
                 <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:2}}
+                    whileInView={{opacity:1, transition:1.2}}
+                    whileHover={{scale:1.2}}
                     > 
                     <Card className='w-100 h-100' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
@@ -165,7 +165,11 @@ const Services = () => {
         <div className='tech-learned py-2' >
            <h4 className='fs-2 text-warning fw-bold'>Skills</h4>
            <Row className='px-5'>        
-        <div className='skl-logos'>
+        <motion.div 
+            initial={{opacity:0}}
+            whileInView={{opacity:1, transition:1}}
+            whileHover={{scale:1.2}}
+        >
             <AiOutlineHtml5  size={50} color='lightgrey' className="skl-logo"/>
             <IoLogoCss3 size={50} color='lightgrey' className="skl-logo" />
             <IoLogoJavascript size={50} color='lightgrey' className="skl-logo" />
@@ -184,7 +188,7 @@ const Services = () => {
             <AiFillApi  size={50} color='lightgrey' className='skl-logo'/>
             <SiHeroku  size={50} color='lightgrey' className='skl-logo'/>
             <SiFramer  size={50} color='lightgrey' className='skl-logo'/>
-        </div>
+        </motion.div>
            </Row>
         </div>
 

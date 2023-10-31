@@ -25,8 +25,6 @@ const ExpandableText = ({ children, descriptionLength }) => {
     );
   };
   
-
-
 const Reviews =() => {
     return (
         <section className='reviews' id='reviews'>
@@ -35,6 +33,7 @@ const Reviews =() => {
             <Container>
 
             <Row className='reviews-row'>
+
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <motion.div
                     initial={{ opacity:0}}
@@ -148,7 +147,7 @@ const Reviews =() => {
             <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1}}
-                    transition={{delay:1.5}}
+                    transition={{delay:1.1}}
                     >
 
             <Card className='review-card text-white' bg='dark' border='secondary' >
@@ -213,11 +212,10 @@ const Reviews =() => {
             </Card>
             </motion.div>
                 </Col>
-            {/*Thank you for submitting your assignment Edmer! <br/> I was able to clone and run the application. The application utilizes React on the front end, and the routes are handled by Express.<br/> */}
 
             </Row>
             </Container>
         </section>
     )
 }
-export default Reviews ;
+export default Reviews;

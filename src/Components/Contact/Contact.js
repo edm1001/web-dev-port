@@ -21,6 +21,19 @@ const Contact = () => {
           });
 
         }
+
+        const rotateVariant = {
+            resting: {
+                rotate: 0,
+            },
+            hovering: {
+                rotate: 360, // Rotate by 360 degrees
+                transition: {
+                duration: 2,
+                },
+            },
+            };
+
     return ( 
         <section className='contact' id='contact'>
 
@@ -33,21 +46,52 @@ const Contact = () => {
             whileInView={{opacity:1}}
             >
             <div className='contact-info'>
-                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'><FaLinkedin color='darkblue' size={30}/></a><br/>
-               <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed  className='mt-2' color='darkblue' size={30} /></a> <br/>  
-                <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-2'/></a>
+                <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering" 
+                >
+
+                <a href='https://www.linkedin.com/in/edmer-valencia-080414227/'><FaLinkedin color='darkblue' size={30}/></a>
+                </motion.div>
+                <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering" 
+                >
+
+                <a href='https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429'><SiIndeed  className='mt-1' color='darkblue' size={30} /></a>
+                </motion.div>
+
+                <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering" 
+                >
+                <a href='mailto:edmerfranciz@gmail.com'><FcGoogle size={30} className='my-1'/></a>
+                </motion.div>
+                <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering" 
+                >
                 <p className='fw-semibold ps-2'>Spring, TX <GiTexas size={20} color='darkorange'/></p> 
-                <div>
-                <Button className='my-2' href='/ResumePdf' variant="outline-dark" >Resume</Button>
-                </div>
+                </motion.div>
+                <motion.div
+                whileHover={{scale:1.2}}
+                >
+                <Button className='my-1' href='/ResumePdf' variant="outline-dark" >Resume</Button>
+                </motion.div>
             </div>
             </motion.div>
             </Col>
+
             <Col className='mb-3 contact-form'lg={6} md={6} sm={12} >
             <motion.div
             initial={{x:200, opacity:0}}
             whileInView={{x:0, opacity:1}}
             transition={{delay:1.5}}
+            whileTap={{scale:1.2}}
             >
 
             <Form ref={form} onSubmit={sendEmail} className='p-5 message'>
@@ -67,7 +111,12 @@ const Contact = () => {
                     <Form.Control required name="message" as='textarea' rows={4} placeholder='Write your message here'>
                     </Form.Control>
                 </Form.Group>
+                <motion.div
+                whileHover={{scale:1.2, x:25}}
+                whileTap={{x:200,opacity:0.3, transition:1.5}}
+                >
                 <Button type="submit" className="my-2" variant='secondary' value="Send"> Submit</Button>
+                </motion.div>
             </Form>
             </motion.div>
             </Col>

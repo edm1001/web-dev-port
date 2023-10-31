@@ -6,8 +6,20 @@ import Wordle from '../../Assets/port/wordle.gif';
 import PortGenerator from '../../Assets/port/portfolio=generator.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
 import Container from 'react-bootstrap/Container';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
+    const rotateVariant={
+        resting: {
+          rotate: 0,
+        },
+        hovering: {
+          rotate: 360, // Rotate by 360 degrees
+          transition: {
+            duration: 2,
+          },
+        },
+      };
     return (
         <section>
 
@@ -16,23 +28,44 @@ const Projects = () => {
             
             <Row className="project-row">
             <Col className='p-2' lg={4} md={4} sm={4} xs={4}>
+            <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering"
+                >
+
             <Image className="proj-img"  src={Wordle} to='/portfolio'>
             </Image> 
+            </motion.div>
                 </Col>
             <Col className='p-2' lg={4} md={4} sm={4} xs={4} >
+            <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering"
+                >
             <Image className="proj-img" src={Chatterize} to='/portfolio'>
             </Image> 
+                </motion.div>
                 </Col>
             <Col className='p-2' lg={4} md={4} sm={4} xs={4}>
+            <motion.div
+                variants={rotateVariant}
+                initial="resting"
+                whileHover="hovering"
+                >
             <Image className="proj-img" src={PortGenerator} to='/portfolio'>
             </Image> 
+                </motion.div>
                 </Col>
 
             </Row >
 
-            <div className='pb-5 text-center'>
+            <motion.div 
+            whileHover={{scale:1.5}}
+            className='pb-5 text-center'>
             <Button  variant="outline-dark" size="lg" className='see-btn' href='/portfolio'> See More! </Button>
-            </div>
+            </motion.div>
         </Container>
             </section>
     )
