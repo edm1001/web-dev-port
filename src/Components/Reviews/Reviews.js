@@ -37,8 +37,7 @@ const Reviews =() => {
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.5}}
+                    whileInView={{opacity:1, delay:1}}
                     >
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'><BsFillPersonFill size={35} /> </i>
@@ -66,8 +65,7 @@ const Reviews =() => {
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6} >
             <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.5}}
+                    whileInView={{opacity:1, delay:1}}
                     >
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /> </i>
@@ -93,8 +91,7 @@ const Reviews =() => {
              <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
              <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.5}}
+                    whileInView={{opacity:1, delay:1}}
                     >
              <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
@@ -146,8 +143,7 @@ const Reviews =() => {
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.1}}
+                    whileInView={{opacity:1, delay:1}}
                     >
 
             <Card className='review-card text-white' bg='dark' border='secondary' >
@@ -194,8 +190,7 @@ const Reviews =() => {
             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
             <motion.div
                     initial={{ opacity:0}}
-                    whileInView={{opacity:1}}
-                    transition={{delay:1.5}}
+                    whileInView={{opacity:1, delay:1}}
                     >
 
             <Card className='review-card text-white' bg='dark' border='secondary' >
