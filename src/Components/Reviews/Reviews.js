@@ -34,7 +34,7 @@ const Reviews =() => {
 
             <Row className='reviews-row'>
 
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
             <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, delay:1}}
@@ -62,7 +62,7 @@ const Reviews =() => {
             </motion.div>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6} >
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12} >
             <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, delay:1}}
@@ -88,7 +88,7 @@ const Reviews =() => {
             </motion.div>
                 </Col>
                 
-             <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+             <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
              <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, delay:1}}
@@ -112,7 +112,7 @@ const Reviews =() => {
             </motion.div>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35} /></i>
             <Card.Body>
@@ -140,7 +140,7 @@ const Reviews =() => {
             </Card>
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
             <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, delay:1}}
@@ -168,7 +168,7 @@ const Reviews =() => {
 
                 </Col>
 
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
             <Card className='review-card text-white' bg='dark' border='secondary' >
             <i className='reviews-icon py-1'> <BsFillPersonFill size={35}/></i>
             <Card.Body>
@@ -187,7 +187,7 @@ const Reviews =() => {
             </Card>
                 </Col>
             
-            <Col className=' py-2' lg={3} md={4} sm={6} xs={6}>
+            <Col className=' py-2' lg={3} md={4} sm={6} xs={12}>
             <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, delay:1}}
