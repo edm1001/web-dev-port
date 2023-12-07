@@ -5,12 +5,12 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import {FaBootstrap, FaReact} from 'react-icons/fa';
+import {FaBootstrap, FaReact, FaWordpress} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
 import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai'
-import {SiMongodb, SiExpress, SiHeroku, SiFramer} from 'react-icons/si'
+import {SiMongodb, SiExpress, SiHeroku, SiFramer, SiJquery, SiSequelize} from 'react-icons/si'
 import {BsFiletypeSql} from 'react-icons/bs'
 
 const ExpandableText = ({ children, descriptionLength }) => {
@@ -163,23 +163,25 @@ const Services = () => {
             </Container>
 
         <div className='tech-learned py-2' >
-           <h4 className='fs-2 text-warning fw-bold'>Skills</h4>
-           <Row className='px-5 mx-5 pt-2'>        
+           <h4 className='fs-2 text-warning fw-bold'>My Stack</h4>
+           <Row className='px-2 mx-3 pt-2'>        
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:1}}
-            whileHover={{scale:1.2}}
+            whileHover={{scale:1.1}}
         >
             <AiOutlineHtml5 title="HTML5"  size={50} color='lightgrey' className="skl-logo"/>
             <IoLogoCss3 title="CSS3" size={50} color='lightgrey' className="skl-logo" />
             <IoLogoJavascript title="JavaScript" size={50} color='lightgrey' className="skl-logo" />
             <FaBootstrap title="Bootstrap" size={50} color='lightgrey' className="skl-logo"/>
+            <SiJquery title="JQuery" size={50} color='lightgrey' className="skl-logo"/>
             <FaReact title="React" size={50} color='lightgrey' className="skl-logo"/>
             <VscJson title="JSON" size={50} color='lightgrey' className="skl-logo"/>
             <DiNodejs title="NodeJS" size={50} color='lightgrey'className="skl-logo"/>
             <DiNpm title="NPM" size={50} color='lightgrey' className="skl-logo"/>
             <DiStackoverflow title="Stack Overflow" size={50} color='lightgrey'className="skl-logo"/>
             <SiMongodb title='Mongo' size={50} color='lightgrey'className="skl-logo"/>
+            <SiSequelize title='Sequelize' size={50} color='lightgrey'className="skl-logo"/>
             <SiExpress title="Express Router" size={50}  color='lightgrey' className="skl-logo"/>
             <DiResponsive title="Responsive Media" size={60} color='lightgrey'className='skl-logo'/>
             <AiFillGithub title="Github" size={50} color='lightgrey' className='skl-logo' />
@@ -187,6 +189,8 @@ const Services = () => {
             <AiFillApi title="APIs" size={50} color='lightgrey' className='skl-logo'/>
             <SiHeroku title="Heroku Cloud" size={50} color='lightgrey' className='skl-logo'/>
             <SiFramer title="Framer Motion" size={50} color='lightgrey' className='skl-logo'/>
+            <FaWordpress title="WordPress" size={50} color='lightgrey' className='skl-logo'/>
+
         </motion.div>
            </Row>
         </div>
