@@ -69,13 +69,13 @@ h2 {
 .about {
   display: flex;
   color: white;
+  background-color: lightgrey;
 }
 .abt-info{
   align-items: center;
 }
 .about-msg {
   background-color: black;
-  padding: 5% 3%;
   height: 100%;
   border-radius: 25px;
   border:#dba544 3px solid;
@@ -207,13 +207,7 @@ h2 {
 /* MOBILE STYLES */
 @media all and (min-width: 526px) and (max-width: 960px) {
   #abt-msg {
-    font-size: small;
-  }
-  .progress-row {
-    padding-block: 5%;
-  }
-  .srvc-row {
-    padding-top: 5%;
+    font-size: 12px;
   }
 
   /* Banner */
