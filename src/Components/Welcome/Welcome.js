@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Photo from '../../Assets/photos/personal/clr-self.png';
+import Container from 'react-bootstrap/Container';
 
 const Welcome =  () => {
     return (
@@ -33,7 +34,7 @@ const Welcome =  () => {
                     animate={{opacity:1}}
                     transition={{delay:2}}
                     >
-                   <Image src={Photo} as='div' className='h-100 w-100 p-4 mb-2 ' id='personal-photo'></Image>
+                   <Image src={Photo} className='' id='personal-photo'></Image>
                     </motion.div>
                     
                     </motion.div>
