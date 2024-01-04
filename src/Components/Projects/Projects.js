@@ -14,18 +14,18 @@ const Projects = () => {
           rotate: 0,
         },
         hovering: {
-          rotate: 360, // Rotate by 360 degrees
+          rotate: 225, 
           transition: {
             duration: 2,
           },
         },
       };
+      
     return (
         <section>
 
         <h2 className=' text-center fw-bold fs-1 pt-5'> My Projects</h2>
         <Container className="project">
-            
             <Row className="project-row">
             <Col className='p-2' lg={4} md={4} sm={4} xs={4}>
             <motion.div

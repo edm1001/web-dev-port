@@ -29,7 +29,7 @@ const projectData = [
     liveLink: "https://edm1001.github.io/wordle-clone/",
   },
   {
-    image:Chatterize ,
+    image: Chatterize ,
     title: "Chatterize Messenger",
     description: "This is messaging app for users that choose to talk about anything! This app was a group project and has an amazing messagging functions for its users to talk to one another. The app also has an option to sign up and log in, in order to chat with one another.",
     githubLink: "https://github.com/xJaimeGx/chatterize",

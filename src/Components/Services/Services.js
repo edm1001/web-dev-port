@@ -167,8 +167,9 @@ const Services = () => {
            <Row className='px-2 mx-3 pt-2'>        
             <motion.div 
             initial={{opacity:0}}
-            whileInView={{opacity:1, transition:1}}
+            whileInView={{opacity:1, transition:1.5}}
             whileHover={{scale:1.1}}
+            className='cursor-pointer'
         >
             <AiOutlineHtml5 title="HTML5"  size={50} color='lightgrey' className="skl-logo"/>
             <IoLogoCss3 title="CSS3" size={50} color='lightgrey' className="skl-logo" />
