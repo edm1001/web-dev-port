@@ -80,8 +80,8 @@ const Reviews = () => {
 
     const settings = {
         infinite: true,
-        speed: 500,
-        slidesToShow: 2,
+        speed: 5000,
+        slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
         beforeChange: (current, next) => setCurrentSlide(next),
@@ -100,10 +100,10 @@ const Reviews = () => {
                             whileInView={{opacity:1, delay:1}}
                         >
                         <Card className='review-card text-white mb-5' bg='dark' border='secondary' >
-                            <i className='d-flex justify-content-center mt-2'><BsFillPersonFill size={35} /> </i>
+                            <i className='d-flex justify-content-center mt-3'><BsFillPersonFill size={35} /> </i>
                             <Card.Body>
                             <p>
-                            <ExpandableText descriptionLength={100}>
+                            <ExpandableText descriptionLength={200}>
                               {reviews.description}
                             </ExpandableText>
                             </p>
