@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import {motion} from 'framer-motion';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {BsFillPersonFill} from 'react-icons/bs'
+import {BsFillPersonFill} from 'react-icons/bs';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // Createa reusable Read More/Less component
 const ExpandableText = ({ children, descriptionLength }) => {
@@ -62,20 +65,42 @@ const ReviewsData = [
         date: "June 2022"
     },
 ]  
+
+
+
 const Reviews = () => {
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prevSlide) => (prevSlide + 1) % ReviewsData.length)
+        }, 2500);
+        return () => clearInterval(interval);
+    }, []);
+
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        beforeChange: (current, next) => setCurrentSlide(next),
+        autoplay: true,
+    }
+
     return (
         <section className='reviews' id='reviews' >
             <h2 className='d-flex justify-content-center text-black py-4'>Reviews</h2>
             <Container>
-                <Row className='reviews-row'>
+             <Slider {...settings}>
                 {ReviewsData.map((reviews, index) => (
-                     <Col key={index} className=' py-2' lg={3} md={4} sm={6} xs={12}>
+                     <div key={index}>
                         <motion.div
                             initial={{ opacity:0}}
                             whileInView={{opacity:1, delay:1}}
                         >
-                        <Card className='review-card text-white' bg='dark' border='secondary' >
-                            <i className='reviews-icon py-1'><BsFillPersonFill size={35} /> </i>
+                        <Card className='review-card text-white mb-5' bg='dark' border='secondary' >
+                            <i className='d-flex justify-content-center mt-2'><BsFillPersonFill size={35} /> </i>
                             <Card.Body>
                             <p>
                             <ExpandableText descriptionLength={100}>
@@ -91,9 +116,9 @@ const Reviews = () => {
                             </Card.Footer>
                         </Card>
                         </motion.div>
-                        </Col>
+                        </div>
                 ))}
-                </Row>
+             </Slider>
             </Container>
         </section>
     )

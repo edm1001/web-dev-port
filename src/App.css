@@ -154,10 +154,10 @@ h2 {
   width: 100%;
   border-radius: 10px;
 }
-.reviews-icon, .reviews-row {
+/* .reviews-icon {
   display: flex;
   justify-content: center;
-}
+} */
 
 /* Read more/less button */
 .toggle-button {

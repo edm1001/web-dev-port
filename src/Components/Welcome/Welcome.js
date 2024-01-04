@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Photo from '../../Assets/photos/personal/clr-self.png';
-import Container from 'react-bootstrap/Container';
 
 const Welcome =  () => {
     return (
