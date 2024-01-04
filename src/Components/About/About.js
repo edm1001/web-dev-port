@@ -30,10 +30,15 @@ const About = () => {
                 transition={{
                     delay:0.5,
                 }}>
-        <div className=" p-2 about-msg">
-        <p className="p-1" id='abt-msg' >
-        I am enthusiastic about Web Development, this field combines creativity with technical expertise and something I became passionate for. With my background in retail, freelance work, and coding bootcamp, I've honed my ability to collaborate effectively. My commitment to ongoing learning ensures I can positively contribute to your company's success.
-        </p>  
+            <h4 
+             className="fw-semibold text-dark fs-3 text-center"
+            >
+            About Me
+            </h4>
+            <div className=" p-2 about-msg">
+            <p className="p-1" id='abt-msg' >
+            I am enthusiastic about Web Development, this field combines creativity with service that I am passionate towards. With my background in retail, freelance work, and coding bootcamp, I've honed my ability to collaborate effectively and is commited to ongoing learning I will ensure to positively contribute to your company's success.
+            </p>  
         </div>
         <Row className="about-badge my-3 text-black">
                 <Col className="text-start ps-4">

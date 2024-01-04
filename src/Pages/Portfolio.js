@@ -1,4 +1,3 @@
-
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row'
 import Col from "react-bootstrap/Col";
@@ -7,6 +6,7 @@ import ListProjects from '../Components/Projects/ListProjects';
 import Contact from '../Components/Contact/Contact'
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+
 const Portfolio = () => {
  
     return (

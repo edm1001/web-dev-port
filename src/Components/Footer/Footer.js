@@ -13,10 +13,10 @@ const Footer = () => {
                 </div>
                 </Col>
 
-                <Col className='ftr-col2'>
+                <Col className='ftr-col2 text-end'>
                     <Dropdown variant='dark'>
                     <Dropdown.Toggle className='ftr-dropdown'
-                    variant='outline-secondary'
+                    variant='outline-light'
                     >See More</Dropdown.Toggle>
                     <Dropdown.Menu> 
                     <Dropdown.Item  href='/ResumePdf'>Resume</Dropdown.Item>
