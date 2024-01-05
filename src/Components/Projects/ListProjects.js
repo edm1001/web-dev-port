@@ -89,7 +89,7 @@ const ListProjects = () => {
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                     <h6 className="fw-bold">Read-Me Generator</h6>
-                    A backend app that generates a read me file for repositories. *User must clone repo to use
+                    A backend app that generates a read me file for repositories.<br/> *User must clone repo to use
                     </div>
                     <a href='https://github.com/edm1001/read-me-gen22' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
                     <a href='https://github.com/edm1001/read-me-gen22/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>
@@ -98,7 +98,7 @@ const ListProjects = () => {
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                     <h6 className="fw-bold">Employee Tracker</h6>
-                    A backend app that allows tracking of employees in a workspace with CRUD functions using SQL.  *User must clone repo to use
+                    A backend app that allows tracking of employees in a workspace with CRUD functions using SQL.<br/>  *User must clone repo to use
                     </div>
                     <a href='https://github.com/edm1001/e.tracker.12' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
                     <a href='https://github.com/edm1001/e.tracker.12/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>
@@ -107,7 +107,7 @@ const ListProjects = () => {
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                     <h6 className="fw-bold">RPG Battle Game</h6>
-                    A backend turn based battle game using Node and jest!  *User must clone repo to use
+                    A backend turn based battle game using Node and jest! <br/> *User must clone repo to use
                     </div>
                     <a href='https://github.com/edm1001/jest-rpg-game' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
                     <a href='https://github.com/edm1001/jest-rpg-game/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>
@@ -116,7 +116,7 @@ const ListProjects = () => {
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                     <h6 className="fw-bold">Team Creator</h6>
-                    A backend app that ouputs a work setting team with different positions.  *User must clone repo to use
+                    A backend app that ouputs a work setting team with different positions.<br/>  *User must clone repo to use
                     </div>
                     <a href='https://github.com/edm1001/team-creator10' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
                     <a href='https://github.com/edm1001/team-creator10/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>
@@ -133,7 +133,7 @@ const ListProjects = () => {
                 <ListGroup.Item as="li" className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                     <h6 className="fw-bold">Voting App</h6>
-                    A backend voting app that has CRUD principles with voters and candidates.  *User must clone repo to use
+                    A backend voting app that has CRUD principles with voters and candidates.<br/> *User must clone repo to use
                     </div>
                     <a href='https://github.com/edm1001/u-develop-it' className="btn btn-outline-secondary mx-1"> <FiGithub/></a>
                     <a href='https://github.com/edm1001/u-develop-it/blob/main/README.md' className="btn btn-outline-secondary mx-1" ><AiOutlineRead/></a>

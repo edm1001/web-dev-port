@@ -66,7 +66,7 @@ const projectData = [
   {
     image: PortGenerator ,
     title: "Portfolio Generator",
-    description: "This app uses NodeJs to create a static html portfolio quick and easy! After installation of the software, the app will ask its user information to put on the portfolio. After answering the questions, the app will produce an index.html file with information requested by the app. **USER MUST CLONE THE APP FROM GITHUB FOR APP TO WORK",
+    description: "This app uses NodeJs to create a static html portfolio quick and easy! After installation of the software, the app will ask its user information to put on the portfolio. After answering the questions, the app will produce an index.html file with information requested by the app. *USER MUST CLONE THE APP FROM GITHUB FOR APP TO WORK",
     githubLink: "https://github.com/edm1001/node-portfolio-gen",
     liveLink: "Not Available"
   },
