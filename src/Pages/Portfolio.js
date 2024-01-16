@@ -14,14 +14,14 @@ const Portfolio = () => {
         <Container className="portfolio mb-5">
         <h1 className='mt-3 text-warning align-center text-center fw-bold'>Projects Page</h1>
         <Row as='div'className="mt-5 "> 
-            <Col lg={6} md={6} sm={12}>
+            <Col lg={6} md={6} sm={12} xs={12}>
                 <motion.h4 
                   initial={{opacity:0.2}}
                   whileInView={{opacity:1}}
-                  className='text-secondary fs-3 text-end ms-5 pt-3'
+                  className='text-secondary fs-3 text-center pt-3'
                   >Link to my Github:</motion.h4>
             </Col>
-            <Col lg={6} md={6} sm={12}>
+            <Col  className='text-center' lg={6} md={6} sm={12} xs={12}>
              <motion.div
                 whileHover={{
                     scale:1.3, 
