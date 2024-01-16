@@ -33,7 +33,7 @@ const Welcome =  () => {
                     animate={{opacity:1}}
                     transition={{delay:2}}
                     >
-                   <Image src={Photo} className='' id='personal-photo'></Image>
+                   <Image src={Photo} className=' w-80 h-80 pe-3' id='personal-photo'></Image>
                     </motion.div>
                     
                     </motion.div>

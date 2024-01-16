@@ -11,19 +11,19 @@ const About = () => {
     <section className="about" id="about">
       <Container>
         <Row className="abt-info">
-            <Col lg={6} md={5} sm={12}>
+            <Col lg={6} md={5} sm={12} xs={12} >
             <motion.div
             initial={{x:-200 ,opacity:0}}
             whileInView={{x:0, opacity:1, animationDelay:2}}
             >
-            <div className='about-img w-100 px-4'>
-            <img  alt='about-pic' src={AboutPic} className=''/>
+            <div className='about-img px-4'>
+            <img  alt='about-pic' src={AboutPic} className='w-80'/>
             </div>
             </motion.div>
             </Col>
 
 
-        <Col className="my-2 p-1 " lg={6} md={7} sm={12}>
+        <Col className="pb-5 " lg={6} md={7} sm={12} xs={12}>
             <motion.div
                 initial={{x:200 ,opacity:0}}
                 whileInView={{x:0, opacity:1, }}
@@ -37,7 +37,7 @@ const About = () => {
             </h4>
             <div className=" p-2 about-msg">
             <p className="p-1" id='abt-msg' >
-            I am enthusiastic about Web Development, this field combines creativity with service that I am passionate towards. With my background in retail, freelance work, and coding bootcamp, I've honed my ability to collaborate effectively and is commited to ongoing learning I will ensure to positively contribute to your company's success.
+            I am enthusiastic about Web Development, this field combines creativity with service that I am passionate towards. With my background in retail, freelance work, and coding bootcamp, I've honed my ability to collaborate effectively and commited to ongoing learning. I will ensure to positively contribute to your company's success.
             </p>  
         </div>
         <Row className="about-badge my-3 text-black">
