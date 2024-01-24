@@ -60,6 +60,9 @@ const ExpandableText = ({ children, descriptionLength }) => {
         title: 'Client-Server Model',
         description: 'Experienced in the client-server model, I specialize in architecting networked applications for seamless communication. Whether optimizing web interactions or designing efficient distributed systems, my proficiency is crucial for crafting effective and responsive software solutions.'
     }
+    // make the same data with DRY Principle
+
+
   ]
 
 
@@ -85,7 +88,7 @@ const Services = () => {
 
     return (
         <section className='services' id='services'>
-            <Container>
+            <Container className='h-100 w-100'>
 
 
             <Row className='srvc-row' bg='dark' data-bs-theme='dark'>
@@ -93,27 +96,25 @@ const Services = () => {
             <Col lg={6} md={12} sm={12} >
                 <div className=''>
                     <h2 className='text-warning fw-bold'> Services</h2>
-                    <Row className='text-start fw-bold py-3 progress-row'>
+                <Row className='text-start fw-bold py-3 my-5 progress-row'>
                     <Col className='col-12 py-1 text-start'>
-                        <h6>Full Stack Development:</h6> 
-                        <ProgressBar animated variant='warning' now={100} className='' />
+                    <h6>Full Stack Development:</h6>
+                    <ProgressBar animated variant='warning' now={100} className='' />
+                    <small className='text-muted'>React, Node.js, Express, MongoDB</small>
                     </Col>
-                    <Col  className='col-12 py-1 text-start' >
-                        <h6>MERN Stack:</h6>  
-                        <ProgressBar animated variant='warning' now={100} className='' />
+                    <Col className='col-12 py-1 text-start'>
+                    <h6>MERN Stack:</h6>
+                    <ProgressBar animated variant='warning' now={100} className='' />
+                    <small className='text-muted'>MongoDB, Express, React, Node.js</small>
                     </Col>
-
-                    <Col  className='col-12 py-1' >
-                        <h6>CRUD Operations:</h6>  
-                        <ProgressBar animated variant='warning' now={100} className='' />
+                    <Col className='col-12 py-1'>
+                    <h6>CRUD Operations:</h6>
+                    <ProgressBar animated variant='warning' now={100} className='' />
+                    <small className='text-muted'>Database interactions, RESTful APIs</small>
                     </Col>
-                    <Col  className='col-12 py-1' >
-                        <h6>Client Server Model:</h6>  
-                        <ProgressBar animated variant='warning' now={100} className='' />
-                    </Col>                    
                 </Row>
                 </div>
-            </Col>
+                </Col>
 
             <Col lg={6} md={12} sm={12} >
             <Row className='my-3 mx-2'>
@@ -122,11 +123,11 @@ const Services = () => {
                     {serviceCards.map((serviceCard, index) => (                      
                     <div key={index}>
                     <Card className='w-100 h-100 mt-3' border='secondary' >
-                    <Card.Header className='srvc-header'> <h6>{serviceCard.header}</h6></Card.Header>
+                    <Card.Header className='srvc-header text-center align-center'> <h5>{serviceCard.header}</h5></Card.Header>
                     <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>{serviceCard.title}</Card.Title>
                     <p>
-                    <ExpandableText descriptionLength={75}>
+                    <ExpandableText descriptionLength={150}>
                     {serviceCard.description}
                     </ExpandableText>
                     </p>
