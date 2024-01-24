@@ -31,6 +31,29 @@ const ExpandableText = ({ children, descriptionLength }) => {
     );
   };
 
+  const serviceCards = [
+    {
+        header: 'DSA',
+        title: 'Data Structure & Algorithms',
+        description: 'My knowledge of DSA enables me to efficiently manage and analyze data through structured scripting and algorithmic processes.'
+    },
+    {
+        header: 'OOP',
+        title: 'Object Oriented Programming',
+        description: 'A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping.'
+    },
+    {
+        header: 'MVC',
+        title: 'Model View Controller',
+        description: 'A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements.'
+    },
+    {
+        header: 'PWA',
+        title: 'Progressive Web Application',
+        description: 'PWAs work on any platform with a compliant browser, offering a seamless user experience like native apps. They use service workers for offline access, push notifications, and enhanced performance.'
+    }
+  ]
+
 
 const Services = () => {
 
@@ -74,86 +97,28 @@ const Services = () => {
 
             <Col lg={6} md={12} sm={12} >
             <Row className='my-3 mx-2'>
-
                 <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
-                    <motion.div
-                        initial={{ opacity:0}}
-                        whileInView={{opacity:1, transition:1.2}}
-                        whileHover={{scale:1.2}}
-                    >
-                    <Card className=' w-100 h-100' border='secondary'>
-                    <Card.Header className='srvc-header'>
-                        <h6 className='fw-bold'>MVC</h6></Card.Header>
-                    <Card.Body>
-                    <Card.Title className='fw-small fs-6 text-warning'>Model View Controller</Card.Title>
-                    <p>
-                        <ExpandableText descriptionLength={75}>
-                         A framework pattern for computer softwares that easilhy distinguish related program logic into model, view, and controller elements. 
-                        </ExpandableText>
-                    </p>
-                    </Card.Body>
-                     </Card>
-                    </motion.div>
-                </Col>
-                
-                <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
-                <motion.div
-                    initial={{ opacity:0}}
-                    whileInView={{opacity:1, transition:1.2}}
-                    whileHover={{scale:1.2}}
-                    >
-                    <Card className='w-100 h-100' border='secondary'>
-                    <Card.Header className='srvc-header'> <h6 className='fw-bold'>OOP</h6></Card.Header>
-                <Card.Body>
-                    <Card.Title className='fw-small fs-6 text-warning'>Object-Oriented Programming</Card.Title>
-                    <p>
-                    <ExpandableText descriptionLength={75}>
-                    A popular paradigm to create easy to refractor sites using reusable code blocks and object-relational mapping. 
-                    </ExpandableText>
-                </p>
-                </Card.Body>
-                        </Card>
-                    </motion.div>
-                </Col>
-
-                <Col lg={6} md={6} sm={6} xs={12}className='srvc-col'>
-                <motion.div
-                    initial={{ opacity:0}}
-                    whileInView={{opacity:1, transition:1.2}}
-                    whileHover={{scale:1.2}}
-                    >
-                    <Card className='w-100 h-100' border='secondary' >
-                    <Card.Header className='srvc-header'> <h6>PWA</h6></Card.Header>
-                    <Card.Body>
-                    <Card.Title className='fw-small fs-6 text-warning'>Progressing Web Application</Card.Title>
-                    <p>
-                    <ExpandableText descriptionLength={75}>
-                        Web apps that use workers, manifests, and other features together to make the site as effecient as possible. 
-                    </ExpandableText>
-
-                </p>
-                </Card.Body>
-                        </Card>
-                    </motion.div>
-                </Col>
-                <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
+                    {serviceCards.map((serviceCard, index) => (                      
+                        <div key={index}>
                 <motion.div
                     initial={{ opacity:0}}
                     whileInView={{opacity:1, transition:1.2}}
                     whileHover={{scale:1.2}}
                     > 
                     <Card className='w-100 h-100' border='secondary' >
-                    <Card.Header className='srvc-header'> <h6>ORM</h6></Card.Header>
+                    <Card.Header className='srvc-header'> <h6>{serviceCard.header}</h6></Card.Header>
                     <Card.Body>
-                    <Card.Title className='fw-small fs-6 text-warning'>Object Relational Mapping</Card.Title>
+                    <Card.Title className='fw-small fs-6 text-warning'>{serviceCard.title}</Card.Title>
                     <p>
                     <ExpandableText descriptionLength={75}>
-                        A framework that simplifies the interchange between the two paradigms, the object and relational database tables.
+                    {serviceCard.description}
                     </ExpandableText>
                 </p>
                 </Card.Body>
-                        </Card>
-                    </motion.div>
+                    </Card>
+                    </motion.div>                     
+                </div>
+                ))}
                 </Col>
             </Row>
             </Col>
