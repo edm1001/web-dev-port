@@ -1,17 +1,20 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {motion} from 'framer-motion';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card'
-import Row from 'react-bootstrap/Row'
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import {FaBootstrap, FaReact, FaWordpress} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
 import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
-import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai'
-import {SiMongodb, SiExpress, SiHeroku, SiFramer, SiJquery, SiSequelize} from 'react-icons/si'
-import {BsFiletypeSql} from 'react-icons/bs'
+import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai';
+import {SiMongodb, SiExpress, SiHeroku, SiFramer, SiJquery, SiSequelize} from 'react-icons/si';
+import {BsFiletypeSql} from 'react-icons/bs';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const ExpandableText = ({ children, descriptionLength }) => {
     const fullText = children;
@@ -51,11 +54,34 @@ const ExpandableText = ({ children, descriptionLength }) => {
         header: 'PWA',
         title: 'Progressive Web Application',
         description: 'PWAs work on any platform with a compliant browser, offering a seamless user experience like native apps. They use service workers for offline access, push notifications, and enhanced performance.'
+    },
+    {
+        header: 'CSM',
+        title: 'Client-Server Model',
+        description: 'Experienced in the client-server model, I specialize in architecting networked applications for seamless communication. Whether optimizing web interactions or designing efficient distributed systems, my proficiency is crucial for crafting effective and responsive software solutions.'
     }
   ]
 
 
 const Services = () => {
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prevSlide) => (prevSlide + 1) % serviceCards.length)
+        }, 2500);
+        return () => clearInterval(interval);
+    }, []);
+
+    const settings = {
+        infinite: true,
+        speed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        beforeChange: (current, next) => setCurrentSlide(next),
+        autoplay: true,
+    }
 
     return (
         <section className='services' id='services'>
@@ -73,13 +99,10 @@ const Services = () => {
                         <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
                     <Col  className='col-12 py-1 text-start' >
-                        <h6>Front End Development:</h6>  
+                        <h6>MERN Stack:</h6>  
                         <ProgressBar animated variant='warning' now={100} className='' />
                     </Col>
-                    <Col  className='col-12 py-1' >
-                        <h6>Back End Development:</h6>  
-                        <ProgressBar animated variant='warning' now={100} className=''/>
-                    </Col>
+
                     <Col  className='col-12 py-1' >
                         <h6>CRUD Operations:</h6>  
                         <ProgressBar animated variant='warning' now={100} className='' />
@@ -87,25 +110,18 @@ const Services = () => {
                     <Col  className='col-12 py-1' >
                         <h6>Client Server Model:</h6>  
                         <ProgressBar animated variant='warning' now={100} className='' />
-                    </Col>
-                    
-
-                    </Row>
+                    </Col>                    
+                </Row>
                 </div>
             </Col>
 
-
             <Col lg={6} md={12} sm={12} >
             <Row className='my-3 mx-2'>
-                <Col lg={6} md={6} sm={6} xs={12} className='srvc-col'>
+                <Col lg={12} md={12} sm={12} xs={12} className='srvc-col'>
+                    <Slider {...settings}>
                     {serviceCards.map((serviceCard, index) => (                      
-                        <div key={index}>
-                <motion.div
-                    initial={{ opacity:0}}
-                    whileInView={{opacity:1, transition:1.2}}
-                    whileHover={{scale:1.2}}
-                    > 
-                    <Card className='w-100 h-100' border='secondary' >
+                    <div key={index}>
+                    <Card className='w-100 h-100 mt-3' border='secondary' >
                     <Card.Header className='srvc-header'> <h6>{serviceCard.header}</h6></Card.Header>
                     <Card.Body>
                     <Card.Title className='fw-small fs-6 text-warning'>{serviceCard.title}</Card.Title>
@@ -113,12 +129,12 @@ const Services = () => {
                     <ExpandableText descriptionLength={75}>
                     {serviceCard.description}
                     </ExpandableText>
-                </p>
-                </Card.Body>
-                    </Card>
-                    </motion.div>                     
-                </div>
+                    </p>
+                    </Card.Body>
+                    </Card>                     
+                    </div>
                 ))}
+                </Slider>
                 </Col>
             </Row>
             </Col>
