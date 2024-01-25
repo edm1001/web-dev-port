@@ -98,7 +98,7 @@ const Services = () => {
                     <h2 className='text-warning fw-bold'> Services</h2>
                 <Row className='text-start fw-bold py-3 my-5 progress-row'>
                     <Col className='col-12 py-1 text-start'>
-                    <h6>Full Stack Development:</h6>
+                    <h6>   Full Stack Development:</h6>
                     <ProgressBar animated variant='warning' now={100} className='' />
                     <small className='text-muted'>React, Node.js, Express, MongoDB</small>
                     </Col>
