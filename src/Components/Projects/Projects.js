@@ -71,7 +71,7 @@ const Projects = () => {
         },
         hovering: {
           rotate: 225, 
-          scale:1.1,
+          scale:1.2,
           transition: {
             duration: 2,
           },

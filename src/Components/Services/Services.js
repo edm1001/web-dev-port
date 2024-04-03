@@ -68,6 +68,7 @@ const ExpandableText = ({ children, descriptionLength }) => {
 
 const Services = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
+    
 
     useEffect(() => {
         const interval = setInterval(() => {

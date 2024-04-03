@@ -13,6 +13,8 @@ import PortGenerator from '../../Assets/port/portfolio=generator.gif';
 import SalonSite from '../../Assets/port/salon-site.gif';
 import Taskmaster from '../../Assets/port/task-master-pro.gif';
 import Zookeepers from '../../Assets/port/zoo-inventory.gif';
+import Bookshop from '../../Assets/port/book-shop.gif';
+import Chatapp from '../../Assets/port/chat-app.gif';
 
 import {motion} from 'framer-motion';
 
@@ -21,6 +23,21 @@ import { FiExternalLink } from "react-icons/fi";
 
 
 const projectData = [
+  {
+    image: Bookshop,
+    title: "Book Shop",
+    description: "The frontend bookshop app allows users to seamlessly create, delete, and update their book inventory, providing a user-friendly interface for managing their collection effortlessly.",
+    githubLink: "https://github.com/edm1001/book-app",
+    liveLink: " https://edm1001.github.io/book-app/"
+  },
+  {
+    image: Chatapp,
+    title: "Chat App",
+    description: "The chat app enables users to engage in real-time conversations with multiple users while conveniently monitoring their online/offline status. Additionally, it offers seamless authentication through sign-in or registration, ensuring a personalized and secure user experience.",
+    githubLink: "https://github.com/edm1001/mern-chat-app",
+    liveLink: "https://edm1001.github.io/mern-chat-app/",
+  },
+
   {
     image: Wordle,
     title: "Wordle Game",
