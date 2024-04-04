@@ -15,6 +15,7 @@ import Taskmaster from '../../Assets/port/task-master-pro.gif';
 import Zookeepers from '../../Assets/port/zoo-inventory.gif';
 import Bookshop from '../../Assets/port/book-shop.gif';
 import Chatapp from '../../Assets/port/chat-app.gif';
+import Blogsite from '../../Assets/port/blog-site.gif';
 
 import {motion} from 'framer-motion';
 
@@ -23,6 +24,13 @@ import { FiExternalLink } from "react-icons/fi";
 
 
 const projectData = [
+  {
+    image: Blogsite,
+    title: "Blog App",
+    description: "The blog site empowers users to effortlessly sign up or log in, facilitating seamless creation, updating, or deletion of posts, alongside the convenient option to upload files to enhance their posts.",
+    githubLink: "https://github.com/edm1001/mern-blog",
+    liveLink: "https://edm1001.github.io/mern-blog/"
+  },
   {
     image: Bookshop,
     title: "Book Shop",
@@ -37,13 +45,47 @@ const projectData = [
     githubLink: "https://github.com/edm1001/mern-chat-app",
     liveLink: "https://edm1001.github.io/mern-chat-app/",
   },
-
   {
     image: Wordle,
     title: "Wordle Game",
-    description: " This is a clone of the popular game Wordle! In this project we use Javascript to recreate a word guessing game, We guess the five letter word by choosing a choice of letters and press enter If the letter chosen by the user is correct and in position, the letter box will turn green. If the letter chosen is correct but in wrong position, it will turn orange. The wrong letters will remain black, and the user will have chances to guess the word right! Good Luck!",
+    description: "This is a Wordle clone, recreated using JavaScript. Players guess a five-letter word by selecting letters and pressing enter. Correct letters in the right position turn green, those correct but in the wrong position turn orange, while incorrect letters remain black, with multiple chances for guessing. Good luck!",
     githubLink: "https://github.com/edm1001/wordle-clone",
     liveLink: "https://edm1001.github.io/wordle-clone/",
+  },
+  {
+    image: Zookeepers ,
+    title: "Zoo Inventory List",
+    description: "This inventory app showcases the zoo's animal collection, allowing users to view all animals along with relevant information. Users can utilize the filter function to locate specific animals efficiently. Additionally, the app provides access to information about the zookeepers responsible for caring for these animals.",
+    githubLink: "https://github.com/edm1001/zookeepr",
+    liveLink: "https://edm1001.github.io/zookeepr/"
+  },
+  {
+    image: TripleJ,
+    title: "Triple J Wild Game Birds",
+    description: "This online store, developed in partnership with a local company, showcases birds and their products available to customers. Users can explore detailed information about the birds, including care instructions, while also accessing a convenient contact form to provide inquiry about the company.",
+    githubLink: "Not Available",
+    liveLink: "www.triplejwildgamebirds.com"
+  },
+  {
+    image: Taskmaster ,
+    title: "To Do List",
+    description: "The to-do list app lets users organize tasks into sections like a sudoku board: To-Do, In Progress, In Review, and Done. Users can easily create, move, and delete tasks, dragging items to the bottom to mark as complete or deleting all tasks with a single click.",
+    githubLink: "https://github.com/edm1001/taskmaster-pro",
+    liveLink: "https://edm1001.github.io/taskmaster-pro/"
+  },
+  {
+    image: IssuesLookup ,
+    title: "Github Issues Search",
+    description: "This app allows users to search for GitHub issues within specific repositories. Users can browse through projects and view the status of issues, identifying whether they're completed or not. Users are then empowered to decide whether to contribute or read further on the repository's issues.",
+    githubLink: "https://github.com/edm1001/git-it-done",
+    liveLink: "https://edm1001.github.io/git-it-done/"
+  },
+  {
+    image: PortGenerator ,
+    title: "Portfolio Generator",
+    description: "This Node.js app simplifies the creation of static HTML portfolios. Upon installation, users provide information for their portfolio, and the app generates an index.html file based on their input. To use the app, users must clone it from GitHub.",
+    githubLink: "https://github.com/edm1001/node-portfolio-gen",
+    liveLink: "Not Available"
   },
   {
     image: Chatterize ,
@@ -53,58 +95,23 @@ const projectData = [
     liveLink: "https://chatterize123.herokuapp.com/"
   },
   {
-    image: Zookeepers ,
-    title: "Zoo Inventory List",
-    description: " This is a inventory app that lists the animals in the zoo! If user wants to find the animal lists, user can click on view animals and it will list all the animals with some info on that animal. The user can also use the filter function to categorize and find a specific animal. The user can also find the zookeepers that tend to these animals!",
-    githubLink: "https://github.com/edm1001/zookeepr",
-    liveLink: "https://edm1001.github.io/zookeepr/"
-  },
-  {
-    image: TripleJ,
-    title: "Triple J Wild Game Birds",
-    description: "This is an online store I've partnered with a local company. This app shows its users the birds and products that the company offers to its customers. The bird section will have a bit of info with the birds and the care for them. App will also have a contact form on the site for easy contact and have some info on the company.",
-    githubLink: "Not Available",
-    liveLink: "www.triplejwildgamebirds.com"
-  },
-  {
-    image: Taskmaster ,
-    title: "To Do List",
-    description: "This app is a to-do list that lets users create tasks. This app allows users to set their tasks into different sections like a sudoku board. App has following sections: To-Do, In Progress, In Review, Done. Users can drag the item to the bottom to delete the task once finished, with an option to delete all tasks on top of the app.",
-    githubLink: "https://github.com/edm1001/taskmaster-pro",
-    liveLink: "https://edm1001.github.io/taskmaster-pro/"
-  },
-  {
-    image: IssuesLookup ,
-    title: "Github Issues Search",
-    description: "This app is for users to search for Github issues. User can search through a Github account and look at their projects, the app will show the user if the if the issues for that repository have been completed or not. The user can then make the choice to help or read on the repo's issue.",
-    githubLink: "https://github.com/edm1001/git-it-done",
-    liveLink: "https://edm1001.github.io/git-it-done/"
-  },
-  {
-    image: PortGenerator ,
-    title: "Portfolio Generator",
-    description: "This app uses NodeJs to create a static html portfolio quick and easy! After installation of the software, the app will ask its user information to put on the portfolio. After answering the questions, the app will produce an index.html file with information requested by the app. *USER MUST CLONE THE APP FROM GITHUB FOR APP TO WORK",
-    githubLink: "https://github.com/edm1001/node-portfolio-gen",
-    liveLink: "Not Available"
-  },
-  {
     image: SalonSite,
     title: "Salon Website",
-    description: " This app was for a local salon in Houston Texas. The app will show its users information about the salon and their services! Due to discontinuation of the app, it will not have a reservation function because it requires subscription",
+    description: "This is a frontend app served as a platform for a local salon in Houston, Texas, offering users information about the salon and its services. However, the reservation function was removed because it required a subscription from an external service provider.",
     githubLink: "https://github.com/edm1001/vitalz-barbershop",
     liveLink: "https://edm1001.github.io/vitalz-barbershop/"
   },
   {
     image: TravelDiary,
     title: "Travel Blog",
-    description: " This is a travel blog app that allows its users to search for destinations using city and country. When user finds a place, they will find information about the destination, such as popular restaurants and travel safety. This app allows users to register for an account to create a post. App users can also reviews from other users will appear, and can comment if user is logged in!",
+    description: "The travel blog app enables users to search for destinations by city and country, providing detailed information such as popular restaurants and travel safety. Users can register to create posts, view reviews from other users, and leave comments if logged in.",
     githubLink: "https://afternoon-harbor-62644.herokuapp.com/",
     liveLink: "https://github.com/strudelAndCoffee/travel-log-dashboard"
   },
   {
     image: DailyScheduler,
     title: "Daily Task Scheduler",
-    description: " This app is for daily task scheduling. This app has a set time from 1AM to 5PM, once it passes the time the timeslot will turn red. The current timeslot also turns green, there's a save button on the right of the app that user can click to save the task they created on the local storage. They can then use the saved task for a different day or time.",
+    description: "The daily task scheduling app features time slots from 1AM to 5PM, where past slots turn red while the current one is green. Users can create tasks and save them locally using the save button, allowing reuse for different days or times.",
     githubLink: "https://github.com/edm1001/i-like-tortoises-05",
     liveLink: "https://edm1001.github.io/i-like-tortoises-05/"
   }
