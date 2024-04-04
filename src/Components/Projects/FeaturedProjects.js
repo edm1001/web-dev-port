@@ -15,7 +15,7 @@ import Taskmaster from '../../Assets/port/task-master-pro.gif';
 import Zookeepers from '../../Assets/port/zoo-inventory.gif';
 import Bookshop from '../../Assets/port/book-shop.gif';
 import Chatapp from '../../Assets/port/chat-app.gif';
-import Blogsite from '../../Assets/port/blog-site.gif';
+import Blogsite from '../../Assets/port/blogsite.gif';
 
 import {motion} from 'framer-motion';
 
