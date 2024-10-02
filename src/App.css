@@ -25,10 +25,6 @@ h2 {
 }
 
 /* Welcome section */
-.hero{
-  width: 100%;
-  height: 100%;
-}
 .welcome-img{
   height: 100%;
   width: 100%
@@ -40,17 +36,16 @@ h2 {
 /* About section */
 .about {
   display: flex;
-  color: white;
+  color: black;
   background-color: lightgrey;
 }
 .abt-info{
   align-items: center;
 }
 .about-msg {
-  background-color: black;
   height: 100%;
-  border-radius: 25px;
-  border:#dba544 3px solid;
+  border-radius: 15px;
+  border:white 3px solid;
   text-align: center;
 }
  #abt-msg {
