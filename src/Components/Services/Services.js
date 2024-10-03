@@ -8,31 +8,13 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import {FaBootstrap, FaReact, FaWordpress} from 'react-icons/fa';
 import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io';
 import {VscJson} from 'react-icons/vsc';
-import {DiNpm, DiNodejs, DiStackoverflow, DiResponsive} from 'react-icons/di';
+import {DiNpm, DiNodejs,  DiResponsive} from 'react-icons/di';
 import {AiOutlineHtml5, AiFillGithub, AiFillApi} from 'react-icons/ai';
 import {SiMongodb, SiExpress, SiHeroku, SiFramer, SiJquery, SiSequelize} from 'react-icons/si';
 import {BsFiletypeSql} from 'react-icons/bs';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-const ExpandableText = ({ children, descriptionLength }) => {
-    const fullText = children;
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const toggleText = () => {
-      setIsExpanded(!isExpanded);
-    };
-  
-    return (
-      <p className='text'>
-        {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}...`}
-        <span onClick={toggleText} className='toggle-button'>
-          {isExpanded ? 'Show less' : 'Show more'}
-        </span>
-      </p>
-    );
-  };
 
   const serviceCards = [
     {
@@ -60,11 +42,60 @@ const ExpandableText = ({ children, descriptionLength }) => {
         title: 'Client-Server Model',
         description: 'Experienced in the client-server model, I specialize in architecting networked applications for seamless communication. Whether optimizing web interactions or designing efficient distributed systems, my proficiency is crucial for crafting effective and responsive software solutions.'
     }
-    // make the same data with DRY Principle
-
-
   ]
 
+  const techIcons = [
+    { Component: AiOutlineHtml5, title: 'HTML5' },
+    { Component: IoLogoCss3, title: 'CSS3' },
+    { Component: IoLogoJavascript, title: 'JavaScript' },
+    { Component: FaBootstrap, title: 'Bootstrap' },
+    { Component: SiJquery, title: 'JQuery' },
+    { Component: FaReact, title: 'React' },
+    { Component: VscJson, title: 'JSON' },
+    { Component: DiNodejs, title: 'NodeJS' },
+    { Component: DiNpm, title: 'NPM' },
+    { Component: SiMongodb, title: 'MongoDB' },
+    { Component: SiExpress, title: 'Express Router' },
+    { Component: DiResponsive, title: 'Responsive Media' },
+    { Component: AiFillGithub, title: 'GitHub' },
+    { Component: BsFiletypeSql, title: 'SQL' },
+    { Component: AiFillApi, title: 'APIs' },
+    { Component: SiHeroku, title: 'Heroku Cloud' },
+    { Component: SiFramer, title: 'Framer Motion' },
+    { Component: FaWordpress, title: 'WordPress' },
+  ];
+
+const ExpandableText = ({ children, descriptionLength }) => {
+    const fullText = children;
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleText = () => {
+      setIsExpanded(!isExpanded);
+    };
+  
+    return (
+      <p className='text'>
+        {isExpanded ? fullText : `${fullText.slice(0, descriptionLength)}...`}
+        <span onClick={toggleText} className='toggle-button'>
+          {isExpanded ? 'Show less' : 'Show more'}
+        </span>
+      </p>
+    );
+  };
+  const renderIcons = () => {
+    return techIcons.map(({ Component, title }, index) => (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        whileHover={{ scale: 1.2 }}
+        transition={{ duration: 0.5 }}
+        className="cursor-pointer mx-3 my-2"
+      >
+        <Component title={title} size={50} color="lightgrey" className="skl-logo" />
+      </motion.div>
+    ));
+  };
 
 const Services = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -79,12 +110,13 @@ const Services = () => {
 
     const settings = {
         infinite: true,
-        speed: 5000,
+        speed: 8000,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
         beforeChange: (current, next) => setCurrentSlide(next),
         autoplay: true,
+        arrows: false,
     }
 
     return (
@@ -145,40 +177,13 @@ const Services = () => {
 
             </Container>
 
-        <div className='tech-learned py-2' >
-           <h4 className='fs-2 text-warning fw-bold'>My Stack</h4>
-           <Row className='px-2 mx-3 pt-2'>        
-            <motion.div 
-            initial={{opacity:0}}
-            whileInView={{opacity:1, transition:1.5}}
-            whileHover={{scale:1.1}}
-            className='cursor-pointer'
-        >
-            <AiOutlineHtml5 title="HTML5"  size={50} color='lightgrey' className="skl-logo"/>
-            <IoLogoCss3 title="CSS3" size={50} color='lightgrey' className="skl-logo" />
-            <IoLogoJavascript title="JavaScript" size={50} color='lightgrey' className="skl-logo" />
-            <FaBootstrap title="Bootstrap" size={50} color='lightgrey' className="skl-logo"/>
-            <SiJquery title="JQuery" size={50} color='lightgrey' className="skl-logo"/>
-            <FaReact title="React" size={50} color='lightgrey' className="skl-logo"/>
-            <VscJson title="JSON" size={50} color='lightgrey' className="skl-logo"/>
-            <DiNodejs title="NodeJS" size={50} color='lightgrey'className="skl-logo"/>
-            <DiNpm title="NPM" size={50} color='lightgrey' className="skl-logo"/>
-            <DiStackoverflow title="Stack Overflow" size={50} color='lightgrey'className="skl-logo"/>
-            <SiMongodb title='Mongo' size={50} color='lightgrey'className="skl-logo"/>
-            <SiSequelize title='Sequelize' size={50} color='lightgrey'className="skl-logo"/>
-            <SiExpress title="Express Router" size={50}  color='lightgrey' className="skl-logo"/>
-            <DiResponsive title="Responsive Media" size={60} color='lightgrey'className='skl-logo'/>
-            <AiFillGithub title="Github" size={50} color='lightgrey' className='skl-logo' />
-            <BsFiletypeSql title="SQL" size={50} color='lightgrey' className='skl-logo'/>
-            <AiFillApi title="APIs" size={50} color='lightgrey' className='skl-logo'/>
-            <SiHeroku title="Heroku Cloud" size={50} color='lightgrey' className='skl-logo'/>
-            <SiFramer title="Framer Motion" size={50} color='lightgrey' className='skl-logo'/>
-            <FaWordpress title="WordPress" size={50} color='lightgrey' className='skl-logo'/>
 
-        </motion.div>
-           </Row>
+     <div className="tech-learned py-2">
+        <h4 className="fs-2 text-warning fw-bold">My Stack</h4>
+        <div className="d-flex flex-wrap justify-content-center">
+          {renderIcons()}
         </div>
-
+      </div>
         </section>
     )
 }
