@@ -27,7 +27,7 @@ const Contact = () => {
                 rotate: 0,
             },
             hovering: {
-                rotate: 360, // Rotate by 360 degrees
+                rotate: 360,
                 transition: {
                 duration: 2,
                 },
@@ -112,7 +112,7 @@ const Contact = () => {
                     </Form.Control>
                 </Form.Group>
                 <motion.div
-                whileHover={{scale:1.2, x:25}}
+                whileHover={{scale:1.2, x:35}}
                 whileTap={{x:200,opacity:0.3, transition:1.5}}
                 >
                 <Button type="submit" className="my-2" variant='secondary' value="Send"> Submit</Button>

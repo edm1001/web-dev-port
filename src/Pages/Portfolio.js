@@ -43,7 +43,7 @@ const Portfolio = () => {
             <motion.div
               whileHover={{
                 scale: 1.3,
-                x: 0, // Keep horizontal movement zero for better centering on hover
+                x: 0,
               }}
             >
               <a
