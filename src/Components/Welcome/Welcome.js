@@ -3,10 +3,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Photo from "../../Assets/photos/personal/clr-self.png";
+import Container from "react-bootstrap/Container";
 
 const Welcome = () => {
   return (
-    <section>
+    <Container fluid className="welcome-section bg-dark" >
       <Row className="w-100" id="home">
         {/* Text Column */}
         <Col lg={6} md={6} sm={12} xs={12} className="text-center bg-dark">
@@ -25,8 +26,8 @@ const Welcome = () => {
               bootcamp at the University of Texas at Austin.
             </p>
             <p className="text-white text-start ps-md-1 ">
-              I am passionate about learning and applying my skills to develop
-              innovative technologies and dynamic projects.
+              I am passionate about coding and eager to develop
+              innovative software and projects.
             </p>
           </motion.div>
         </Col>
@@ -44,7 +45,7 @@ const Welcome = () => {
             initial={{ x: 200 }}
             whileInView={{ x: 40 }}
             transition={{ delay: 1 }}
-            className="welcome-box w-100"
+            className="welcome-box"
             style={{ maxWidth: "100%", width: "100%" }}
           >
             <motion.div
@@ -61,7 +62,7 @@ const Welcome = () => {
           </motion.div>
         </Col>
       </Row>
-    </section>
+    </Container>
   );
 };
 export default Welcome;

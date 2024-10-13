@@ -53,7 +53,7 @@ const About = () => {
                     <Badge bg="success">Ethnicity :</Badge> Filipino <br />
                     <Badge bg="success">Birthday :</Badge> October 1, 1998{" "}
                     <br />
-                    <Badge bg="success">Age :</Badge> 25 <br />
+                    <Badge bg="success">Age :</Badge> 26 <br />
                   </p>
                 </Col>
                 <Col className="text-start pe-5" id="abt-msg">

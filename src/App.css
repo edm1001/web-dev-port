@@ -27,7 +27,6 @@ h2 {
 /* Welcome section */
 .welcome-img{
   height: 100%;
-  width: 100%
 }
 .welcome-box{
   background-color: var(--darkgrey);
@@ -51,20 +50,19 @@ h2 {
 .services {
   align-items: center;
   text-align: center;
-  padding-block: 30px;
   background-color: black;
   color: white;
   width:100%;
   height: 100%;
 }
-.srvc-row{
+.service-row{
   padding: 2%;
 }
-.srvc-info {
+.service-info {
   text-align: center;
   padding-inline: 10%;
 }
-.srvc-col {
+.service-col {
   padding-block:1%;
 }
 

@@ -132,17 +132,17 @@ const Services = () => {
     initialSlide: 0,
     beforeChange: (current, next) => setCurrentSlide(next),
     autoplay: true,
-    arrows: false,
+    arrows: true,
   };
 
   return (
-    <section className="services" id="services">
+    <section className="services py-2" id="services">
       <Container className="h-100 w-100">
-        <Row className="srvc-row" bg="dark" data-bs-theme="dark">
+        <Row className="service-row" bg="dark" data-bs-theme="dark">
           <Col lg={6} md={12} sm={12}>
             <div className="">
               <h2 className="text-warning fw-bold"> Services</h2>
-              <Row className="text-start fw-bold py-3 my-5 progress-row">
+              <Row className="text-start fw-bold p-1 my-5 progress-row">
                 <Col className="col-12 py-1 text-start">
                   <h6> Full Stack Development:</h6>
                   <ProgressBar
@@ -152,11 +152,11 @@ const Services = () => {
                     className=""
                   />
                   <small className="text-muted">
-                    React, Node.js, Express, MongoDB
+                    MongoDB, Express Router, React, NodeJS, Git ...
                   </small>
                 </Col>
                 <Col className="col-12 py-1 text-start">
-                  <h6>MERN Stack:</h6>
+                  <h6>Front End Development:</h6>
                   <ProgressBar
                     animated
                     variant="warning"
@@ -164,11 +164,11 @@ const Services = () => {
                     className=""
                   />
                   <small className="text-muted">
-                    MongoDB, Express, React, Node.js
+                    HTML5, CSS3, JavaScript, Bootstrap, Tailwind ...
                   </small>
                 </Col>
                 <Col className="col-12 py-1">
-                  <h6>CRUD Operations:</h6>
+                  <h6>Back End Development:</h6>
                   <ProgressBar
                     animated
                     variant="warning"
@@ -176,7 +176,7 @@ const Services = () => {
                     className=""
                   />
                   <small className="text-muted">
-                    Database interactions, RESTful APIs
+                    APIs, JSON, NodeJS, Express, NoSQL, SQL ...
                   </small>
                 </Col>
               </Row>
@@ -185,13 +185,15 @@ const Services = () => {
 
           <Col lg={6} md={12} sm={12}>
             <Row className="my-3 mx-2">
-              <Col lg={12} md={12} sm={12} xs={12} className="srvc-col">
+              <Col lg={12} md={12} sm={12} xs={12} className="service-col">
                 <Slider {...settings}>
                   {serviceCards.map((serviceCard, index) => (
-                    <div key={index}>
-                      <Card className="w-100 h-100 mt-3" border="secondary">
-                        <Card.Header className="srvc-header text-center align-center">
-                          {" "}
+                    <div key={index} className="slider-item">
+                      <Card
+                        className="w-100 h-100 mt-3 slider-card"
+                        border="secondary"
+                      >
+                        <Card.Header className="service-header text-center align-center">
                           <h5>{serviceCard.header}</h5>
                         </Card.Header>
                         <Card.Body>
@@ -212,14 +214,14 @@ const Services = () => {
             </Row>
           </Col>
         </Row>
-      </Container>
 
-      <div className="tech-learned py-2">
-        <h4 className="fs-2 text-warning fw-bold">My Stack</h4>
-        <div className="d-flex flex-wrap justify-content-center">
-          {renderIcons()}
+        <div className="tech-learned py-2">
+          <h4 className="fs-2 text-warning fw-bold">My Stack</h4>
+          <div className="d-flex flex-wrap justify-content-center">
+            {renderIcons()}
+          </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
