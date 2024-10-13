@@ -3,41 +3,20 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
-import Wordle from '../../Assets/port/wordle.gif';
 import Chatterize from '../../Assets/port/chatterize.gif';
 import TravelDiary from '../../Assets/port/travel-blog.gif';
 import TripleJ from '../../Assets/port/triplej.gif';
-import DailyScheduler from '../../Assets/port/daily-scheduler.gif';
 import IssuesLookup from '../../Assets/port/git-issue-lookup.gif';
 import PortGenerator from '../../Assets/port/portfolio=generator.gif';
 import SalonSite from '../../Assets/port/salon-site.gif';
-import Taskmaster from '../../Assets/port/task-master-pro.gif';
 import Zookeepers from '../../Assets/port/zoo-inventory.gif';
-import Bookshop from '../../Assets/port/book-shop.gif';
 import Chatapp from '../../Assets/port/chat-app.gif';
-import Blogsite from '../../Assets/port/blogsite.gif';
-
 import {motion} from 'framer-motion';
-
 import {AiFillGithub} from 'react-icons/ai';
 import { FiExternalLink } from "react-icons/fi";
 
 
 const projectData = [
-  // {
-  //   image: Blogsite,
-  //   title: "Blog App",
-  //   description: "The blog site empowers users to effortlessly sign up or log in, facilitating seamless creation, updating, or deletion of posts, alongside the convenient option to upload files to enhance their posts.",
-  //   githubLink: "https://github.com/edm1001/mern-blog",
-  //   liveLink: "https://edm1001.github.io/mern-blog/"
-  // },
-  // {
-  //   image: Bookshop,
-  //   title: "Book Shop",
-  //   description: "The frontend bookshop app allows users to seamlessly create, delete, and update their book inventory, providing a user-friendly interface for managing their collection effortlessly.",
-  //   githubLink: "https://github.com/edm1001/book-app",
-  //   liveLink: " https://edm1001.github.io/book-app/"
-  // },
   {
     image: Chatapp,
     title: "Chat App",
@@ -45,13 +24,7 @@ const projectData = [
     githubLink: "https://github.com/edm1001/mern-chat-app",
     liveLink: "https://edm1001.github.io/mern-chat-app/",
   },
-  // {
-  //   image: Wordle,
-  //   title: "Wordle Game",
-  //   description: "This is a Wordle clone, recreated using JavaScript. Players guess a five-letter word by selecting letters and pressing enter. Correct letters in the right position turn green, those correct but in the wrong position turn orange, while incorrect letters remain black, with multiple chances for guessing. Good luck!",
-  //   githubLink: "https://github.com/edm1001/wordle-clone",
-  //   liveLink: "https://edm1001.github.io/wordle-clone/",
-  // },
+
   {
     image: Zookeepers ,
     title: "Zoo Inventory List",
@@ -66,13 +39,7 @@ const projectData = [
     githubLink: "Not Available",
     liveLink: "www.triplejwildgamebirds.com"
   },
-  // {
-  //   image: Taskmaster ,
-  //   title: "To Do List",
-  //   description: "The to-do list app lets users organize tasks into sections like a sudoku board: To-Do, In Progress, In Review, and Done. Users can easily create, move, and delete tasks, dragging items to the bottom to mark as complete or deleting all tasks with a single click.",
-  //   githubLink: "https://github.com/edm1001/taskmaster-pro",
-  //   liveLink: "https://edm1001.github.io/taskmaster-pro/"
-  // },
+
   {
     image: IssuesLookup ,
     title: "Github Issues Search",
@@ -108,13 +75,6 @@ const projectData = [
     githubLink: "https://afternoon-harbor-62644.herokuapp.com/",
     liveLink: "https://github.com/strudelAndCoffee/travel-log-dashboard"
   },
-  // {
-  //   image: DailyScheduler,
-  //   title: "Daily Task Scheduler",
-  //   description: "The daily task scheduling app features time slots from 1AM to 5PM, where past slots turn red while the current one is green. Users can create tasks and save them locally using the save button, allowing reuse for different days or times.",
-  //   githubLink: "https://github.com/edm1001/i-like-tortoises-05",
-  //   liveLink: "https://edm1001.github.io/i-like-tortoises-05/"
-  // }
 ];
 
 const FeaturedProjects = () => {
