@@ -5,36 +5,41 @@ import { AiOutlineRead } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 
 const listProjectData = [
-    {
-        title: "Blog App",
-        description: "A blog platform where users can sign up, create, update, delete posts, and upload files for enhanced content.",
-        githubLink: "https://github.com/edm1001/mern-blog",
-        liveLink: "https://edm1001.github.io/mern-blog/"
-      },
-      {
-        title: "Book Shop",
-        description: "A bookshop app that allows users to manage their book inventory by creating, deleting, and updating items.",
-        githubLink: "https://github.com/edm1001/book-app",
-        liveLink: " https://edm1001.github.io/book-app/"
-      },
-        {
-        title: "Wordle Game",
-        description: "A Wordle clone where players guess a five-letter word, with correct and incorrect guesses highlighted visually",
-        githubLink: "https://github.com/edm1001/wordle-clone",
-        liveLink: "https://edm1001.github.io/wordle-clone/",
-      },
-        {
-        title: "To Do List",
-        description: "Organize tasks in sections like To-Do, In Progress, and Done with easy drag-and-drop functionality",
-        githubLink: "https://github.com/edm1001/taskmaster-pro",
-        liveLink: "https://edm1001.github.io/taskmaster-pro/"
-      },
-        {
-        title: "Daily Task Scheduler",
-        description: "Schedule daily tasks with time slots from 1AM to 5PM, saving tasks locally for easy reuse.",
-        githubLink: "https://github.com/edm1001/i-like-tortoises-05",
-        liveLink: "https://edm1001.github.io/i-like-tortoises-05/"
-      },
+  {
+    title: "Book Shop",
+    description:
+      "A bookshop app that allows users to manage their book inventory by creating, deleting, and updating items.",
+    githubLink: "https://github.com/edm1001/book-app",
+    liveLink: " https://edm1001.github.io/book-app/",
+  },
+  {
+    title: "Wordle Game",
+    description:
+      "A Wordle clone where players guess a five-letter word, with correct and incorrect guesses highlighted visually",
+    githubLink: "https://github.com/edm1001/wordle-clone",
+    liveLink: "https://edm1001.github.io/wordle-clone/",
+  },
+  {
+    title: "To Do List",
+    description:
+      "Organize tasks in sections like To-Do, In Progress, and Done with easy drag-and-drop functionality",
+    githubLink: "https://github.com/edm1001/taskmaster-pro",
+    liveLink: "https://edm1001.github.io/taskmaster-pro/",
+  },
+  {
+    title: "Zoo Inventory List",
+    description:
+      "This app displays the zoo's animal collection with filtering and info on animals and their zookeepers.",
+    githubLink: "https://github.com/edm1001/zookeepr",
+    liveLink: "https://edm1001.github.io/zookeepr/",
+  },
+  {
+    title: "Daily Task Scheduler",
+    description:
+      "Schedule daily tasks with time slots from 1AM to 5PM, saving tasks locally for easy reuse.",
+    githubLink: "https://github.com/edm1001/i-like-tortoises-05",
+    liveLink: "https://edm1001.github.io/i-like-tortoises-05/",
+  },
   {
     title: "Weather App",
     description:

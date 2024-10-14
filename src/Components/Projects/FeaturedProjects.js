@@ -14,23 +14,22 @@ import Chatapp from '../../Assets/port/chat-app.gif';
 import {motion} from 'framer-motion';
 import {AiFillGithub} from 'react-icons/ai';
 import { FiExternalLink } from "react-icons/fi";
-
+import Blogsite from '../../Assets/port/blogsite.gif';
 
 const projectData = [
+  {
+    image: Blogsite,
+    title: "Blog App",
+    description: "The blog site empowers users to effortlessly sign up or log in, facilitating seamless creation, updating, or deletion of posts, alongside the convenient option to upload files to enhance their posts.",
+    githubLink: "https://github.com/edm1001/mern-blog",
+    liveLink: "https://edm1001.github.io/mern-blog/"
+  },
   {
     image: Chatapp,
     title: "Chat App",
     description: "The chat app enables users to engage in real-time conversations with multiple users while conveniently monitoring their online/offline status. Additionally, it offers seamless authentication through sign-in or registration, ensuring a personalized and secure user experience.",
     githubLink: "https://github.com/edm1001/mern-chat-app",
     liveLink: "https://edm1001.github.io/mern-chat-app/",
-  },
-
-  {
-    image: Zookeepers ,
-    title: "Zoo Inventory List",
-    description: "This inventory app showcases the zoo's animal collection, allowing users to view all animals along with relevant information. Users can utilize the filter function to locate specific animals efficiently. Additionally, the app provides access to information about the zookeepers responsible for caring for these animals.",
-    githubLink: "https://github.com/edm1001/zookeepr",
-    liveLink: "https://edm1001.github.io/zookeepr/"
   },
   {
     image: TripleJ,
