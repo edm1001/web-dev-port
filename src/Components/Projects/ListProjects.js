@@ -181,30 +181,6 @@ const ListProjects = () => {
             className="d-flex justify-content-between align-items-start"
           >
             <div className="ms-2 me-auto">
-              <h6 className="fw-bold">RPG Battle Game</h6>
-              A backend turn based battle game using Node and jest! <br /> *User
-              must clone repo to use
-            </div>
-            <a
-              href="https://github.com/edm1001/jest-rpg-game"
-              className="btn btn-outline-secondary mx-1"
-            >
-              {" "}
-              <FiGithub />
-            </a>
-            <a
-              href="https://github.com/edm1001/jest-rpg-game/blob/main/README.md"
-              className="btn btn-outline-secondary mx-1"
-            >
-              <AiOutlineRead />
-            </a>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            as="li"
-            className="d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
               <h6 className="fw-bold">Regex Tutorial</h6>A regex tutorial on how
               to make easy validations in an app.
             </div>

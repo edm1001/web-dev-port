@@ -29,15 +29,13 @@ const Contact = () => {
       );
   };
 
-  const rotateVariant = {
+  const scaleVariant = {
     resting: {
-      rotate: 0,
+      scale: 1,
     },
     hovering: {
-      rotate: 360,
-      transition: {
-        duration: 2,
-      },
+      scale: 1.5,
+      opacity: 0.6,
     },
   };
 
@@ -51,7 +49,7 @@ const Contact = () => {
               <div className="contact-info">
                 {/* create a link like below but with a github logo */}
                 <motion.div
-                  variants={rotateVariant}
+                  variants={scaleVariant}
                   initial="resting"
                   whileHover="hovering"
                 >
@@ -60,7 +58,7 @@ const Contact = () => {
                   </a>
                 </motion.div>{" "}
                 <motion.div
-                  variants={rotateVariant}
+                  variants={scaleVariant}
                   initial="resting"
                   whileHover="hovering"
                 >
@@ -69,7 +67,7 @@ const Contact = () => {
                   </a>
                 </motion.div>
                 <motion.div
-                  variants={rotateVariant}
+                  variants={scaleVariant}
                   initial="resting"
                   whileHover="hovering"
                 >
@@ -78,7 +76,7 @@ const Contact = () => {
                   </a>
                 </motion.div>
                 <motion.div
-                  variants={rotateVariant}
+                  variants={scaleVariant}
                   initial="resting"
                   whileHover="hovering"
                 >
@@ -87,7 +85,7 @@ const Contact = () => {
                   </a>
                 </motion.div>
                 <motion.div
-                  variants={rotateVariant}
+                  variants={scaleVariant}
                   initial="resting"
                   whileHover="hovering"
                 >

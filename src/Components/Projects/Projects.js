@@ -35,9 +35,6 @@ const ProjSlider = [
         image: GitIssue
     },
     {
-        image: DailyScheduler
-    },
-    {
         image: TripleJ
     },
     {
@@ -57,7 +54,7 @@ const Projects = () => {
 
     const settings = {
         infinite: true,
-        speed: 3000,
+        speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,

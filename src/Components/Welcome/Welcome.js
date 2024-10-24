@@ -10,11 +10,11 @@ const Welcome = () => {
     <Container fluid className="welcome-section bg-dark" >
       <Row className="w-100" id="home">
         {/* Text Column */}
-        <Col lg={6} md={6} sm={12} xs={12} className="text-center bg-dark">
+        <Col lg={6} md={6} sm={12} xs={12}>
           <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: -25 }}
-            className="welcome-img px-4 py-5"
+            className="welcome-img m-5"
           >
             <h1 className="fw-bold text-warning text-start ps-lg-5 ps-2">
               Hello!

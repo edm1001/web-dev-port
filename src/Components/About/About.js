@@ -15,7 +15,7 @@ const About = () => {
               initial={{ x: -200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1, animationDelay: 2 }}
             >
-              <div className="about-img">
+              <div className="about-img text-center">
                 <img
                   alt="about-pic"
                   src={AboutPic}
@@ -26,7 +26,7 @@ const About = () => {
             </motion.div>
           </Col>
 
-          <Col className="my-5 " lg={6} md={7} sm={12} xs={12}>
+          <Col className="p-4" lg={6} md={7} sm={12} xs={12}>
             <motion.div
               initial={{ x: 200, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -38,11 +38,11 @@ const About = () => {
                 About Me
               </h4>
               <div className="about-msg">
-                <p className="mt-2 px-2 text-start" id="abt-msg">
+                <p className="px-2  m-2  text-start" id="abt-msg">
                   I’m passionate about web development, blending creativity with
                   purpose. My experience in retail, freelancing, and coding
                   bootcamp has sharpened my collaboration skills, and I’m
-                  committed to continuous learning. I’m eager to make a positive
+                  committed to continuous learning. I’m eager to make an
                   impact and contribute to your company’s success.
                 </p>
               </div>
