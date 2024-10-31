@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { Container } from "react-bootstrap";
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineRead } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
@@ -11,6 +12,7 @@ const listProjectData = [
       "A bookshop app that allows users to manage their book inventory by creating, deleting, and updating items.",
     githubLink: "https://github.com/edm1001/book-app",
     liveLink: " https://edm1001.github.io/book-app/",
+    readmeLink: "https://github.com/edm1001/book-app/blob/main/README.md",
   },
   {
     title: "Wordle Game",
@@ -18,6 +20,7 @@ const listProjectData = [
       "A Wordle clone where players guess a five-letter word, with correct and incorrect guesses highlighted visually",
     githubLink: "https://github.com/edm1001/wordle-clone",
     liveLink: "https://edm1001.github.io/wordle-clone/",
+    readmeLink: "https://github.com/edm1001/wordle-clone/blob/main/README.md",
   },
   {
     title: "To Do List",
@@ -25,6 +28,7 @@ const listProjectData = [
       "Organize tasks in sections like To-Do, In Progress, and Done with easy drag-and-drop functionality",
     githubLink: "https://github.com/edm1001/taskmaster-pro",
     liveLink: "https://edm1001.github.io/taskmaster-pro/",
+    readmeLink: "https://github.com/edm1001/taskmaster-pro/blob/main/README.md",
   },
   {
     title: "Zoo Inventory List",
@@ -32,6 +36,7 @@ const listProjectData = [
       "This app displays the zoo's animal collection with filtering and info on animals and their zookeepers.",
     githubLink: "https://github.com/edm1001/zookeepr",
     liveLink: "https://edm1001.github.io/zookeepr/",
+    readmeLink: "https://github.com/edm1001/zookeepr/blob/main/README.md",
   },
   {
     title: "Daily Task Scheduler",
@@ -39,6 +44,8 @@ const listProjectData = [
       "Schedule daily tasks with time slots from 1AM to 5PM, saving tasks locally for easy reuse.",
     githubLink: "https://github.com/edm1001/i-like-tortoises-05",
     liveLink: "https://edm1001.github.io/i-like-tortoises-05/",
+    readmeLink:
+      "https://github.com/edm1001/i-like-tortoises-05/blob/main/README.md",
   },
   {
     title: "Weather App",
@@ -89,7 +96,8 @@ const listProjectData = [
   },
   {
     title: "Read-Me Generator",
-    description: "A backend app that generates a read me file for repositories.",
+    description:
+      "A backend app that generates a read me file for repositories.",
     githubLink: "https://github.com/edm1001/read-me-generator",
     liveLink: "https://edm1001.github.io/read-me-generator/",
     readmeLink:
@@ -104,60 +112,61 @@ const listProjectData = [
   },
   {
     title: "Regex Tutorial",
-    description:
-      "A regex tutorial on how to make easy validations in an app.",
+    description: "A regex tutorial on how to make easy validations in an app.",
     githubLink: "https://github.com/edm1001/Regex-tutorial-peach",
-    readmeLink: "https://github.com/edm1001/Regex-tutorial-peach/blob/main/README.md",
+    readmeLink:
+      "https://github.com/edm1001/Regex-tutorial-peach/blob/main/README.md",
   },
 ];
 
 const ListProjects = () => {
   return (
-    <Card bg="light">
-      <Card.Header as="h5">More Projects:</Card.Header>
-      <Card.Body>
-        <ListGroup bg="light">
-          {listProjectData.map((project, index) => (
-            <ListGroup.Item
-              as="li"
-              key={index}
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <h6 className="fw-bold">{project.title}</h6>
-                {project.description}
-              </div>
-              {project.liveLink && (
-                <a
-                  href={project.liveLink}
-                  className="btn btn-outline-secondary mx-1"
-                >
-                  <FiExternalLink />
-                </a>
-              )}
-              {project.githubLink && (
-                <a
-                  href={project.githubLink}
-                  className="btn btn-outline-secondary mx-1"
-                >
-                  <FiGithub />
-                </a>
-              )}
-              {project.readmeLink && (
-                <a
-                  href={project.readmeLink}
-                  className="btn btn-outline-secondary mx-1"
-                >
-                  <AiOutlineRead />
-                </a>
-              )}
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
-      </Card.Body>
-    </Card>
+    <Container>
+      <Card bg="light">
+        <Card.Header as="h5">More Projects:</Card.Header>
+        <Card.Body>
+          <ListGroup bg="light">
+            {listProjectData.map((project, index) => (
+              <ListGroup.Item
+                as="li"
+                key={index}
+                className="d-flex justify-content-between align-items-start"
+              >
+                <div className="ms-2 me-auto">
+                  <h6 className="fw-bold">{project.title}</h6>
+                  {project.description}
+                </div>
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    className="btn btn-outline-secondary mx-1"
+                  >
+                    <FiExternalLink />
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    className="btn btn-outline-secondary mx-1"
+                  >
+                    <FiGithub />
+                  </a>
+                )}
+                {project.readmeLink && (
+                  <a
+                    href={project.readmeLink}
+                    className="btn btn-outline-secondary mx-1"
+                  >
+                    <AiOutlineRead />
+                  </a>
+                )}
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Card.Body>
+      </Card>
+    </Container>
   );
 };
-  
 
 export default ListProjects;

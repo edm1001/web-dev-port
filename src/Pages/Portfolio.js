@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
+    <section className="portfolio bg-light">
       <Container className="portfolio mb-5">
-        <h1 className="mt-3 text-warning align-center text-center fw-bold">
+        <h1 className="mt-3 p-5 text-warning align-center text-center fw-bold fs-1">
           Projects Page
         </h1>
         <Row
