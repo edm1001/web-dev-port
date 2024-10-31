@@ -149,7 +149,8 @@ h2 {
 /* PORTFOLIO PAGE*/
 .portfolio {
   height: 100%;
-}
+  background-color: var(--lightgrey);
+  }
 .ftrd-img{
   cursor: pointer;
 }
