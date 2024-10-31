@@ -15,6 +15,14 @@ h2 {
 }
 
 /* Navbar */
+.nav-menu {
+  border: none !important;
+}
+
+.nav-menu:focus {
+  border: none !important;
+}
+
 .nav-links {
   display:flex;
   justify-content: center;
