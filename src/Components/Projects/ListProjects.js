@@ -51,7 +51,7 @@ const listProjectData = [
   },
   {
     title: "Blackjack",
-    description: "Based a popular card game creted using Vanilla JS",
+    description: "Based a popular card game created using Vanilla JS",
     githubLink: "https://github.com/edm1001/blackjackgame",
     liveLink: "https://edm1001.github.io/blackjackgame/",
     readmeLink: "https://github.com/edm1001/blackjackgame/blob/main/README.md",
@@ -87,12 +87,34 @@ const listProjectData = [
     liveLink: "https://edm1001.github.io/online-counter/",
     readmeLink: "https://github.com/edm1001/online-counter/blob/main/README.md",
   },
+  {
+    title: "Read-Me Generator",
+    description: "A backend app that generates a read me file for repositories.",
+    githubLink: "https://github.com/edm1001/read-me-generator",
+    liveLink: "https://edm1001.github.io/read-me-generator/",
+    readmeLink:
+      "https://github.com/edm1001/read-me-generator/blob/main/README.md",
+  },
+  {
+    title: "Employee Tracker",
+    description:
+      "A backend app that allows tracking of employees in a workspace with CRUD functions using SQL. *User must clone repo to use",
+    githubLink: "https://github.com/edm1001/e.tracker.12",
+    readmeLink: "https://github.com/edm1001/e.tracker.12/blob/main/README.md",
+  },
+  {
+    title: "Regex Tutorial",
+    description:
+      "A regex tutorial on how to make easy validations in an app.",
+    githubLink: "https://github.com/edm1001/Regex-tutorial-peach",
+    readmeLink: "https://github.com/edm1001/Regex-tutorial-peach/blob/main/README.md",
+  },
 ];
 
 const ListProjects = () => {
   return (
     <Card bg="light">
-      <Card.Header as="h5"> More Projects: </Card.Header>
+      <Card.Header as="h5">More Projects:</Card.Header>
       <Card.Body>
         <ListGroup bg="light">
           {listProjectData.map((project, index) => (
@@ -105,103 +127,37 @@ const ListProjects = () => {
                 <h6 className="fw-bold">{project.title}</h6>
                 {project.description}
               </div>
-              <a
-                href={project.liveLink}
-                className="btn btn-outline-secondary mx-1"
-              >
-                <FiExternalLink />
-              </a>
-              <a
-                href={project.githubLink}
-                className="btn btn-outline-secondary mx-1"
-              >
-                {" "}
-                <FiGithub />
-              </a>
-              <a
-                href={project.readmeLink}
-                className="btn btn-outline-secondary mx-1"
-              >
-                <AiOutlineRead />
-              </a>
+              {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  className="btn btn-outline-secondary mx-1"
+                >
+                  <FiExternalLink />
+                </a>
+              )}
+              {project.githubLink && (
+                <a
+                  href={project.githubLink}
+                  className="btn btn-outline-secondary mx-1"
+                >
+                  <FiGithub />
+                </a>
+              )}
+              {project.readmeLink && (
+                <a
+                  href={project.readmeLink}
+                  className="btn btn-outline-secondary mx-1"
+                >
+                  <AiOutlineRead />
+                </a>
+              )}
             </ListGroup.Item>
           ))}
-
-          <ListGroup.Item
-            as="li"
-            className="d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
-              <h6 className="fw-bold">Read-Me Generator</h6>
-              A backend app that generates a read me file for repositories.
-              <br /> *User must clone repo to use
-            </div>
-            <a
-              href="https://github.com/edm1001/read-me-gen22"
-              className="btn btn-outline-secondary mx-1"
-            >
-              {" "}
-              <FiGithub />
-            </a>
-            <a
-              href="https://github.com/edm1001/read-me-gen22/blob/main/README.md"
-              className="btn btn-outline-secondary mx-1"
-            >
-              <AiOutlineRead />
-            </a>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            as="li"
-            className="d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
-              <h6 className="fw-bold">Employee Tracker</h6>
-              A backend app that allows tracking of employees in a workspace
-              with CRUD functions using SQL.
-              <br /> *User must clone repo to use
-            </div>
-            <a
-              href="https://github.com/edm1001/e.tracker.12"
-              className="btn btn-outline-secondary mx-1"
-            >
-              {" "}
-              <FiGithub />
-            </a>
-            <a
-              href="https://github.com/edm1001/e.tracker.12/blob/main/README.md"
-              className="btn btn-outline-secondary mx-1"
-            >
-              <AiOutlineRead />
-            </a>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            as="li"
-            className="d-flex justify-content-between align-items-start"
-          >
-            <div className="ms-2 me-auto">
-              <h6 className="fw-bold">Regex Tutorial</h6>A regex tutorial on how
-              to make easy validations in an app.
-            </div>
-            <a
-              href="https://github.com/edm1001/Regex-tutorial-peach"
-              className="btn btn-outline-secondary mx-1"
-            >
-              {" "}
-              <FiGithub />
-            </a>
-            <a
-              href="https://github.com/edm1001/Regex-tutorial-peach/blob/main/README.md"
-              className="btn btn-outline-secondary mx-1"
-            >
-              <AiOutlineRead />
-            </a>
-          </ListGroup.Item>
         </ListGroup>
       </Card.Body>
     </Card>
   );
 };
+  
 
 export default ListProjects;
