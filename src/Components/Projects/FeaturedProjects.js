@@ -9,7 +9,6 @@ import TripleJ from '../../Assets/port/triplej.gif';
 import IssuesLookup from '../../Assets/port/git-issue-lookup.gif';
 import PortGenerator from '../../Assets/port/portfolio=generator.gif';
 import SalonSite from '../../Assets/port/salon-site.gif';
-// import Zookeepers from '../../Assets/port/zoo-inventory.gif';
 import Chatapp from '../../Assets/port/chat-app.gif';
 import {motion} from 'framer-motion';
 import {AiFillGithub} from 'react-icons/ai';

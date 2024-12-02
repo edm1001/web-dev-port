@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio bg-light">
+    <section className="portfolio">
       <Container className="portfolio mb-5">
         <h1 className="p-5 text-dark align-center text-center fw-bold">
           Projects Page
@@ -64,7 +64,9 @@ const Portfolio = () => {
           <ListProjects />
         </Row>
       </Container>
+      <div className="bg-light py-4">
       <Contact />
+      </div>
     </section>
   );
 };
