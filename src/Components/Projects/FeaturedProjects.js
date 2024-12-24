@@ -29,7 +29,7 @@ const projectData = [
     title: "Blog App",
     description: "The blog site empowers users to effortlessly sign up or log in, facilitating seamless creation, updating, or deletion of posts, alongside the convenient option to upload files to enhance their posts.",
     githubLink: "https://github.com/edm1001/mern-blog",
-    liveLink: "https://edm1001.github.io/mern-blog/"
+    liveLink: "https://headlinehub-6a4bc8139a2f.herokuapp.com/blog"
   },
   {
     image: Chatapp,
