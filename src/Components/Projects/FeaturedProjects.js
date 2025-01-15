@@ -18,11 +18,25 @@ import Aquamania from '../../Assets/port/aquamania.gif';
 
 const projectData = [
   {
+    image: TripleJ,
+    title: "Triple J Wild Game Birds",
+    description: "This online store, developed in partnership with a local company, showcases birds and their products available to customers. Users can explore detailed information about the birds, including care instructions, while also accessing a convenient contact form to provide inquiry about the company.",
+    githubLink: "Not Available",
+    liveLink: "www.triplejwildgamebirds.com"
+  },
+  {
     image: Aquamania,
     title: "Aquamania",
     description: "Aquamania is an aquarist guide to research new fish and find inspiration! Dive into the mesmerizing world under the water and discover a world of wonder and .",
     githubLink: "https://github.com/edm1001/aquamania",
     liveLink: "https://edm1001.github.io/aquamania/",
+  },
+  {
+    image: SalonSite,
+    title: "Salon Website",
+    description: "This is a frontend app served as a platform for a local salon in Houston, Texas, offering users information about the salon and its services. However, the reservation function was removed because it required a subscription from an external service provider.",
+    githubLink: "https://github.com/edm1001/vitalz-barbershop",
+    liveLink: "https://www.vitalcutz.com/"
   },
   {
     image: Blogsite,
@@ -31,21 +45,13 @@ const projectData = [
     githubLink: "https://github.com/edm1001/mern-blog",
     liveLink: "https://headlinehub-6a4bc8139a2f.herokuapp.com/blog"
   },
-  {
-    image: Chatapp,
-    title: "Chat App",
-    description: "The chat app enables users to engage in real-time conversations with multiple users while conveniently monitoring their online/offline status. Additionally, it offers seamless authentication through sign-in or registration, ensuring a personalized and secure user experience.",
-    githubLink: "https://github.com/edm1001/mern-chat-app",
-    liveLink: "https://edm1001.github.io/mern-chat-app/",
-  },
-  {
-    image: TripleJ,
-    title: "Triple J Wild Game Birds",
-    description: "This online store, developed in partnership with a local company, showcases birds and their products available to customers. Users can explore detailed information about the birds, including care instructions, while also accessing a convenient contact form to provide inquiry about the company.",
-    githubLink: "Not Available",
-    liveLink: "www.triplejwildgamebirds.com"
-  },
-
+  // {
+  //   image: Chatapp,
+  //   title: "Chat App",
+  //   description: "The chat app enables users to engage in real-time conversations with multiple users while conveniently monitoring their online/offline status. Additionally, it offers seamless authentication through sign-in or registration, ensuring a personalized and secure user experience.",
+  //   githubLink: "https://github.com/edm1001/mern-chat-app",
+  //   liveLink: "https://edm1001.github.io/mern-chat-app/",
+  // },
   {
     image: IssuesLookup ,
     title: "Github Issues Search",
@@ -66,13 +72,6 @@ const projectData = [
     description: "This is messaging app for users that choose to talk about anything! This app was a group project and has an amazing messagging functions for its users to talk to one another. The app also has an option to sign up and log in, in order to chat with one another.",
     githubLink: "https://github.com/xJaimeGx/chatterize",
     liveLink: "https://chatterize123.herokuapp.com/"
-  },
-  {
-    image: SalonSite,
-    title: "Salon Website",
-    description: "This is a frontend app served as a platform for a local salon in Houston, Texas, offering users information about the salon and its services. However, the reservation function was removed because it required a subscription from an external service provider.",
-    githubLink: "https://github.com/edm1001/vitalz-barbershop",
-    liveLink: "https://edm1001.github.io/vitalz-barbershop/"
   },
   {
     image: TravelDiary,
