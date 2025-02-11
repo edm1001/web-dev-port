@@ -29,7 +29,7 @@ const projectData = [
     title: "Aquamania",
     description: "Aquamania is an aquarist guide to research new fish and find inspiration! Dive into the mesmerizing world under the water and discover a world of wonder and .",
     githubLink: "https://github.com/edm1001/aquamania",
-    liveLink: "https://edm1001.github.io/aquamania/",
+    liveLink: "https://aquamania-e6fb842efdeb.herokuapp.com/",
   },
   {
     image: SalonSite,
@@ -43,7 +43,7 @@ const projectData = [
     title: "Blog App",
     description: "The blog site empowers users to effortlessly sign up or log in, facilitating seamless creation, updating, or deletion of posts, alongside the convenient option to upload files to enhance their posts.",
     githubLink: "https://github.com/edm1001/mern-blog",
-    liveLink: "https://headlinehub-6a4bc8139a2f.herokuapp.com/blog"
+    liveLink: "https://headlinehub-6a4bc8139a2f.herokuapp.com"
   },
   // {
   //   image: Chatapp,
