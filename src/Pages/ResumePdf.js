@@ -1,4 +1,4 @@
-import resumePdf from '../Assets/resume/MyResume.pdf';
+import resumePdf from '../Assets/resume/Resume2025.pdf';
 
 const ResumePdf= () => {
     return (
