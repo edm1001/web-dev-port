@@ -22,12 +22,12 @@ const projectData = [
     title: "Triple J Wild Game Birds",
     description: "This online store, developed in partnership with a local company, showcases birds and their products available to customers. Users can explore detailed information about the birds, including care instructions, while also accessing a convenient contact form to provide inquiry about the company.",
     githubLink: "Not Available",
-    liveLink: "www.triplejwildgamebirds.com"
+    liveLink: "https://www.triplejwildgamebirds.com"
   },
   {
     image: Aquamania,
     title: "Aquamania",
-    description: "Aquamania is an aquarist guide to research new fish and find inspiration! Dive into the mesmerizing world under the water and discover a world of wonder and .",
+    description: "Aquamania is a web app designed for aquarists to research freshwater and saltwater fish, discover care tips, and find inspiration for building beautiful, healthy aquariums. It provides users with species information, visual guides, and a user-friendly interface to explore the underwater world with ease.",
     githubLink: "https://github.com/edm1001/aquamania",
     liveLink: "https://aquamania-e6fb842efdeb.herokuapp.com/",
   },

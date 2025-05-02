@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <Container className="portfolio mb-5">
-        <h1 className="p-5 text-dark align-center text-center fw-bold">
+        <h1 className="p-4 text-dark align-center text-center fw-bold">
           Projects Page
         </h1>
         <Row
@@ -25,13 +25,13 @@ const Portfolio = () => {
             xs={12}
             className="d-flex justify-content-center"
           >
-            <motion.h6
+            <motion.h3
               initial={{ opacity: 0.2 }}
               whileInView={{ opacity: 1 }}
               className="text-secondary text-center"
             >
               Link to my Github:
-            </motion.h6>
+            </motion.h3>
           </Col>
           <Col
             lg={6}
