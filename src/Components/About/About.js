@@ -6,72 +6,89 @@ import AboutPic from "../../Assets/photos/personcoding.png";
 import { motion } from "framer-motion";
 
 const About = () => {
-  return (
-    <section className="about" id="about">
-      <Container>
-        <Row className="abt-info">
-          <Col lg={6} md={5} sm={12} xs={12} className="">
-            <motion.div
-              initial={{ x: -200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1, animationDelay: 2 }}
-            >
-              <div className="about-img text-center">
-                <img
-                  alt="about-pic"
-                  src={AboutPic}
-                  className="img-fluid"
-                  style={{ maxWidth: "100%", height: "auto" }}
-                />
-              </div>
-            </motion.div>
-          </Col>
+return (
+  <section className="about py-5" id="about">
+    <Container>
+      <Row className="abt-info align-items-center">
+        {/* Image Column */}
+        <Col lg={6} md={5} sm={12} className="mb-4 mb-md-0">
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            <div className="about-img text-center">
+              <img
+                alt="Edmer Valencia"
+                src={AboutPic}
+                className="img-fluid rounded shadow"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </div>
+          </motion.div>
+        </Col>
 
-          <Col className="p-4" lg={6} md={7} sm={12} xs={12}>
-            <motion.div
-              initial={{ x: 200, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.5,
-              }}
-            >
-              <h4 className="fw-semibold text-dark fs-3 text-center text-md-start">
-                About Me
-              </h4>
-              <div className="about-msg mt-2">
-                <p className="px-2  m-2  text-start" id="abt-msg">
-                  I'm a web developer with a passion for building clean,
-                  purposeful experiences. My background in retail, freelancing,
-                  and a coding bootcamp helped me develop strong teamwork and
-                  problem-solving skills. I'm currently working toward a BS in
-                  Computer Science at WGU and always looking to grow and make a
-                  meaningful impact.
-                </p>
-              </div>
+        {/* Info Column */}
+        <Col lg={6} md={7} sm={12}>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            <h4 className="fw-bold text-dark fs-3 text-center text-md-start mb-3">
+              About Me
+            </h4>
+            <p className="text-start fs-6 lh-base">
+              I’m a <strong>Full Stack Developer </strong>
+              and current Computer Science student at WGU. I got my start
+              through UT Austin’s coding bootcamp, and since then I’ve been
+              building meaningful web experiences while continuing to grow as a
+              developer. When I’m not coding, you’ll probably find me fishing
+              along the Texas Gulf, spending time outdoors. I’m also into a wide
+              range of music—anything from country to 80s rock. I bring
+              curiosity, focus, and creativity to every project I work on and
+              hope to find an opportunity tp grow both personally and
+              professionally.
+            </p>
 
-              <Row className="about-badge my-3 text-black">
-                <Col className="text-start ps-4">
-                  <p id="abt-msg">
-                    <Badge bg="primary">Birthday :</Badge> October 1, 1998{" "}
-                    <br />
-                    <Badge bg="primary">Age :</Badge> 26 <br />
-                  </p>
-                </Col>
-                <Col className="text-start pe-5" id="abt-msg">
-                  <p id="abt-msg">
-                    <Badge bg="primary">Birthplace :</Badge> Iloilo City,
-                    Philippines <br />
-                    <Badge bg="primary">School :</Badge> Coding bootcamp at UT
-                    Austin <br />
-                    <Badge bg="primary">Loves :</Badge> Tech, Nature, & Music{" "}
-                    <br />
-                  </p>
-                </Col>
-              </Row>
-            </motion.div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
+            {/* Badge Info */}
+            <Row className="about-badge mt-4">
+              <Col xs={12} sm={6} className="mb-3">
+                <div className="d-flex flex-column gap-2">
+                  <div>
+                    <span className="badge bg-primary fs-6 py-1 px-2 me-2">Birthday</span>
+                    <span className="text-muted">Oct 1, 1998</span>
+                  </div>
+                  <div>
+                    <span className="badge bg-primary fs-6 py-1 px-2 me-2">Age</span>
+                    <span className="text-muted">26</span>
+                  </div>
+                  <div>
+                    <span className="badge bg-primary fs-6 py-1 px-2 me-2">Birthplace</span>
+                    <span className="text-muted">Iloilo City, Philippines</span>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6}>
+                <div className="d-flex flex-column gap-2">
+                  <div>
+                    <span className="badge bg-primary fs-6 py-1 px-2 me-2">Education</span>
+                    <span className="text-muted">UT Austin Bootcamp, WGU CS</span>
+                  </div>
+                  <div>
+                    <span className="badge bg-primary fs-6 py-1 px-2 me-2">Interests</span>
+                    <span className="text-muted">Tech, Nature, Music</span>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </motion.div>
+        </Col>
+      </Row>
+    </Container>
+  </section>
+);
+
+
 };
 export default About;

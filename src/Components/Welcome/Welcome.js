@@ -16,9 +16,7 @@ const Welcome = () => {
             whileInView={{ x: -25 }}
             className="welcome-img m-5"
           >
-            <h1 className="fw-bold text-warning text-start  ps-2">
-              Hello!
-            </h1>{" "}
+            <h1 className="fw-bold text-warning text-start  ps-2">Hello!</h1>{" "}
             <p className="text-white text-start ps-md-1 pt-1">
               {" "}
               Hi, I’m Edmer Valencia — a Full Stack Developer and Computer
