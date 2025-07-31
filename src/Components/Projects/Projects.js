@@ -60,19 +60,14 @@ const Projects = () => {
     autoplay: true,
   };
 
-  const rotateVariant = {
-    resting: {
-      rotate: 0,
-    },
+  const zoomVariant = {
     hovering: {
-      rotate: 225,
       scale: 1.2,
       transition: {
         duration: 2,
       },
     },
   };
-
   return (
     <section>
       <h2 className=" text-center fw-bold fs-1 pt-5"> My Projects</h2>
@@ -82,7 +77,7 @@ const Projects = () => {
             <Slider {...settings}>
               {ProjSlider.map((item, index) => (
                 <motion.div
-                  variants={rotateVariant}
+                  variants={zoomVariant}
                   initial="resting"
                   whileHover="hovering"
                 >

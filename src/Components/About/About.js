@@ -37,32 +37,32 @@ const About = () => {
               <h4 className="fw-semibold text-dark fs-3 text-center text-md-start">
                 About Me
               </h4>
-              <div className="about-msg">
+              <div className="about-msg mt-2">
                 <p className="px-2  m-2  text-start" id="abt-msg">
-                  I’m passionate about web development, blending creativity with
-                  purpose. My experience in retail, freelancing, and coding
-                  bootcamp has sharpened my collaboration skills, and I’m
-                  committed to continuous learning. I’m eager to make an
-                  impact and contribute to your company’s success.
+                  I'm a web developer with a passion for building clean,
+                  purposeful experiences. My background in retail, freelancing,
+                  and a coding bootcamp helped me develop strong teamwork and
+                  problem-solving skills. I'm currently working toward a BS in
+                  Computer Science at WGU and always looking to grow and make a
+                  meaningful impact.
                 </p>
               </div>
 
               <Row className="about-badge my-3 text-black">
                 <Col className="text-start ps-4">
                   <p id="abt-msg">
-                    <Badge bg="success">Ethnicity :</Badge> Filipino <br />
-                    <Badge bg="success">Birthday :</Badge> October 1, 1998{" "}
+                    <Badge bg="primary">Birthday :</Badge> October 1, 1998{" "}
                     <br />
-                    <Badge bg="success">Age :</Badge> 26 <br />
+                    <Badge bg="primary">Age :</Badge> 26 <br />
                   </p>
                 </Col>
                 <Col className="text-start pe-5" id="abt-msg">
                   <p id="abt-msg">
-                    <Badge bg="success">Birthplace :</Badge> Iloilo City,
+                    <Badge bg="primary">Birthplace :</Badge> Iloilo City,
                     Philippines <br />
-                    <Badge bg="success">School :</Badge> Coding bootcamp at UT
+                    <Badge bg="primary">School :</Badge> Coding bootcamp at UT
                     Austin <br />
-                    <Badge bg="success">Loves :</Badge> Tech, Nature, & Music{" "}
+                    <Badge bg="primary">Loves :</Badge> Tech, Nature, & Music{" "}
                     <br />
                   </p>
                 </Col>

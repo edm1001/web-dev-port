@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 
 const Welcome = () => {
   return (
-    <Container fluid className="welcome-section bg-dark" >
+    <Container fluid className="welcome-section bg-dark">
       <Row className="w-100" id="home">
         {/* Text Column */}
         <Col lg={6} md={6} sm={12} xs={12}>
@@ -16,18 +16,16 @@ const Welcome = () => {
             whileInView={{ x: -25 }}
             className="welcome-img m-5"
           >
-            <h1 className="fw-bold text-warning text-start ps-lg-5 ps-2">
+            <h1 className="fw-bold text-warning text-start  ps-2">
               Hello!
             </h1>{" "}
             <p className="text-white text-start ps-md-1 pt-1">
               {" "}
-              My name is Edmer Valencia, and I am a Full Stack Developer with a
-              background in web development, having completed the coding
-              bootcamp at the University of Texas at Austin.
-            </p>
-            <p className="text-white text-start ps-md-1 ">
-              I am passionate about coding and eager to develop
-              innovative software and projects.
+              Hi, I’m Edmer Valencia — a Full Stack Developer and Computer
+              Science student at WGU. With a strong foundation from UT Austin’s
+              coding bootcamp and hands-on experience in web development, I
+              bring a mix of technical skill and real-world problem-solving to
+              every project.
             </p>
           </motion.div>
         </Col>

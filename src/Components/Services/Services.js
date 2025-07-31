@@ -215,7 +215,7 @@ const Services = () => {
           </Col>
         </Row>
 
-        <div className="tech-learned py-2">
+        <div className="tech-learned py-2 pb-4">
           <h4 className="fs-2 text-warning fw-bold">My Stack</h4>
           <div className="d-flex flex-wrap justify-content-center">
             {renderIcons()}
