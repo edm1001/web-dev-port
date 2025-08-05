@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Row, Col, Button, Form } from "react-bootstrap";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
+import { SiHandshake } from "react-icons/si";
 import { GiTexas } from "react-icons/gi";
 import { motion } from "framer-motion";
 
@@ -71,8 +71,8 @@ const Contact = () => {
                   initial="resting"
                   whileHover="hovering"
                 >
-                  <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage&_ga=2.32972793.659603090.1698012374-1692506508.1662130429">
-                    <SiIndeed className="mt-1" color="darkblue" size={30} />
+                  <a href="https://wgu.joinhandshake.com/profiles/tr7jzd">
+                    <SiHandshake className="mt-1" color="green" size={28} />
                   </a>
                 </motion.div>
                 <motion.div

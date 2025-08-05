@@ -136,7 +136,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services py-2" id="services">
+    <section className="services py-4" id="services">
       <Container className="h-100 w-100">
         <Row className="service-row" bg="dark" data-bs-theme="dark">
           <Col lg={6} md={12} sm={12}>
@@ -215,7 +215,7 @@ const Services = () => {
           </Col>
         </Row>
 
-        <div className="tech-learned py-2 pb-4">
+        <div className="tech-learned py-2 pb-4 ">
           <h4 className="fs-2 text-warning fw-bold">My Stack</h4>
           <div className="d-flex flex-wrap justify-content-center">
             {renderIcons()}

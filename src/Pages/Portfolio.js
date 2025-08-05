@@ -12,7 +12,7 @@ const Portfolio = () => {
     <section className="portfolio">
       <Container className="portfolio mb-5">
         <h1 className="p-4 text-dark align-center text-center fw-bold">
-          Projects Page
+          Project Page
         </h1>
         <Row
           as="div"
@@ -25,13 +25,13 @@ const Portfolio = () => {
             xs={12}
             className="d-flex justify-content-center"
           >
-            <motion.h3
+            <motion.p
               initial={{ opacity: 0.2 }}
               whileInView={{ opacity: 1 }}
               className="text-secondary text-center"
             >
               Link to my Github:
-            </motion.h3>
+            </motion.p>
           </Col>
           <Col
             lg={6}
@@ -52,7 +52,7 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub size={50} />
+                <AiFillGithub size={35} />
               </a>
             </motion.div>
           </Col>
@@ -65,7 +65,7 @@ const Portfolio = () => {
         </Row>
       </Container>
       <div className="bg-light py-4">
-      <Contact />
+        <Contact />
       </div>
     </section>
   );

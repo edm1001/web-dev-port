@@ -94,7 +94,7 @@ const Projects = () => {
           </Col>
         </Row>
         <motion.div
-          whileHover={{ scale: 1.3, x: 0 }}
+          whileHover={{ scale: 1.2 }}
           className="pb-5 text-center"
         >
           <Button
